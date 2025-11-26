@@ -136,7 +136,6 @@ cython_debug/
 
 # DaSCH internal stuff
 /id2iri_*.json
-daschland_data_excel2xml.xml
 upload_protocol.txt
 /data/multimedia/image_alternative/outdated/
 warnings.log

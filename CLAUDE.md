@@ -15,14 +15,13 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - `just format` - Run all auto-formatting tools
 - `just test` - Run unit tests with pytest
 - `just ruff-check` - Check Python code style
-- `just mypy` - Type checking (excludes src/excel2xml)
+- `just mypy` - Type checking
 - `just vulture` - Dead code analysis
 - `just clean` - Remove artifact files
 
 ### Data Generation
 
-- `uv run src/xmllib/main.py` - Generate the main XML file (data_daschland.xml) using new xmllib
-- `uv run src/excel2xml/main_excel2xml.py` - Generate XML using legacy excel2xml module
+- `uv run src/xmllib/xmllib_main.py` - Generate the main XML file (data_daschland.xml) using xmllib
 
 ### DSP-API Upload
 
@@ -47,30 +46,25 @@ This project heavily relies on DSP-TOOLS for data model creation and upload work
 
 ### Key DSP-TOOLS Commands Used
 
-- `dsp-tools create` - Creates project data model on DSP server from JSON definition (`daschland.json`)
-- `dsp-tools xmlupload` - Uploads resources and metadata from XML file (`data_daschland.xml`)
-- `dsp-tools excel2json` - Converts Excel ontology files to JSON project definition (used for `daschland.json`)
-- `dsp-tools validate-data` - Validates XML data against server ontology before upload
-
-### DSP-TOOLS Workflow
-
-1. **Project Setup**: `excel2json` converts ontology Excel files to `daschland.json`
-2. **Model Creation**: `create` establishes the data model on the DSP server
-3. **Data Upload**: `xmlupload` populates the project with resources and metadata
-4. **Validation**: `validate-data` can verify XML structure before upload
+1. **Create JSON project definition**: `dsp-tools excel2json` converts Excel files into a JSON file.
+  This is a pure restructuring, the information stays the same.
+2. **Data Model Creation**: `dsp-tools create` establishes the data model from the JSON file on the DSP server.
+3. **Validation**: `dsp-tools validate-data` validates the XML data against the data model on the server.
+4. **Data Upload**: `dsp-tools xmlupload` populates the project with resources and metadata defined in the XML file.
 
 ### Important DSP-TOOLS Notes
 
-- Creates `id2iri_mapping_[timestamp].json` files during upload for resource tracking
-- Supports both local DSP instances and remote servers (like rdu-08)
-- Authentication required for project creation and data upload
-- XML files must conform to DSP ontology structure
+- Creates `id2iri_mapping_[timestamp].json` files during xmlupload, to map IDs of the XML to IRIs on the DSP server
+- Supports both local DSP instances and remote servers like <https://app.rdu-08.dasch.swiss/>
+- For project creation and data upload, authentication is always required on remote servers
+- XML files must conform to the ontology/data model structure defined in the JSON file
 
 ## Development Workflow
 
 ### Pull Request Reviews
 
 PRs in this repository are typically reviewed by:
+
 - [@Notheturtle](https://github.com/Notheturtle)
 - [@jnussbaum](https://github.com/jnussbaum)
 - [@Nora-Olivia-Ammann](https://github.com/Nora-Olivia-Ammann)
@@ -84,25 +78,22 @@ into formats suitable for the DSPplatform.
 
 ### Core Data Flow
 
-1. **Spreadsheets** (`data/spreadsheets/`) contain structured data for different resource types
-2. **Two parallel conversion paths**:
-   - **Modern**: `src/xmllib/` uses new dsp-tools xmllib for XML generation
-   - **Legacy**: `src/excel2xml/` uses old dsp-tools excel2xml module
-3. **Output**: Both generate XML files for upload to DSP-API servers
-4. **Mirror**: NodeGoat CSV files are automatically updated for parallel project
+1. **Spreadsheets** (`data/raw/`) contain structured data for different resource types
+2. **Conversion path**: `src/xmllib/` uses dsp-tools xmllib for XML generation
+3. **Output**: Generated files (JSON + XML) for upload to DSP-API servers
+4. **Mirror**: NodeGoat CSV files (`data/processed`) are automatically updated for parallel project
 
 ### Key Components
 
 - **Resource Types**: Archive, Audio, AudioSegment, Book, BookChapter, BookCover, BookEdition, Character,
   Documentation, Event, Image, Location, Material, Region, Video, VideoSegment
-- **Data Sources**: Excel spreadsheets in `data/spreadsheets/`
+- **Data Sources**: Excel spreadsheets in `data/raw/`
 - **Multimedia Files**: Organized in `data/multimedia/` by type (audio, image, video, etc.)
-- **Ontology**: Defined in `daschland_ontology/` Excel files, compiled to `daschland.json`
+- **Ontology**: Defined in `data/daschland_ontology/` Excel files, compiled to `data/output/daschland.json`
 
 ### Important Notes
 
 - Requires Git LFS for large multimedia files
 - Uses uv for Python environment management
 - ExifTool required for metadata extraction
-- MyPy excludes `src/excel2xml` due to legacy code issues
 - NodeGoat files are automatically updated when running main XML generation

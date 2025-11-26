@@ -25,7 +25,7 @@ ruff-format-check:
 # Check type annotations
 [no-exit-message]
 mypy:
-    uv run mypy . --exclude "src/excel2xml"
+    uv run mypy .
 
 
 # Run vulture, dead code analysis
