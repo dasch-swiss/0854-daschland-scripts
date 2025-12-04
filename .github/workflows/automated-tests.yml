@@ -5,7 +5,43 @@ on:
   pull_request:
 
 jobs:
+  auto-generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          lfs: 'false'  # take care not to exceed the monthly quota
+          # https://docs.github.com/en/billing/managing-billing-for-your-products/managing-billing-for-git-large-file-storage
+          token: ${{ secrets.DASCHBOT_PAT }}
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+      - name: Install Python dependencies (uv will install python automatically, if no appropriate version is installed)
+        run: uv sync --all-extras --dev
+        shell: bash
+      - name: Install ExifTool
+        run: sudo apt-get update && sudo apt-get install -y exiftool
+      - name: Generate XML and CSV files
+        run: uv run scripts/generate_xml_csv.py
+      - name: Configure git
+        run: |
+          git config user.name "daschbot"
+          git config user.email "daschbot@users.noreply.github.com"
+          git remote set-url origin "https://x-access-token:${{ secrets.DASCHBOT_PAT }}@github.com/dasch-swiss/daschland-scripts.git"
+      - name: Commit and push if changed
+        run: |
+          git add data/output/data_daschland.xml data/processed/*.csv
+          if ! git diff --staged --quiet; then
+            git commit -m "Auto-generate XML and CSV files"
+            git push
+          else
+            echo "No changes to commit"
+          fi
+
   lint:
+    needs: auto-generate
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
@@ -32,6 +68,7 @@ jobs:
         run: just vulture
 
   tests:
+    needs: auto-generate
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
