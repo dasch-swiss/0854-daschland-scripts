@@ -43,12 +43,6 @@ lint:
     just vulture
 
 
-# Run the unit tests
-[no-exit-message]
-test *FLAGS:
-    uv run pytest {{FLAGS}}
-
-
 # Remove artifact files
 [no-exit-message]
 clean:
