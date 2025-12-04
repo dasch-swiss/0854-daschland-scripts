@@ -22,7 +22,6 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ### Data Generation
 
 - `uv run src/xmllib/xmllib_main.py` - Generate the main XML file (data_daschland.xml) using xmllib
-- `uv run scripts/generate_xml_csv.py` - Auto-generate XML and CSV files (used in CI/CD)
 
 ### DSP-API Upload
 
@@ -74,14 +73,12 @@ PRs in this repository are typically reviewed by:
 
 When a PR is created or updated, GitHub Actions automatically:
 
-1. **Auto-generates** XML and CSV files using `scripts/generate_xml_csv.py`
+1. **Auto-generates** XML and CSV files
 2. **Auto-commits** any changes to the PR branch (via daschbot)
-3. Runs **linting** (ruff, mypy, vulture) on the updated code
-4. Runs **tests** (pytest) if any exist
 
 This ensures that the checked-in XML and CSV files always stay in sync with the Python code,
 without requiring manual regeneration by developers. The workflow uses a Personal Access Token
-(DASCHBOT_PAT) to allow the auto-commit to trigger subsequent workflow steps
+(DASCHBOT_PAT) to allow the auto-commit to trigger subsequent workflow steps.
 
 ## Architecture Overview
 

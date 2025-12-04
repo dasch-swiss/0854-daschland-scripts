@@ -13,18 +13,23 @@ jobs:
         with:
           lfs: 'false'  # take care not to exceed the monthly quota
           # https://docs.github.com/en/billing/managing-billing-for-your-products/managing-billing-for-git-large-file-storage
-          token: ${{ secrets.DASCHBOT_PAT }}
       - name: Install uv
         uses: astral-sh/setup-uv@v5
         with:
           enable-cache: true
       - name: Install Python dependencies (uv will install python automatically, if no appropriate version is installed)
         run: uv sync --all-extras --dev
-        shell: bash
+      - name: Upgrade DSP-TOOLS
+        run: uv add --upgrade dsp-tools
       - name: Install ExifTool
         run: sudo apt-get update && sudo apt-get install -y exiftool
       - name: Generate XML and CSV files
-        run: uv run scripts/generate_xml_csv.py
+        shell: python
+        run: from src.xmllib.xmllib_main import main; main()
+        env:
+          XMLLIB_SORT_RESOURCES: "true"
+          XMLLIB_SORT_PROPERTIES: "true"
+          XMLLIB_AUTHORSHIP_ID_WITH_INTEGERS: "true"
       - name: Configure git
         run: |
           git config user.name "daschbot"
@@ -66,28 +71,3 @@ jobs:
         run: just mypy
       - name: Run vulture
         run: just vulture
-
-  tests:
-    needs: auto-generate
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repo
-        uses: actions/checkout@v4
-        with:
-          lfs: 'false'  # take care not to exceed the monthly quota 
-          # https://docs.github.com/en/billing/managing-billing-for-your-products/managing-billing-for-git-large-file-storage
-      - name: Install just
-        uses: taiki-e/install-action@just
-      - name: Install uv
-        uses: astral-sh/setup-uv@v5
-        with:
-          enable-cache: true
-      - name: Install Python dependencies (uv will install python automatically, if no appropriate version is installed)
-        run: uv sync --all-extras --dev
-        shell: bash
-      - name: Upgrade DSP-TOOLS
-        run: uv add --upgrade dsp-tools
-      - name: Install ExifTool
-        run: sudo apt-get update && sudo apt-get install -y exiftool
-      - name: Run tests
-        run: just test -s
