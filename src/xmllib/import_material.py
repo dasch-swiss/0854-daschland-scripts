@@ -11,7 +11,7 @@ def main() -> list[Resource]:
     material_df = pd.read_csv(PROCESSED_FOLDER / "Material.csv", dtype="str")
 
     # iterate through rows of dataframe:
-    for _, row in material_df.iterrows():
+    for _, row in list(material_df.iterrows())[:10]:
         if row["File Name"].lower().endswith(".csv"):
             material_path = f"{PROCESSED_FOLDER / row['File Name']}"
         else:
