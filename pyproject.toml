@@ -7,7 +7,7 @@ authors = [
     { name = "Noémi Amberg", email = "117180458+Notheturtle@users.noreply.github.com"},
 ]
 readme = "README.md"
-requires-python = ">=3.13"
+requires-python = ">=3.14"
 dependencies = [
     "dsp-tools",
     "icecream",
