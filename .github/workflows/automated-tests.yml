@@ -24,8 +24,7 @@ jobs:
       - name: Install ExifTool
         run: sudo apt-get update && sudo apt-get install -y exiftool
       - name: Generate XML and CSV files
-        shell: python
-        run: from src.xmllib.xmllib_main import main; main()
+        run: uv run src/xmllib/xmllib_main.py
         env:
           XMLLIB_SORT_RESOURCES: "true"
           XMLLIB_SORT_PROPERTIES: "true"
