@@ -76,3 +76,7 @@ jobs:
         run: just mypy
       - name: Run vulture
         run: just vulture
+
+  xmlupload:
+    uses: ./.github/workflows/xmlupload-reusable.yml
+    needs: auto-generate

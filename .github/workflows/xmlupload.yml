@@ -2,45 +2,9 @@
 name: xmlupload
 
 on:
-  pull_request:
   schedule:
     - cron: "0 0 * * *"
-env:
-  DSP_USER_PASSWORD: ${{ secrets.USER_PASSWORD_CHESHIRE_CAT }}
 
 jobs:
   xmlupload:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repo
-        uses: actions/checkout@v4
-        with:
-          lfs: false # take care not to exceed the monthly quota
-          # https://docs.github.com/en/billing/managing-billing-for-your-products/managing-billing-for-git-large-file-storage
-      - name: Install uv
-        uses: astral-sh/setup-uv@v5
-        with:
-          enable-cache: true
-      - name: Install Python dependencies (uv will install python automatically, if no appropriate version is installed)
-        run: uv sync --all-extras --dev
-      - name: Upgrade DSP-TOOLS
-        run: uv add --upgrade dsp-tools
-      - name: Copy dummy MP4 to correct location
-        run: |
-          rm data/multimedia/video/VID_AliceInWonderland_1915.mp4  # remove the pointer file (small text file)
-          cp test/testdata/dummy.mp4 data/multimedia/video/VID_AliceInWonderland_1915.mp4
-      - name: Enable dsp-tools log file in cwd
-        run: echo 'DSP_TOOLS_SAVE_ADDITIONAL_LOG_FILE_IN_CWD=true' >> .env
-      - name: Start stack
-        run: uv run dsp-tools start-stack --suppress-update-prompt --no-prune
-      - name: Create JSON project
-        run: uv run dsp-tools create --suppress-update-prompt data/output/daschland.json
-      - name: Xmlupload
-        run: uv run dsp-tools xmlupload --suppress-update-prompt -u cheshire.cat@dasch.swiss -p "$DSP_USER_PASSWORD" data/output/data_daschland.xml
-      - name: make logging file available
-        uses: actions/upload-artifact@v4
-        if: always()
-        with:
-          name: logging.log
-          path: logging.log
-          compression-level: 0
+    uses: ./.github/workflows/xmlupload-reusable.yml
