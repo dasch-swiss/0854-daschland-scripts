@@ -3,6 +3,9 @@ name: Automated Tests
 
 on:
   pull_request:
+  push:
+    branches-ignore:
+      - main
 
 permissions:
   contents: write
@@ -42,7 +45,7 @@ jobs:
           git config user.name "daschbot"
           git config user.email "daschbot@users.noreply.github.com"
           git remote set-url origin "https://x-access-token:${{ secrets.DASCHBOT_PAT }}@github.com/dasch-swiss/daschland-scripts.git"
-          git checkout ${{ github.event.pull_request.head.ref }}
+          git checkout ${{ github.event.pull_request.head.ref || github.ref_name }}
       - name: Commit and push if changed
         id: push
         run: |
