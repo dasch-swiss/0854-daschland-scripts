@@ -10,7 +10,10 @@ permissions:
 
 jobs:
   auto-generate:
+    if: github.event.head_commit.author.name != 'daschbot'
     runs-on: ubuntu-latest
+    outputs:
+      changes_pushed: ${{ steps.push.outputs.pushed }}
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
@@ -41,17 +44,23 @@ jobs:
           git remote set-url origin "https://x-access-token:${{ secrets.DASCHBOT_PAT }}@github.com/dasch-swiss/daschland-scripts.git"
           git checkout ${{ github.event.pull_request.head.ref }}
       - name: Commit and push if changed
+        id: push
         run: |
           git add data/output/data_daschland.xml data/processed/*.csv
           if ! git diff --staged --quiet; then
             git commit -m "Auto-generate XML and CSV files"
             git push
+            echo "pushed=true" >> $GITHUB_OUTPUT
           else
             echo "No changes to commit"
+            echo "pushed=false" >> $GITHUB_OUTPUT
           fi
 
   lint:
     needs: auto-generate
+    if: |
+      always() && !failure() && !cancelled() &&
+      (needs.auto-generate.result == 'skipped' || needs.auto-generate.outputs.changes_pushed == 'false')
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
@@ -80,3 +89,6 @@ jobs:
   xmlupload:
     uses: ./.github/workflows/xmlupload-reusable.yml
     needs: auto-generate
+    if: |
+      always() && !failure() && !cancelled() &&
+      (needs.auto-generate.result == 'skipped' || needs.auto-generate.outputs.changes_pushed == 'false')
