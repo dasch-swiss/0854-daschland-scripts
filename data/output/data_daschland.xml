@@ -10716,6 +10716,231 @@ Shrill Voice/The Fishes: Liberty Stump</text>
             <list>LIC_002</list>
         </list-prop>
     </resource>
+    <resource label="List_Event_Type.csv" id="MAT_011" restype="project-metadata:Material">
+        <bitstream license="http://rdfh.ch/licenses/cc-by-4.0" copyright-holder="DaSCH" authorship-id="authorship_3">data/processed/List_Event_Type.csv</bitstream>
+        <text-prop name="project-metadata:hasAuthorshipResource">
+            <text encoding="utf8">Daniela Subotic</text>
+            <text encoding="utf8">Noémi Villars-Amberg</text>
+        </text-prop>
+        <text-prop name="project-metadata:hasCopyrightResource">
+            <text encoding="utf8">DaSCH</text>
+        </text-prop>
+        <text-prop name="project-metadata:hasFileDescription">
+            <text encoding="xml">csv file for Nodegoat import for Event Type list</text>
+        </text-prop>
+        <text-prop name="project-metadata:hasFileName">
+            <text encoding="utf8">List_Event_Type.csv</text>
+        </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.0</decimal>
+        </decimal-prop>
+        <text-prop name="project-metadata:hasID">
+            <text encoding="utf8">MAT_011</text>
+        </text-prop>
+        <list-prop name="project-metadata:hasLicenseResource" list="License">
+            <list>LIC_002</list>
+        </list-prop>
+    </resource>
+    <resource label="List_License.csv" id="MAT_012" restype="project-metadata:Material">
+        <bitstream license="http://rdfh.ch/licenses/cc-by-4.0" copyright-holder="DaSCH" authorship-id="authorship_3">data/processed/List_License.csv</bitstream>
+        <text-prop name="project-metadata:hasAuthorshipResource">
+            <text encoding="utf8">Daniela Subotic</text>
+            <text encoding="utf8">Noémi Villars-Amberg</text>
+        </text-prop>
+        <text-prop name="project-metadata:hasCopyrightResource">
+            <text encoding="utf8">DaSCH</text>
+        </text-prop>
+        <text-prop name="project-metadata:hasFileDescription">
+            <text encoding="xml">csv file for Nodegoat import for License list class</text>
+        </text-prop>
+        <text-prop name="project-metadata:hasFileName">
+            <text encoding="utf8">List_License.csv</text>
+        </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.0</decimal>
+        </decimal-prop>
+        <text-prop name="project-metadata:hasID">
+            <text encoding="utf8">MAT_012</text>
+        </text-prop>
+        <list-prop name="project-metadata:hasLicenseResource" list="License">
+            <list>LIC_002</list>
+        </list-prop>
+    </resource>
+    <resource label="List_Role.csv" id="MAT_013" restype="project-metadata:Material">
+        <bitstream license="http://rdfh.ch/licenses/cc-by-4.0" copyright-holder="DaSCH" authorship-id="authorship_3">data/processed/List_Role.csv</bitstream>
+        <text-prop name="project-metadata:hasAuthorshipResource">
+            <text encoding="utf8">Daniela Subotic</text>
+            <text encoding="utf8">Noémi Villars-Amberg</text>
+        </text-prop>
+        <text-prop name="project-metadata:hasCopyrightResource">
+            <text encoding="utf8">DaSCH</text>
+        </text-prop>
+        <text-prop name="project-metadata:hasFileDescription">
+            <text encoding="xml">csv file for Nodegoat import for Role list class</text>
+        </text-prop>
+        <text-prop name="project-metadata:hasFileName">
+            <text encoding="utf8">List_Role.csv</text>
+        </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.0</decimal>
+        </decimal-prop>
+        <text-prop name="project-metadata:hasID">
+            <text encoding="utf8">MAT_013</text>
+        </text-prop>
+        <list-prop name="project-metadata:hasLicenseResource" list="License">
+            <list>LIC_002</list>
+        </list-prop>
+    </resource>
+    <resource label="Location.csv" id="MAT_014" restype="project-metadata:Material">
+        <bitstream license="http://rdfh.ch/licenses/cc-by-4.0" copyright-holder="DaSCH" authorship-id="authorship_3">data/processed/Location.csv</bitstream>
+        <text-prop name="project-metadata:hasAuthorshipResource">
+            <text encoding="utf8">Daniela Subotic</text>
+            <text encoding="utf8">Noémi Villars-Amberg</text>
+        </text-prop>
+        <text-prop name="project-metadata:hasCopyrightResource">
+            <text encoding="utf8">DaSCH</text>
+        </text-prop>
+        <text-prop name="project-metadata:hasFileDescription">
+            <text encoding="xml">csv file for Nodegoat import for Location class</text>
+        </text-prop>
+        <text-prop name="project-metadata:hasFileName">
+            <text encoding="utf8">Location.csv</text>
+        </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.0</decimal>
+        </decimal-prop>
+        <text-prop name="project-metadata:hasID">
+            <text encoding="utf8">MAT_014</text>
+        </text-prop>
+        <list-prop name="project-metadata:hasLicenseResource" list="License">
+            <list>LIC_002</list>
+        </list-prop>
+    </resource>
+    <resource label="Material.csv" id="MAT_015" restype="project-metadata:Material">
+        <bitstream license="http://rdfh.ch/licenses/cc-by-4.0" copyright-holder="DaSCH" authorship-id="authorship_3">data/processed/Material.csv</bitstream>
+        <text-prop name="project-metadata:hasAuthorshipResource">
+            <text encoding="utf8">Daniela Subotic</text>
+            <text encoding="utf8">Noémi Villars-Amberg</text>
+        </text-prop>
+        <text-prop name="project-metadata:hasCopyrightResource">
+            <text encoding="utf8">DaSCH</text>
+        </text-prop>
+        <text-prop name="project-metadata:hasFileDescription">
+            <text encoding="xml">csv file for Nodegoat import for Material class</text>
+        </text-prop>
+        <text-prop name="project-metadata:hasFileName">
+            <text encoding="utf8">Material.csv</text>
+        </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.0</decimal>
+        </decimal-prop>
+        <text-prop name="project-metadata:hasID">
+            <text encoding="utf8">MAT_015</text>
+        </text-prop>
+        <list-prop name="project-metadata:hasLicenseResource" list="License">
+            <list>LIC_002</list>
+        </list-prop>
+    </resource>
+    <resource label="Region.csv" id="MAT_016" restype="project-metadata:Material">
+        <bitstream license="http://rdfh.ch/licenses/cc-by-4.0" copyright-holder="DaSCH" authorship-id="authorship_3">data/processed/Region.csv</bitstream>
+        <text-prop name="project-metadata:hasAuthorshipResource">
+            <text encoding="utf8">Daniela Subotic</text>
+            <text encoding="utf8">Noémi Villars-Amberg</text>
+        </text-prop>
+        <text-prop name="project-metadata:hasCopyrightResource">
+            <text encoding="utf8">DaSCH</text>
+        </text-prop>
+        <text-prop name="project-metadata:hasFileDescription">
+            <text encoding="xml">csv file for Nodegoat import for Region of Image class</text>
+        </text-prop>
+        <text-prop name="project-metadata:hasFileName">
+            <text encoding="utf8">Region.csv</text>
+        </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.0</decimal>
+        </decimal-prop>
+        <text-prop name="project-metadata:hasID">
+            <text encoding="utf8">MAT_016</text>
+        </text-prop>
+        <list-prop name="project-metadata:hasLicenseResource" list="License">
+            <list>LIC_002</list>
+        </list-prop>
+    </resource>
+    <resource label="Video.csv" id="MAT_017" restype="project-metadata:Material">
+        <bitstream license="http://rdfh.ch/licenses/cc-by-4.0" copyright-holder="DaSCH" authorship-id="authorship_3">data/processed/Video.csv</bitstream>
+        <text-prop name="project-metadata:hasAuthorshipResource">
+            <text encoding="utf8">Daniela Subotic</text>
+            <text encoding="utf8">Noémi Villars-Amberg</text>
+        </text-prop>
+        <text-prop name="project-metadata:hasCopyrightResource">
+            <text encoding="utf8">DaSCH</text>
+        </text-prop>
+        <text-prop name="project-metadata:hasFileDescription">
+            <text encoding="xml">csv file for Nodegoat import for Video class</text>
+        </text-prop>
+        <text-prop name="project-metadata:hasFileName">
+            <text encoding="utf8">Video.csv</text>
+        </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.0</decimal>
+        </decimal-prop>
+        <text-prop name="project-metadata:hasID">
+            <text encoding="utf8">MAT_017</text>
+        </text-prop>
+        <list-prop name="project-metadata:hasLicenseResource" list="License">
+            <list>LIC_002</list>
+        </list-prop>
+    </resource>
+    <resource label="VideoSegment.csv" id="MAT_018" restype="project-metadata:Material">
+        <bitstream license="http://rdfh.ch/licenses/cc-by-4.0" copyright-holder="DaSCH" authorship-id="authorship_3">data/processed/VideoSegment.csv</bitstream>
+        <text-prop name="project-metadata:hasAuthorshipResource">
+            <text encoding="utf8">Daniela Subotic</text>
+            <text encoding="utf8">Noémi Villars-Amberg</text>
+        </text-prop>
+        <text-prop name="project-metadata:hasCopyrightResource">
+            <text encoding="utf8">DaSCH</text>
+        </text-prop>
+        <text-prop name="project-metadata:hasFileDescription">
+            <text encoding="xml">csv file for Nodegoat import for Segment of Video class</text>
+        </text-prop>
+        <text-prop name="project-metadata:hasFileName">
+            <text encoding="utf8">VideoSegment.csv</text>
+        </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.0</decimal>
+        </decimal-prop>
+        <text-prop name="project-metadata:hasID">
+            <text encoding="utf8">MAT_018</text>
+        </text-prop>
+        <list-prop name="project-metadata:hasLicenseResource" list="License">
+            <list>LIC_002</list>
+        </list-prop>
+    </resource>
+    <resource label="AudioSegment.csv" id="MAT_019" restype="project-metadata:Material">
+        <bitstream license="http://rdfh.ch/licenses/cc-by-4.0" copyright-holder="DaSCH" authorship-id="authorship_3">data/processed/AudioSegment.csv</bitstream>
+        <text-prop name="project-metadata:hasAuthorshipResource">
+            <text encoding="utf8">Daniela Subotic</text>
+            <text encoding="utf8">Noémi Villars-Amberg</text>
+        </text-prop>
+        <text-prop name="project-metadata:hasCopyrightResource">
+            <text encoding="utf8">DaSCH</text>
+        </text-prop>
+        <text-prop name="project-metadata:hasFileDescription">
+            <text encoding="xml">csv file for Nodegoat import for Segment of Audio class</text>
+        </text-prop>
+        <text-prop name="project-metadata:hasFileName">
+            <text encoding="utf8">AudioSegment.csv</text>
+        </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.0</decimal>
+        </decimal-prop>
+        <text-prop name="project-metadata:hasID">
+            <text encoding="utf8">MAT_019</text>
+        </text-prop>
+        <list-prop name="project-metadata:hasLicenseResource" list="License">
+            <list>LIC_002</list>
+        </list-prop>
+    </resource>
     <region label="White Rabbit Figure" id="R_001">
         <geometry-prop name="hasGeometry">
             <geometry>{"status": "active", "type": "rectangle", "lineWidth": 3, "points": [{"x": 0.02, "y": 0.1}, {"x": 0.22, "y": 0.5}]}</geometry>
