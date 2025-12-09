@@ -28,6 +28,7 @@ jobs:
         run: |
           uv run dsp-tools create \
           --suppress-update-prompt \
+          --exit-if-exists \
           -s api.stage.dasch.swiss \
           -u dasch@dasch.swiss \
           -p "$PW" \
