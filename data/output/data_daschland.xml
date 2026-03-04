@@ -1795,6 +1795,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name=":hasDescription">
             <text encoding="xml">Alice's Adventures in Wonderland<br/>by Lewis Carroll<br/>Illustrated by John Tenniel<br/>Book Virtual Edition, true to the typesetting of the original version.</text>
         </text-prop>
+        <uri-prop name=":hasWikidataLink">
+            <uri>https://www.wikidata.org/wiki/Q20872991</uri>
+        </uri-prop>
         <text-prop name="project-metadata:hasAuthorshipResource">
             <text encoding="utf8">Daniela Subotic</text>
             <text encoding="utf8">Noémi Villars-Amberg</text>
@@ -1978,6 +1981,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <list-prop name=":hasRoleList" list="Role">
             <list>R_01</list>
         </list-prop>
+        <uri-prop name=":hasWikidataLink">
+            <uri>https://www.wikidata.org/wiki/Q1269082</uri>
+        </uri-prop>
         <text-prop name="project-metadata:hasAuthorshipResource">
             <text encoding="utf8">Daniela Subotic</text>
             <text encoding="utf8">Noémi Villars-Amberg</text>
@@ -2026,6 +2032,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <list-prop name=":hasRoleList" list="Role">
             <list>R_01</list>
         </list-prop>
+        <uri-prop name=":hasWikidataLink">
+            <uri>https://www.wikidata.org/wiki/Q178776</uri>
+        </uri-prop>
         <text-prop name="project-metadata:hasAuthorshipResource">
             <text encoding="utf8">Daniela Subotic</text>
             <text encoding="utf8">Noémi Villars-Amberg</text>
@@ -2075,6 +2084,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <list-prop name=":hasRoleList" list="Role">
             <list>R_01</list>
         </list-prop>
+        <uri-prop name=":hasWikidataLink">
+            <uri>https://www.wikidata.org/wiki/Q1282345</uri>
+        </uri-prop>
         <text-prop name="project-metadata:hasAuthorshipResource">
             <text encoding="utf8">Daniela Subotic</text>
             <text encoding="utf8">Noémi Villars-Amberg</text>
@@ -2124,6 +2136,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <list-prop name=":hasRoleList" list="Role">
             <list>R_01</list>
         </list-prop>
+        <uri-prop name=":hasWikidataLink">
+            <uri>https://www.wikidata.org/wiki/Q864751</uri>
+        </uri-prop>
         <text-prop name="project-metadata:hasAuthorshipResource">
             <text encoding="utf8">Daniela Subotic</text>
             <text encoding="utf8">Noémi Villars-Amberg</text>
@@ -2172,6 +2187,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <list-prop name=":hasRoleList" list="Role">
             <list>R_01</list>
         </list-prop>
+        <uri-prop name=":hasWikidataLink">
+            <uri>https://www.wikidata.org/wiki/Q934013</uri>
+        </uri-prop>
         <text-prop name="project-metadata:hasAuthorshipResource">
             <text encoding="utf8">Daniela Subotic</text>
             <text encoding="utf8">Noémi Villars-Amberg</text>
@@ -2220,6 +2238,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <list-prop name=":hasRoleList" list="Role">
             <list>R_01</list>
         </list-prop>
+        <uri-prop name=":hasWikidataLink">
+            <uri>https://www.wikidata.org/wiki/Q324433</uri>
+        </uri-prop>
         <text-prop name="project-metadata:hasAuthorshipResource">
             <text encoding="utf8">Daniela Subotic</text>
             <text encoding="utf8">Noémi Villars-Amberg</text>
@@ -2265,6 +2286,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <list-prop name=":hasRoleList" list="Role">
             <list>R_02</list>
         </list-prop>
+        <uri-prop name=":hasWikidataLink">
+            <uri>https://www.wikidata.org/wiki/Q2587090</uri>
+        </uri-prop>
         <text-prop name="project-metadata:hasAuthorshipResource">
             <text encoding="utf8">Daniela Subotic</text>
             <text encoding="utf8">Noémi Villars-Amberg</text>
@@ -2308,6 +2332,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <list-prop name=":hasRoleList" list="Role">
             <list>R_02</list>
         </list-prop>
+        <uri-prop name=":hasWikidataLink">
+            <uri>https://www.wikidata.org/wiki/Q430315</uri>
+        </uri-prop>
         <text-prop name="project-metadata:hasAuthorshipResource">
             <text encoding="utf8">Daniela Subotic</text>
             <text encoding="utf8">Noémi Villars-Amberg</text>
@@ -2351,6 +2378,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <list-prop name=":hasRoleList" list="Role">
             <list>R_02</list>
         </list-prop>
+        <uri-prop name=":hasWikidataLink">
+            <uri>https://www.wikidata.org/wiki/Q2668352</uri>
+        </uri-prop>
         <text-prop name="project-metadata:hasAuthorshipResource">
             <text encoding="utf8">Daniela Subotic</text>
             <text encoding="utf8">Noémi Villars-Amberg</text>
@@ -2393,6 +2423,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <list-prop name=":hasRoleList" list="Role">
             <list>R_02</list>
         </list-prop>
+        <uri-prop name=":hasWikidataLink">
+            <uri>https://www.wikidata.org/wiki/Q1263672</uri>
+        </uri-prop>
         <text-prop name="project-metadata:hasAuthorshipResource">
             <text encoding="utf8">Daniela Subotic</text>
             <text encoding="utf8">Noémi Villars-Amberg</text>
@@ -2436,6 +2469,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <list-prop name=":hasRoleList" list="Role">
             <list>R_01</list>
         </list-prop>
+        <uri-prop name=":hasWikidataLink">
+            <uri>https://www.wikidata.org/wiki/Q2561830</uri>
+        </uri-prop>
         <text-prop name="project-metadata:hasAuthorshipResource">
             <text encoding="utf8">Daniela Subotic</text>
             <text encoding="utf8">Noémi Villars-Amberg</text>
@@ -2478,6 +2514,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <list-prop name=":hasRoleList" list="Role">
             <list>R_02</list>
         </list-prop>
+        <uri-prop name=":hasWikidataLink">
+            <uri>https://www.wikidata.org/wiki/Q783947</uri>
+        </uri-prop>
         <text-prop name="project-metadata:hasAuthorshipResource">
             <text encoding="utf8">Daniela Subotic</text>
             <text encoding="utf8">Noémi Villars-Amberg</text>
@@ -2521,6 +2560,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <list-prop name=":hasRoleList" list="Role">
             <list>R_02</list>
         </list-prop>
+        <uri-prop name=":hasWikidataLink">
+            <uri>https://www.wikidata.org/wiki/Q7994952</uri>
+        </uri-prop>
         <text-prop name="project-metadata:hasAuthorshipResource">
             <text encoding="utf8">Daniela Subotic</text>
             <text encoding="utf8">Noémi Villars-Amberg</text>
@@ -2564,6 +2606,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <list-prop name=":hasRoleList" list="Role">
             <list>R_02</list>
         </list-prop>
+        <uri-prop name=":hasWikidataLink">
+            <uri>https://www.wikidata.org/wiki/Q6926011</uri>
+        </uri-prop>
         <text-prop name="project-metadata:hasAuthorshipResource">
             <text encoding="utf8">Daniela Subotic</text>
             <text encoding="utf8">Noémi Villars-Amberg</text>
@@ -2608,6 +2653,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <list-prop name=":hasRoleList" list="Role">
             <list>R_02</list>
         </list-prop>
+        <uri-prop name=":hasWikidataLink">
+            <uri>https://www.wikidata.org/wiki/Q2325524</uri>
+        </uri-prop>
         <text-prop name="project-metadata:hasAuthorshipResource">
             <text encoding="utf8">Daniela Subotic</text>
             <text encoding="utf8">Noémi Villars-Amberg</text>
@@ -2650,6 +2698,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <list-prop name=":hasRoleList" list="Role">
             <list>R_02</list>
         </list-prop>
+        <uri-prop name=":hasWikidataLink">
+            <uri>https://www.wikidata.org/wiki/Q54002293</uri>
+        </uri-prop>
         <text-prop name="project-metadata:hasAuthorshipResource">
             <text encoding="utf8">Daniela Subotic</text>
             <text encoding="utf8">Noémi Villars-Amberg</text>
@@ -2693,6 +2744,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <list-prop name=":hasRoleList" list="Role">
             <list>R_02</list>
         </list-prop>
+        <uri-prop name=":hasWikidataLink">
+            <uri>https://www.wikidata.org/wiki/Q6412246</uri>
+        </uri-prop>
         <text-prop name="project-metadata:hasAuthorshipResource">
             <text encoding="utf8">Daniela Subotic</text>
             <text encoding="utf8">Noémi Villars-Amberg</text>
@@ -2736,6 +2790,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <list-prop name=":hasRoleList" list="Role">
             <list>R_02</list>
         </list-prop>
+        <uri-prop name=":hasWikidataLink">
+            <uri>https://www.wikidata.org/wiki/Q950895</uri>
+        </uri-prop>
         <text-prop name="project-metadata:hasAuthorshipResource">
             <text encoding="utf8">Daniela Subotic</text>
             <text encoding="utf8">Noémi Villars-Amberg</text>
@@ -2778,6 +2835,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <list-prop name=":hasRoleList" list="Role">
             <list>R_02</list>
         </list-prop>
+        <uri-prop name=":hasWikidataLink">
+            <uri>https://www.wikidata.org/wiki/Q5238309</uri>
+        </uri-prop>
         <text-prop name="project-metadata:hasAuthorshipResource">
             <text encoding="utf8">Daniela Subotic</text>
             <text encoding="utf8">Noémi Villars-Amberg</text>
@@ -2816,6 +2876,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <list-prop name=":hasRoleList" list="Role">
             <list>R_02</list>
         </list-prop>
+        <uri-prop name=":hasWikidataLink">
+            <uri>https://www.wikidata.org/wiki/Q26902936</uri>
+        </uri-prop>
         <text-prop name="project-metadata:hasAuthorshipResource">
             <text encoding="utf8">Daniela Subotic</text>
             <text encoding="utf8">Noémi Villars-Amberg</text>
@@ -2856,6 +2919,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <list-prop name=":hasRoleList" list="Role">
             <list>R_02</list>
         </list-prop>
+        <uri-prop name=":hasWikidataLink">
+            <uri>https://www.wikidata.org/wiki/Q4395118</uri>
+        </uri-prop>
         <text-prop name="project-metadata:hasAuthorshipResource">
             <text encoding="utf8">Daniela Subotic</text>
             <text encoding="utf8">Noémi Villars-Amberg</text>
@@ -2894,6 +2960,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <list-prop name=":hasRoleList" list="Role">
             <list>R_02</list>
         </list-prop>
+        <uri-prop name=":hasWikidataLink">
+            <uri>https://www.wikidata.org/wiki/Q14828573</uri>
+        </uri-prop>
         <text-prop name="project-metadata:hasAuthorshipResource">
             <text encoding="utf8">Daniela Subotic</text>
             <text encoding="utf8">Noémi Villars-Amberg</text>
@@ -2934,6 +3003,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <list-prop name=":hasRoleList" list="Role">
             <list>R_02</list>
         </list-prop>
+        <uri-prop name=":hasWikidataLink">
+            <uri>https://www.wikidata.org/wiki/Q5325395</uri>
+        </uri-prop>
         <text-prop name="project-metadata:hasAuthorshipResource">
             <text encoding="utf8">Daniela Subotic</text>
             <text encoding="utf8">Noémi Villars-Amberg</text>
@@ -2970,6 +3042,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <list-prop name=":hasRoleList" list="Role">
             <list>R_02</list>
         </list-prop>
+        <uri-prop name=":hasWikidataLink">
+            <uri>https://www.wikidata.org/wiki/Q130534644</uri>
+        </uri-prop>
         <text-prop name="project-metadata:hasAuthorshipResource">
             <text encoding="utf8">Daniela Subotic</text>
             <text encoding="utf8">Noémi Villars-Amberg</text>
@@ -3007,6 +3082,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <list-prop name=":hasRoleList" list="Role">
             <list>R_02</list>
         </list-prop>
+        <uri-prop name=":hasWikidataLink">
+            <uri>https://www.wikidata.org/wiki/Q7143182</uri>
+        </uri-prop>
         <text-prop name="project-metadata:hasAuthorshipResource">
             <text encoding="utf8">Daniela Subotic</text>
             <text encoding="utf8">Noémi Villars-Amberg</text>
@@ -3052,6 +3130,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <list-prop name=":hasRoleList" list="Role">
             <list>R_02</list>
         </list-prop>
+        <uri-prop name=":hasWikidataLink">
+            <uri>https://www.wikidata.org/wiki/Q11309917</uri>
+        </uri-prop>
         <text-prop name="project-metadata:hasAuthorshipResource">
             <text encoding="utf8">Daniela Subotic</text>
             <text encoding="utf8">Noémi Villars-Amberg</text>
@@ -3089,6 +3170,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <list-prop name=":hasRoleList" list="Role">
             <list>R_02</list>
         </list-prop>
+        <uri-prop name=":hasWikidataLink">
+            <uri>https://www.wikidata.org/wiki/Q3640014</uri>
+        </uri-prop>
         <text-prop name="project-metadata:hasAuthorshipResource">
             <text encoding="utf8">Daniela Subotic</text>
             <text encoding="utf8">Noémi Villars-Amberg</text>
@@ -3127,6 +3211,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <list-prop name=":hasRoleList" list="Role">
             <list>R_02</list>
         </list-prop>
+        <uri-prop name=":hasWikidataLink">
+            <uri>https://www.wikidata.org/wiki/Q16933961</uri>
+        </uri-prop>
         <text-prop name="project-metadata:hasAuthorshipResource">
             <text encoding="utf8">Daniela Subotic</text>
             <text encoding="utf8">Noémi Villars-Amberg</text>
@@ -3330,6 +3417,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <list-prop name=":hasRoleList" list="Role">
             <list>R_02</list>
         </list-prop>
+        <uri-prop name=":hasWikidataLink">
+            <uri>https://www.wikidata.org/wiki/Q31194459</uri>
+        </uri-prop>
         <text-prop name="project-metadata:hasAuthorshipResource">
             <text encoding="utf8">Daniela Subotic</text>
             <text encoding="utf8">Noémi Villars-Amberg</text>
@@ -3536,6 +3626,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <list-prop name=":hasRoleList" list="Role">
             <list>R_02</list>
         </list-prop>
+        <uri-prop name=":hasWikidataLink">
+            <uri>https://www.wikidata.org/wiki/Q26902956</uri>
+        </uri-prop>
         <text-prop name="project-metadata:hasAuthorshipResource">
             <text encoding="utf8">Daniela Subotic</text>
             <text encoding="utf8">Noémi Villars-Amberg</text>
@@ -3691,6 +3784,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <list-prop name=":hasRoleList" list="Role">
             <list>R_02</list>
         </list-prop>
+        <uri-prop name=":hasWikidataLink">
+            <uri>https://www.wikidata.org/wiki/Q4083088</uri>
+        </uri-prop>
         <text-prop name="project-metadata:hasAuthorshipResource">
             <text encoding="utf8">Daniela Subotic</text>
             <text encoding="utf8">Noémi Villars-Amberg</text>
@@ -3735,6 +3831,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <list-prop name=":hasRoleList" list="Role">
             <list>R_02</list>
         </list-prop>
+        <uri-prop name=":hasWikidataLink">
+            <uri>https://www.wikidata.org/wiki/Q26902954</uri>
+        </uri-prop>
         <text-prop name="project-metadata:hasAuthorshipResource">
             <text encoding="utf8">Daniela Subotic</text>
             <text encoding="utf8">Noémi Villars-Amberg</text>
@@ -3778,6 +3877,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <list-prop name=":hasRoleList" list="Role">
             <list>R_02</list>
         </list-prop>
+        <uri-prop name=":hasWikidataLink">
+            <uri>https://www.wikidata.org/wiki/Q2454190</uri>
+        </uri-prop>
         <text-prop name="project-metadata:hasAuthorshipResource">
             <text encoding="utf8">Daniela Subotic</text>
             <text encoding="utf8">Noémi Villars-Amberg</text>
@@ -3819,6 +3921,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <list-prop name=":hasRoleList" list="Role">
             <list>R_02</list>
         </list-prop>
+        <uri-prop name=":hasWikidataLink">
+            <uri>https://www.wikidata.org/wiki/Q29051831</uri>
+        </uri-prop>
         <text-prop name="project-metadata:hasAuthorshipResource">
             <text encoding="utf8">Daniela Subotic</text>
             <text encoding="utf8">Noémi Villars-Amberg</text>
@@ -3860,6 +3965,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <list-prop name=":hasRoleList" list="Role">
             <list>R_02</list>
         </list-prop>
+        <uri-prop name=":hasWikidataLink">
+            <uri>https://www.wikidata.org/wiki/Q29051837</uri>
+        </uri-prop>
         <text-prop name="project-metadata:hasAuthorshipResource">
             <text encoding="utf8">Daniela Subotic</text>
             <text encoding="utf8">Noémi Villars-Amberg</text>
@@ -3901,6 +4009,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <list-prop name=":hasRoleList" list="Role">
             <list>R_02</list>
         </list-prop>
+        <uri-prop name=":hasWikidataLink">
+            <uri>https://www.wikidata.org/wiki/Q1568413</uri>
+        </uri-prop>
         <text-prop name="project-metadata:hasAuthorshipResource">
             <text encoding="utf8">Daniela Subotic</text>
             <text encoding="utf8">Noémi Villars-Amberg</text>
@@ -3985,6 +4096,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <list-prop name=":hasRoleList" list="Role">
             <list>R_01</list>
         </list-prop>
+        <uri-prop name=":hasWikidataLink">
+            <uri>https://www.wikidata.org/wiki/Q10357223</uri>
+        </uri-prop>
         <text-prop name="project-metadata:hasAuthorshipResource">
             <text encoding="utf8">Daniela Subotic</text>
             <text encoding="utf8">Noémi Villars-Amberg</text>
@@ -4106,6 +4220,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <list-prop name=":hasRoleList" list="Role">
             <list>R_02</list>
         </list-prop>
+        <uri-prop name=":hasWikidataLink">
+            <uri>https://www.wikidata.org/wiki/Q1566943</uri>
+        </uri-prop>
         <text-prop name="project-metadata:hasAuthorshipResource">
             <text encoding="utf8">Daniela Subotic</text>
             <text encoding="utf8">Noémi Villars-Amberg</text>
@@ -9831,6 +9948,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name=":hasName">
             <text encoding="utf8">Oxford</text>
         </text-prop>
+        <uri-prop name=":hasWikidataLink">
+            <uri>https://www.wikidata.org/wiki/Q34217</uri>
+        </uri-prop>
         <text-prop name="project-metadata:hasAuthorshipResource">
             <text encoding="utf8">Daniela Subotic</text>
             <text encoding="utf8">Noémi Villars-Amberg</text>
@@ -9858,6 +9978,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name=":hasName">
             <text encoding="utf8">England</text>
         </text-prop>
+        <uri-prop name=":hasWikidataLink">
+            <uri>https://www.wikidata.org/wiki/Q21</uri>
+        </uri-prop>
         <text-prop name="project-metadata:hasAuthorshipResource">
             <text encoding="utf8">Daniela Subotic</text>
             <text encoding="utf8">Noémi Villars-Amberg</text>
@@ -14519,6 +14642,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name=":hasName">
             <text encoding="utf8">Alice in Wonderland</text>
         </text-prop>
+        <uri-prop name=":hasWikidataLink">
+            <uri>https://www.wikidata.org/wiki/Q92640</uri>
+        </uri-prop>
         <resptr-prop name=":linkToBookCover">
             <resptr>BCO_001</resptr>
             <resptr>BCO_002</resptr>
@@ -14576,6 +14702,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name=":hasName">
             <text encoding="utf8">Through the Looking-Glass and what Alice found there</text>
         </text-prop>
+        <uri-prop name=":hasWikidataLink">
+            <uri>https://www.wikidata.org/wiki/Q220331</uri>
+        </uri-prop>
         <resptr-prop name=":linkToBookCover">
             <resptr>BCO_005</resptr>
             <resptr>BCO_006</resptr>
@@ -14655,6 +14784,9 @@ Alice's Mother - Lotta Savoy</text>
         <text-prop name=":hasDescription">
             <text encoding="xml">Movie adaptation of the book Alice in Wonderland, dating to 1915. <br/>The film combines the chapters from Through the Looking-Glass with those of Alice’s Adventures in Wonderland. <br/>However, most of the looking-glass portion is lost.</text>
         </text-prop>
+        <uri-prop name=":hasWikidataLink">
+            <uri>https://www.wikidata.org/wiki/Q2302672</uri>
+        </uri-prop>
         <text-prop name="project-metadata:hasAuthorshipResource">
             <text encoding="utf8">Daniela Subotic</text>
             <text encoding="utf8">Noémi Villars-Amberg</text>

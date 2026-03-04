@@ -34,6 +34,7 @@ def main() -> list[Resource]:
         resource.add_link_multiple(":linkToBookEdition", book_edition_ids)
         resource.add_link_multiple(":linkToVideo", video_ids)
         resource.add_link_multiple(":linkToBookCover", cover_ids)
+        resource.add_uri_optional(":hasWikidataLink", row["Wikidata Link"])
         resource.add_simpletext("project-metadata:hasCopyrightResource", "DaSCH")
         resource.add_list("project-metadata:hasLicenseResource", "License", "LIC_002")
         resource.add_simpletext_multiple("project-metadata:hasAuthorshipResource", authors_resource)
