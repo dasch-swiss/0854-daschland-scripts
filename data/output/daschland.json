@@ -1234,6 +1234,28 @@
                         "gui_element": "SimpleText"
                     },
                     {
+                        "name": "hasWikidataLink",
+                        "super": [
+                            "hasValue",
+                            "schema:identifier",
+                            "crm:P1_is_identified_by"
+                        ],
+                        "object": "UriValue",
+                        "labels": {
+                            "de": "Wikidata ID",
+                            "en": "Wikidata ID",
+                            "fr": "Wikidata ID",
+                            "it": "Wikidata ID"
+                        },
+                        "comments": {
+                            "de": "link zu der Wikidata Seite",
+                            "en": "link to the corresponding Wikidata entry",
+                            "fr": "lien vers l'entrée Wikidata correspondante",
+                            "it": "link alla voce Wikidata corrispondente"
+                        },
+                        "gui_element": "SimpleText"
+                    },
+                    {
                         "name": "isDangerous",
                         "super": [
                             "hasValue",
@@ -1582,44 +1604,49 @@
                                 "gui_order": 5
                             },
                             {
-                                "propname": ":linkToStoryChapter",
-                                "cardinality": "0-n",
+                                "propname": ":hasWikidataLink",
+                                "cardinality": "0-1",
                                 "gui_order": 6
                             },
                             {
-                                "propname": ":linkToBookEdition",
+                                "propname": ":linkToStoryChapter",
                                 "cardinality": "0-n",
                                 "gui_order": 7
                             },
                             {
-                                "propname": ":linkToVideo",
+                                "propname": ":linkToBookEdition",
                                 "cardinality": "0-n",
                                 "gui_order": 8
                             },
                             {
-                                "propname": ":linkToBookCover",
+                                "propname": ":linkToVideo",
                                 "cardinality": "0-n",
                                 "gui_order": 9
                             },
                             {
-                                "propname": "project-metadata:hasAuthorshipResource",
+                                "propname": ":linkToBookCover",
                                 "cardinality": "0-n",
                                 "gui_order": 10
                             },
                             {
-                                "propname": "project-metadata:hasCopyrightResource",
-                                "cardinality": "0-1",
+                                "propname": "project-metadata:hasAuthorshipResource",
+                                "cardinality": "0-n",
                                 "gui_order": 11
                             },
                             {
-                                "propname": "project-metadata:hasLicenseResource",
+                                "propname": "project-metadata:hasCopyrightResource",
                                 "cardinality": "0-1",
                                 "gui_order": 12
                             },
                             {
+                                "propname": "project-metadata:hasLicenseResource",
+                                "cardinality": "0-1",
+                                "gui_order": 13
+                            },
+                            {
                                 "propname": "project-metadata:hasID",
                                 "cardinality": "1",
-                                "gui_order": 13
+                                "gui_order": 14
                             }
                         ]
                     },
@@ -1643,11 +1670,6 @@
                             "it": "Capitoli delle due storie, comprese prefazioni e poesie tratte dai libri, con testo completo. Ogni capitolo è collegato alla sua storia. Sono presenti anche registrazioni audio di ogni capitolo. Per ogni capitolo è fornito un link alla località o alle località in cui si svolge l'azione del capitolo, nonché agli eventi che hanno luogo durante i capitoli."
                         },
                         "cardinalities": [
-                            {
-                                "propname": "project-metadata:hasID",
-                                "cardinality": "1",
-                                "gui_order": 14
-                            },
                             {
                                 "propname": ":hasName",
                                 "cardinality": "0-1",
@@ -1712,6 +1734,11 @@
                                 "propname": "project-metadata:hasLicenseResource",
                                 "cardinality": "0-1",
                                 "gui_order": 13
+                            },
+                            {
+                                "propname": "project-metadata:hasID",
+                                "cardinality": "1",
+                                "gui_order": 14
                             }
                         ]
                     },
@@ -1736,11 +1763,6 @@
                         },
                         "cardinalities": [
                             {
-                                "propname": "project-metadata:hasID",
-                                "cardinality": "1",
-                                "gui_order": 11
-                            },
-                            {
                                 "propname": ":hasName",
                                 "cardinality": "0-n",
                                 "gui_order": 1
@@ -1748,26 +1770,31 @@
                             {
                                 "propname": ":hasDescription",
                                 "cardinality": "0-n",
-                                "gui_order": 3
+                                "gui_order": 2
                             },
                             {
                                 "propname": ":hasDescriptionAlternative",
                                 "cardinality": "0-n",
-                                "gui_order": 4
+                                "gui_order": 3
                             },
                             {
                                 "propname": ":hasRoleList",
                                 "cardinality": "0-1",
-                                "gui_order": 5
+                                "gui_order": 4
                             },
                             {
                                 "propname": ":hasQuote",
                                 "cardinality": "0-n",
-                                "gui_order": 6
+                                "gui_order": 5
                             },
                             {
                                 "propname": ":hasKeywordList",
                                 "cardinality": "0-n",
+                                "gui_order": 6
+                            },
+                            {
+                                "propname": ":hasWikidataLink",
+                                "cardinality": "0-1",
                                 "gui_order": 7
                             },
                             {
@@ -1784,6 +1811,11 @@
                                 "propname": "project-metadata:hasLicenseResource",
                                 "cardinality": "0-1",
                                 "gui_order": 10
+                            },
+                            {
+                                "propname": "project-metadata:hasID",
+                                "cardinality": "1",
+                                "gui_order": 11
                             }
                         ]
                     },
@@ -1807,11 +1839,6 @@
                             "it": "Eventi che si verificano nelle due storie. Gli eventi sono suddivisi in sottoclassi, in base al loro tipo: Avventura, Conflitto e Sociale. Gli eventi alternativi sono privati. Tutti gli eventi sono direttamente collegati al capitolo in cui si verificano. Alcuni eventi sono collegati ai personaggi, in base al loro tipo. La proprietà “Descrizione” contiene collegamenti diretti alla classe Location e al personaggio Alice."
                         },
                         "cardinalities": [
-                            {
-                                "propname": "project-metadata:hasID",
-                                "cardinality": "1",
-                                "gui_order": 11
-                            },
                             {
                                 "propname": ":hasName",
                                 "cardinality": "0-1",
@@ -1851,6 +1878,11 @@
                                 "propname": "project-metadata:hasLicenseResource",
                                 "cardinality": "0-1",
                                 "gui_order": 10
+                            },
+                            {
+                                "propname": "project-metadata:hasID",
+                                "cardinality": "1",
+                                "gui_order": 11
                             }
                         ]
                     },
@@ -1875,11 +1907,6 @@
                         },
                         "cardinalities": [
                             {
-                                "propname": "project-metadata:hasID",
-                                "cardinality": "1",
-                                "gui_order": 8
-                            },
-                            {
                                 "propname": ":hasName",
                                 "cardinality": "0-1",
                                 "gui_order": 1
@@ -1897,16 +1924,21 @@
                             {
                                 "propname": "project-metadata:hasAuthorshipResource",
                                 "cardinality": "0-n",
-                                "gui_order": 5
+                                "gui_order": 4
                             },
                             {
                                 "propname": "project-metadata:hasCopyrightResource",
                                 "cardinality": "0-1",
-                                "gui_order": 6
+                                "gui_order": 5
                             },
                             {
                                 "propname": "project-metadata:hasLicenseResource",
                                 "cardinality": "0-1",
+                                "gui_order": 6
+                            },
+                            {
+                                "propname": "project-metadata:hasID",
+                                "cardinality": "1",
                                 "gui_order": 7
                             }
                         ]
@@ -1934,52 +1966,52 @@
                             {
                                 "propname": ":isPartOfStoryChapter",
                                 "cardinality": "0-1",
-                                "gui_order": 2
+                                "gui_order": 1
                             },
                             {
                                 "propname": ":isPartOfCharacter",
                                 "cardinality": "0-n",
-                                "gui_order": 3
+                                "gui_order": 2
                             },
                             {
                                 "propname": "project-metadata:hasFileName",
                                 "cardinality": "0-1",
-                                "gui_order": 4
+                                "gui_order": 3
                             },
                             {
                                 "propname": "project-metadata:hasTimeStamp",
                                 "cardinality": "0-1",
-                                "gui_order": 5
+                                "gui_order": 4
                             },
                             {
                                 "propname": "project-metadata:hasFileSize",
                                 "cardinality": "0-1",
-                                "gui_order": 6
+                                "gui_order": 5
                             },
                             {
                                 "propname": "project-metadata:hasAuthorshipResource",
                                 "cardinality": "0-n",
-                                "gui_order": 7
+                                "gui_order": 6
                             },
                             {
                                 "propname": "project-metadata:hasCopyrightResource",
                                 "cardinality": "0-1",
-                                "gui_order": 8
+                                "gui_order": 7
                             },
                             {
                                 "propname": "project-metadata:hasLicenseResource",
                                 "cardinality": "0-1",
-                                "gui_order": 9
+                                "gui_order": 8
                             },
                             {
                                 "propname": "project-metadata:hasSeqnum",
                                 "cardinality": "0-1",
-                                "gui_order": 10
+                                "gui_order": 9
                             },
                             {
                                 "propname": "project-metadata:hasID",
                                 "cardinality": "1",
-                                "gui_order": 11
+                                "gui_order": 10
                             }
                         ]
                     },
@@ -2018,34 +2050,39 @@
                                 "gui_order": 3
                             },
                             {
-                                "propname": "project-metadata:hasTimeStamp",
+                                "propname": ":hasWikidataLink",
                                 "cardinality": "0-1",
                                 "gui_order": 4
                             },
                             {
-                                "propname": "project-metadata:hasFileSize",
+                                "propname": "project-metadata:hasTimeStamp",
                                 "cardinality": "0-1",
                                 "gui_order": 5
                             },
                             {
+                                "propname": "project-metadata:hasFileSize",
+                                "cardinality": "0-1",
+                                "gui_order": 6
+                            },
+                            {
                                 "propname": "project-metadata:hasAuthorshipResource",
                                 "cardinality": "0-n",
-                                "gui_order": 6
+                                "gui_order": 7
                             },
                             {
                                 "propname": "project-metadata:hasCopyrightResource",
                                 "cardinality": "0-1",
-                                "gui_order": 7
+                                "gui_order": 8
                             },
                             {
                                 "propname": "project-metadata:hasLicenseResource",
                                 "cardinality": "0-1",
-                                "gui_order": 8
+                                "gui_order": 9
                             },
                             {
                                 "propname": "project-metadata:hasID",
                                 "cardinality": "1",
-                                "gui_order": 9
+                                "gui_order": 10
                             }
                         ]
                     },
@@ -2080,11 +2117,6 @@
                                 "gui_order": 2
                             },
                             {
-                                "propname": "project-metadata:hasID",
-                                "cardinality": "1",
-                                "gui_order": 7
-                            },
-                            {
                                 "propname": ":hasDate",
                                 "cardinality": "0-1",
                                 "gui_order": 3
@@ -2103,6 +2135,11 @@
                                 "propname": "project-metadata:hasLicenseResource",
                                 "cardinality": "0-1",
                                 "gui_order": 6
+                            },
+                            {
+                                "propname": "project-metadata:hasID",
+                                "cardinality": "1",
+                                "gui_order": 7
                             }
                         ]
                     },
@@ -2204,39 +2241,44 @@
                                 "gui_order": 2
                             },
                             {
+                                "propname": ":hasWikidataLink",
+                                "cardinality": "0-1",
+                                "gui_order": 3
+                            },
+                            {
                                 "propname": "project-metadata:hasFileName",
                                 "cardinality": "1",
-                                "gui_order": 3
+                                "gui_order": 4
                             },
                             {
                                 "propname": "project-metadata:hasTimeStamp",
                                 "cardinality": "0-1",
-                                "gui_order": 4
+                                "gui_order": 5
                             },
                             {
                                 "propname": "project-metadata:hasFileSize",
                                 "cardinality": "0-1",
-                                "gui_order": 5
+                                "gui_order": 6
                             },
                             {
                                 "propname": "project-metadata:hasAuthorshipResource",
                                 "cardinality": "0-n",
-                                "gui_order": 6
+                                "gui_order": 7
                             },
                             {
                                 "propname": "project-metadata:hasCopyrightResource",
                                 "cardinality": "0-1",
-                                "gui_order": 7
+                                "gui_order": 8
                             },
                             {
                                 "propname": "project-metadata:hasLicenseResource",
                                 "cardinality": "0-1",
-                                "gui_order": 8
+                                "gui_order": 9
                             },
                             {
                                 "propname": "project-metadata:hasID",
                                 "cardinality": "1",
-                                "gui_order": 9
+                                "gui_order": 10
                             }
                         ]
                     },
@@ -2391,7 +2433,12 @@
                             {
                                 "propname": ":hasGeoname",
                                 "cardinality": "0-1",
-                                "gui_order": 4
+                                "gui_order": 8
+                            },
+                            {
+                                "propname": ":hasWikidataLink",
+                                "cardinality": "0-1",
+                                "gui_order": 9
                             }
                         ]
                     },
