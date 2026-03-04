@@ -2,10 +2,8 @@
 name: xmlupload
 
 on:
-  push:
-    branches:
-      - main
   pull_request:
+    types: [opened, synchronize]
   schedule:
     - cron: "0 0 * * *"
 env:
