@@ -11,7 +11,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ### Code Quality and Testing
 
-- `just lint` - Run all linters (ruff, mypy, vulture) at once
+- `just lint` - Run all linters (ruff-check, ruff-format-check, mypy, vulture) at once
 - `just format` - Run all auto-formatting tools
 - `just test` - Run unit tests with pytest
 - `just ruff-check` - Check Python code style
@@ -21,7 +21,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ### Data Generation
 
-- `uv run src/xmllib/xmllib_main.py` - Generate the main XML file (data_daschland.xml) using xmllib
+- `uv run python src/main.py` - Generate the main XML file (data_daschland.xml) (runs data processing and xmllib)
 
 ### DSP-API Upload
 
