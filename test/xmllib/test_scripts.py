@@ -7,7 +7,7 @@ from difflib import context_diff
 from pathlib import Path
 
 import pytest
-from dsp_tools.error.xmllib_warnings import XmllibInputInfo
+from dsp_tools.xmllib.internal.xmllib_warnings import XmllibInputInfo
 
 from src.xmllib.xmllib_main import main
 
