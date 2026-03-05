@@ -58,45 +58,76 @@ echo DSP_USER_PASSWORD="$(openssl rand -base64 32)" >> .env
 
 (The `openssl rand` command generates a random character sequence. Every time you call it, its output is different.)
 
+**Important:** Add these to your `.env` to ensure that the data XML does not contain randomly generated IDs.
+
+```
+XMLLIB_SORT_RESOURCES=true
+XMLLIB_SORT_PROPERTIES=true
+XMLLIB_AUTHORSHIP_ID_WITH_INTEGERS=true
+```
 
 ## Project Structure
 
 - `data` The folder containing the project data.
-  - `daschland_ontology` The ontology folder containing the Excel files used to create the JSON ontology file.
-  - `multimedia` The folder containing the multimedia data (video, audio, ...) for the project, in subfolders according to the project classes.
-  - `output`:
-    - `daschland.json` The JSON file containing the data model for the project.
-    - `data_daschland.xml` The XML file containing the data for the project.
-  - `processed` The folder containing all data to import the project.
-  - `raw` The folder containing the raw data files of the project. Each resource class has a separate spreadsheet file.
+    - `daschland_ontology` The ontology folder containing the Excel files used to create the JSON ontology file.
+    - `multimedia` The folder containing the multimedia data (video, audio, ...) for the project, in subfolders
+      according to the project classes.
+    - `output`:
+        - `daschland.json` The JSON file containing the data model for the project.
+        - `data_daschland.xml` The XML file containing the data for the project.
+    - `processed` The folder containing all data to import the project.
+    - `raw` The folder containing the raw data files of the project. Each resource class has a separate spreadsheet
+      file.
 - `documentation`
 - `src` The folder containing the Python scripts for the project.
-  - `helpers` The helper scripts containing custom functions.
-  - `process_data` The scripts to process the files used for the import.
-  - `xmllib` The scripts to convert the XML data to JSON, using the library "dsp-tools xmllib".
+    - `helpers` The helper scripts containing custom functions.
+    - `process_data` The scripts to process the files used for the import.
+    - `xmllib` The scripts to generate the XML data file from the raw spreadsheets, using the library "dsp-tools
+      xmllib".
 - `test`: Unit tests and e2e tests
 - `CLAUDE.md`: Instructions for Claude Code
 - `justfile`: Shorthand commands
 - `pyproject.toml` The Python project file containing all dependencies for the project.
 - `uv.lock` The lock file for the project, which is used to create a virtual environment for the project.
 
-
 ## Create the Project JSON File
 
 We use the `dsp-tools excel2json` command to generate the JSON file with the project definition.
-If you want to update it, edit the Excel files in `daschland_ontology`.
+If you want to update it, edit the Excel files in `data/daschland_ontology`.
 
 After that, create the project JSON again with `just daschland-excel2json`.
 
+## Process Data
 
-## Create the Import XML File
+Processing data can be executed either in two distinct steps or all at once.
+See below for an overview of the separate steps.
 
-The XML file used for the xmlupload can be generated with `just daschland-xmllib`
-or run the python file `src/xmllib/main.py` directly.
+To update the data and create the XML run:
+
+```bash
+just daschland-xmllib
+```
 
 Some log statements and infos will be printed to the console.
 They are informational, and can be ignored.
 
+### Update Source Data Only
+
+The `src/process_data` scripts sync multimedia file metadata from `data/multimedia/`
+into the raw spreadsheets in `data/raw/`.
+Run this whenever any changes have been made, but you do not want to create the import XML yet.
+
+```bash
+uv run src/process_data/process_data_main.py
+```
+
+### Create the Import XML File
+
+The XML file can be created as a separate step by running this command.
+
+```bash
+uv run src/main.py
+```
 
 ## Upload Protocol
 
@@ -107,13 +138,6 @@ Please use the project admin account "CheshireCat" to upload data to the DSP-API
 Uploading data locally:
 
 ```bash
-dsp-tools create daschland.json
-dsp-tools xmlupload data_daschland.xml
-```
-
-Uploading data to a test server:
-
-```bash
-dsp-tools create -s https://api.rdu-08.dasch.swiss -u root@example.com -p 'predefined_root_password' daschland.json
-dsp-tools xmlupload -s https://api.rdu-08.dasch.swiss -u cheshire.cat@dasch.swiss -p 'some_random_password' data_daschland.xml
+dsp-tools create data/output/daschland.json
+dsp-tools xmlupload data/output/data_daschland.xml
 ```
