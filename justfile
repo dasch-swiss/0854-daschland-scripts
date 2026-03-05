@@ -70,4 +70,4 @@ daschland-excel2json:
 # create the data xml
 [no-exit-message]
 daschland-xmllib:
-    uv run python src/main.py
+    uv run src/main.py

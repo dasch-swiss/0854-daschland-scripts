@@ -21,7 +21,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ### Data Generation
 
-- `uv run python src/main.py` - Generate the main XML file (data_daschland.xml) (runs data processing and xmllib)
+- `uv run src/main.py` - Generate the main XML file (data_daschland.xml) (runs data processing and xmllib)
 
 ### DSP-API Upload
 
