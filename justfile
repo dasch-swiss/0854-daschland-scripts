@@ -65,9 +65,9 @@ clean:
 # create the project json
 [no-exit-message]
 daschland-excel2json:
-    dsp-tools excel2json daschland_ontology daschland.json
+    dsp-tools excel2json data/daschland_ontology data/output/daschland.json
 
 # create the data xml
 [no-exit-message]
 daschland-xmllib:
-    uv run python src/xmllib/main.py
+    uv run python src/main.py
