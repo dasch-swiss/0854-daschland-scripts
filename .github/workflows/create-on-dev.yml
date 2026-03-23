@@ -1,0 +1,45 @@
+---
+name: Create Alice on DEV server
+
+on:
+  workflow_dispatch:
+
+env:
+  DSP_USER_PASSWORD: ${{ secrets.USER_PASSWORD_CHESHIRE_CAT }}
+
+jobs:
+  create:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          lfs: 'true'  # take care not to exceed the monthly quota 
+          # https://docs.github.com/en/billing/managing-billing-for-your-products/managing-billing-for-git-large-file-storage
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+      - name: Install Python & dependencies (allow upgrade, in order to get most up-to-date DSP-TOOLS)
+        run: uv sync --all-extras --upgrade
+      - name: Upgrade DSP-TOOLS
+        run: uv add --upgrade dsp-tools
+      - name: Create project
+        run: |
+          uv run dsp-tools create \
+          --suppress-update-prompt \
+          --exit-if-exists \
+          -s api.dev.dasch.swiss \
+          -u dasch@dasch.swiss \
+          -p "$PW" \
+          data/output/daschland.json
+        env:
+          PW: ${{ secrets.DASCH_USER_PW_PROD }}
+      - name: Upload data
+        run: |
+          uv run dsp-tools xmlupload \
+          --suppress-update-prompt \
+          -s api.dev.dasch.swiss \
+          -u cheshire.cat@dasch.swiss \
+          -p "$DSP_USER_PASSWORD" \
+          data/output/data_daschland.xml
