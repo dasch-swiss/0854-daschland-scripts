@@ -1,5 +1,5 @@
 ---
-name: Create Alice on dev after Deployment
+name: Create Alice on DEV server
 
 on:
   workflow_dispatch:
