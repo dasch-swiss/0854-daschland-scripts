@@ -156,7 +156,7 @@ After every deployment to stage, the Alice in DaSCHland project is **automatical
 **Why?** The Alice project is a comprehensive showcase of DSP features and frequently changes. Testers are accustomed to modifying data on stage freely, assuming it will be reset regularly. To maintain consistency and ensure testers always have a fresh, predictable dataset, the project is automatically recreated after each stage deployment.
 
 **How it works:**
-1. After a successful stage deployment, the ops-deploy pipeline triggers the GitHub Actions workflow
+1. After a successful stage deployment, the ops-deploy Jenkins job triggers the GitHub Actions workflow
 2. The workflow (`.github/workflows/create-on-stage.yml`) runs two commands:
    - `dsp-tools create` — creates the project schema on `api.stage.dasch.swiss`
    - `dsp-tools xmlupload` — populates the project with data from the latest XML
