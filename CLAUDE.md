@@ -32,12 +32,7 @@ dsp-tools create daschland.json
 dsp-tools xmlupload -u cheshire.cat@dasch.swiss -p 'alice9548' data_daschland.xml
 ```
 
-Test server (rdu-08):
-
-```bash
-dsp-tools create -s https://api.rdu-08.dasch.swiss -u root@example.com -p 'xxxx' daschland.json
-dsp-tools xmlupload -s https://api.rdu-08.dasch.swiss -u cheshire.cat@dasch.swiss -p 'alice9548' data_daschland.xml
-```
+See README.md for information on manual dev server uploads and automatic stage deployments.
 
 ## DSP-TOOLS Overview
 
@@ -55,7 +50,7 @@ This project heavily relies on DSP-TOOLS for data model creation and upload work
 ### Important DSP-TOOLS Notes
 
 - Creates `id2iri_mapping_[timestamp].json` files during xmlupload, to map IDs of the XML to IRIs on the DSP server
-- Supports both local DSP instances and remote servers like <https://app.rdu-08.dasch.swiss/>
+- Supports both local DSP instances and remote servers
 - For project creation and data upload, authentication is always required on remote servers
 - XML files must conform to the ontology/data model structure defined in the JSON file
 

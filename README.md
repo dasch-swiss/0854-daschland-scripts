@@ -131,13 +131,38 @@ uv run src/main.py
 
 ## Upload Protocol
 
+### Manual Uploads
+
 To upload data to a DSP-API server, use the [`dsp-tools`](https://pypi.org/project/dsp-tools/) command line tool.
 It is installed in the virtual environment.
-Please use the project admin account "CheshireCat" to upload data to the DSP-API server.
 
-Uploading data locally:
+#### Local
 
 ```bash
 dsp-tools create data/output/daschland.json
 dsp-tools xmlupload data/output/data_daschland.xml
 ```
+
+#### Dev Server
+
+To manually deploy to the dev server, trigger the GitHub Actions workflow `.github/workflows/create-on-dev.yml` from the Actions tab. This workflow runs the same `dsp-tools create` and `dsp-tools xmlupload` commands as local uploads but targets [app.dev.dasch.swiss](https://app.dev.dasch.swiss). Use this to test against a fresh dev environment when needed.
+
+### Automatic Deployments
+
+#### Stage Server
+
+After every deployment to stage, the Alice in DaSCHland project is **automatically recreated and repopulated** on the stage DSP-API server.
+
+**Why?** The Alice project is a comprehensive showcase of DSP features and frequently changes. Testers are accustomed to modifying data on stage freely, assuming it will be reset regularly. To maintain consistency and ensure testers always have a fresh, predictable dataset, the project is automatically recreated after each stage deployment.
+
+**How it works:**
+1. After a successful stage deployment, the ops-deploy Jenkins job triggers the GitHub Actions workflow
+2. The workflow (`.github/workflows/create-on-stage.yml`) runs two commands:
+   - `dsp-tools create` — creates the project schema on `api.stage.dasch.swiss`
+   - `dsp-tools xmlupload` — populates the project with data from the latest XML
+
+**Monitoring:** You can view the workflow execution results in the GitHub Actions tab, or check the deploy logs at [deploy.ops.dasch.swiss](https://deploy.ops.dasch.swiss/job/ops_deploy/job/dsp_stage_01_daschland/)
+
+**User accounts used:**
+- Project creation: `dasch@dasch.swiss` (admin account)
+- Data upload: `cheshire.cat@dasch.swiss` (project account)
