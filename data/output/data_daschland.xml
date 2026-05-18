@@ -9724,6 +9724,40 @@ Shrill Voice/The Fishes: Liberty Stump</text>
             <integer>103</integer>
         </integer-prop>
     </resource>
+    <resource label="Mad Tea Party scene by Tenniel from the 1865 first edition" id="I_104" restype=":ImageOriginal">
+        <bitstream license="http://rdfh.ch/licenses/public-domain" copyright-holder="Public Domain" authorship-id="authorship_5">data/multimedia/image/IMG_teaparty_tenniel.svg</bitstream>
+        <text-prop name=":hasDescription">
+            <text encoding="xml">Mad Tea Party scene by Tenniel from the 1865 first edition</text>
+        </text-prop>
+        <resptr-prop name=":isPartOfCharacter">
+            <resptr>CH_001</resptr>
+            <resptr>CH_004</resptr>
+            <resptr>CH_007</resptr>
+            <resptr>CH_018</resptr>
+        </resptr-prop>
+        <text-prop name="project-metadata:hasAuthorshipResource">
+            <text encoding="utf8">Daniela Subotic</text>
+            <text encoding="utf8">Noémi Villars-Amberg</text>
+        </text-prop>
+        <text-prop name="project-metadata:hasCopyrightResource">
+            <text encoding="utf8">DaSCH</text>
+        </text-prop>
+        <text-prop name="project-metadata:hasFileName">
+            <text encoding="utf8">IMG_teaparty_tenniel.svg</text>
+        </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.8</decimal>
+        </decimal-prop>
+        <text-prop name="project-metadata:hasID">
+            <text encoding="utf8">I_104</text>
+        </text-prop>
+        <list-prop name="project-metadata:hasLicenseResource" list="License">
+            <list>LIC_002</list>
+        </list-prop>
+        <integer-prop name="project-metadata:hasSeqnum">
+            <integer>104</integer>
+        </integer-prop>
+    </resource>
     <resource label="Riverbank" id="L_001" restype=":LocationRealWorld">
         <text-prop name=":hasDescription">
             <text encoding="xml">Alices Garten in Oxford.</text>
