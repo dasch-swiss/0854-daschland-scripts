@@ -69,6 +69,9 @@
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">Spreadsheet_Data.zip</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.3</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">AR_001</text>
         </text-prop>
@@ -211,6 +214,9 @@ Alice's Sister: Diana Majlinger</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">AUD_aliceinwonderland_00.mp3</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>1.8</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">A_01</text>
         </text-prop>
@@ -276,6 +282,9 @@ Alice's Sister: Diana Majlinger</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">AUD_aliceinwonderland_01.mp3</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>5.6</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">A_02</text>
         </text-prop>
@@ -341,6 +350,9 @@ Alice's Sister: Diana Majlinger</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">AUD_aliceinwonderland_02.mp3</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>5.2</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">A_03</text>
         </text-prop>
@@ -406,6 +418,9 @@ Alice's Sister: Diana Majlinger</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">AUD_aliceinwonderland_03.mp3</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>4.5</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">A_04</text>
         </text-prop>
@@ -471,6 +486,9 @@ Alice's Sister: Diana Majlinger</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">AUD_aliceinwonderland_04.mp3</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>6.2</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">A_05</text>
         </text-prop>
@@ -536,6 +554,9 @@ Alice's Sister: Diana Majlinger</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">AUD_aliceinwonderland_05.mp3</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>5.7</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">A_06</text>
         </text-prop>
@@ -601,6 +622,9 @@ Alice's Sister: Diana Majlinger</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">AUD_aliceinwonderland_06.mp3</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>7.2</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">A_07</text>
         </text-prop>
@@ -666,6 +690,9 @@ Alice's Sister: Diana Majlinger</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">AUD_aliceinwonderland_07.mp3</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>6.6</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">A_08</text>
         </text-prop>
@@ -731,6 +758,9 @@ Alice's Sister: Diana Majlinger</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">AUD_aliceinwonderland_08.mp3</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>6.2</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">A_09</text>
         </text-prop>
@@ -796,6 +826,9 @@ Alice's Sister: Diana Majlinger</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">AUD_aliceinwonderland_09.mp3</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>6.6</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">A_10</text>
         </text-prop>
@@ -861,6 +894,9 @@ Alice's Sister: Diana Majlinger</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">AUD_aliceinwonderland_10.mp3</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>6.9</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">A_11</text>
         </text-prop>
@@ -926,6 +962,9 @@ Alice's Sister: Diana Majlinger</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">AUD_aliceinwonderland_11.mp3</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>4.8</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">A_12</text>
         </text-prop>
@@ -991,6 +1030,9 @@ Alice's Sister: Diana Majlinger</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">AUD_aliceinwonderland_12.mp3</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>5.6</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">A_13</text>
         </text-prop>
@@ -1040,6 +1082,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">AUD_throughthelookingglass_00.mp3</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>1.3</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">A_14</text>
         </text-prop>
@@ -1089,6 +1134,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">AUD_throughthelookingglass_01.mp3</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>9.1</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">A_15</text>
         </text-prop>
@@ -1138,6 +1186,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">AUD_throughthelookingglass_02.mp3</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>8.3</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">A_16</text>
         </text-prop>
@@ -1187,6 +1238,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">AUD_throughthelookingglass_03.mp3</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>7.9</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">A_17</text>
         </text-prop>
@@ -1236,6 +1290,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">AUD_throughthelookingglass_04.mp3</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>8.2</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">A_18</text>
         </text-prop>
@@ -1285,6 +1342,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">AUD_throughthelookingglass_05.mp3</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>8.5</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">A_19</text>
         </text-prop>
@@ -1334,6 +1394,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">AUD_throughthelookingglass_06.mp3</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>8.9</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">A_20</text>
         </text-prop>
@@ -1383,6 +1446,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">AUD_throughthelookingglass_07.mp3</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>7.7</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">A_21</text>
         </text-prop>
@@ -1432,6 +1498,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">AUD_throughthelookingglass_08.mp3</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>11.9</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">A_22</text>
         </text-prop>
@@ -1481,6 +1550,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">AUD_throughthelookingglass_09.mp3</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>12.5</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">A_23</text>
         </text-prop>
@@ -1530,6 +1602,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">AUD_throughthelookingglass_10.mp3</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>2.3</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">A_24</text>
         </text-prop>
@@ -1733,12 +1808,18 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">BE_Alice_in_Wonderland.pdf</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>2.9</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">BE_001</text>
         </text-prop>
         <list-prop name="project-metadata:hasLicenseResource" list="License">
             <list>LIC_002</list>
         </list-prop>
+        <time-prop name="project-metadata:hasTimeStamp">
+            <time>2000-01-01T00:00:00-00:00</time>
+        </time-prop>
     </resource>
     <resource label="BE_Through_the_Looking_Glass.pdf" id="BE_002" restype=":BookEdition">
         <bitstream license="http://rdfh.ch/licenses/public-domain" copyright-holder="Harper &amp; Brothers" authorship-id="authorship_8">data/multimedia/book_edition/BE_Through_the_Looking_Glass.pdf</bitstream>
@@ -1758,12 +1839,18 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">BE_Through_the_Looking_Glass.pdf</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>39.5</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">BE_002</text>
         </text-prop>
         <list-prop name="project-metadata:hasLicenseResource" list="License">
             <list>LIC_002</list>
         </list-prop>
+        <time-prop name="project-metadata:hasTimeStamp">
+            <time>2021-02-22T20:44:26-00:00</time>
+        </time-prop>
     </resource>
     <resource label="BE_throughlooking00carr.pdf" id="BE_003" restype=":BookEdition">
         <bitstream license="http://rdfh.ch/licenses/public-domain" copyright-holder="MacMillan and Co." authorship-id="authorship_6">data/multimedia/book_edition/BE_throughlooking00carr.pdf</bitstream>
@@ -1783,12 +1870,18 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">BE_throughlooking00carr.pdf</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>15.2</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">BE_003</text>
         </text-prop>
         <list-prop name="project-metadata:hasLicenseResource" list="License">
             <list>LIC_002</list>
         </list-prop>
+        <time-prop name="project-metadata:hasTimeStamp">
+            <time>2009-08-14T02:21:35-00:00</time>
+        </time-prop>
     </resource>
     <resource label="BE_adventuresalices00carrrich.pdf" id="BE_004" restype=":BookEdition">
         <bitstream license="http://rdfh.ch/licenses/public-domain" copyright-holder="Harper &amp; Brothers" authorship-id="authorship_8">data/multimedia/book_edition/BE_adventuresalices00carrrich.pdf</bitstream>
@@ -1808,12 +1901,18 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">BE_adventuresalices00carrrich.pdf</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>31.6</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">BE_004</text>
         </text-prop>
         <list-prop name="project-metadata:hasLicenseResource" list="License">
             <list>LIC_002</list>
         </list-prop>
+        <time-prop name="project-metadata:hasTimeStamp">
+            <time>2010-11-01T06:40:20-00:00</time>
+        </time-prop>
     </resource>
     <resource label="BE_alicesadventur00carr.pdf" id="BE_005" restype=":BookEdition">
         <bitstream license="http://rdfh.ch/licenses/public-domain" copyright-holder="MacMillan and Co." authorship-id="authorship_6">data/multimedia/book_edition/BE_alicesadventur00carr.pdf</bitstream>
@@ -1833,12 +1932,18 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">BE_alicesadventur00carr.pdf</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>12.7</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">BE_005</text>
         </text-prop>
         <list-prop name="project-metadata:hasLicenseResource" list="License">
             <list>LIC_002</list>
         </list-prop>
+        <time-prop name="project-metadata:hasTimeStamp">
+            <time>2009-08-14T02:25:37-00:00</time>
+        </time-prop>
     </resource>
     <resource label="Alice" id="CH_001" restype=":Character">
         <text-prop name=":hasDescription">
@@ -4232,6 +4337,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">DaSCHland_Data_Model.pdf</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.8</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">DOC_001</text>
         </text-prop>
@@ -4254,6 +4362,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">DaSCHland_Data_Model_Links.pdf</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.2</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">DOC_002</text>
         </text-prop>
@@ -4276,6 +4387,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">DaSCHland_Data_Model_Legend.pdf</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.2</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">DOC_003</text>
         </text-prop>
@@ -4298,6 +4412,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">DaSCHland FAQ.pdf</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.8</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">DOC_004</text>
         </text-prop>
@@ -5926,6 +6043,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">IMG_1book0.jpg</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.2</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">I_001</text>
         </text-prop>
@@ -5957,6 +6077,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">IMG_1book1.jpg</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.1</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">I_002</text>
         </text-prop>
@@ -5988,6 +6111,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">IMG_1book2.jpg</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.1</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">I_003</text>
         </text-prop>
@@ -6019,6 +6145,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">IMG_1book3.jpg</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.1</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">I_004</text>
         </text-prop>
@@ -6050,6 +6179,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">IMG_1book4.jpg</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.2</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">I_005</text>
         </text-prop>
@@ -6082,6 +6214,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">IMG_1book5.jpg</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.3</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">I_006</text>
         </text-prop>
@@ -6113,6 +6248,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">IMG_1book6.jpg</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.1</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">I_007</text>
         </text-prop>
@@ -6145,6 +6283,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">IMG_1book7.jpg</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.2</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">I_008</text>
         </text-prop>
@@ -6177,6 +6318,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">IMG_1book9.jpg</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.3</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">I_009</text>
         </text-prop>
@@ -6210,6 +6354,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">IMG_1book8.jpg</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.2</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">I_010</text>
         </text-prop>
@@ -6241,6 +6388,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">IMG_1book10.jpg</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.3</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">I_011</text>
         </text-prop>
@@ -6273,6 +6423,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">IMG_1book11.jpg</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.1</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">I_012</text>
         </text-prop>
@@ -6304,6 +6457,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">IMG_1book12.jpg</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.2</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">I_013</text>
         </text-prop>
@@ -6336,6 +6492,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">IMG_1book13.jpg</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.3</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">I_014</text>
         </text-prop>
@@ -6368,6 +6527,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">IMG_1book14.jpg</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.2</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">I_015</text>
         </text-prop>
@@ -6399,6 +6561,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">IMG_1book15.jpg</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.2</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">I_016</text>
         </text-prop>
@@ -6430,6 +6595,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">IMG_1book16.jpg</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.3</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">I_017</text>
         </text-prop>
@@ -6461,6 +6629,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">IMG_1book17.jpg</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.2</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">I_018</text>
         </text-prop>
@@ -6492,6 +6663,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">IMG_1book18.jpg</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.2</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">I_019</text>
         </text-prop>
@@ -6523,6 +6697,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">IMG_1book19.jpg</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.3</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">I_020</text>
         </text-prop>
@@ -6558,6 +6735,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">IMG_1book20.jpg</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.3</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">I_021</text>
         </text-prop>
@@ -6590,6 +6770,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">IMG_1book21.jpg</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.1</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">I_022</text>
         </text-prop>
@@ -6622,6 +6805,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">IMG_1book22.jpg</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.3</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">I_023</text>
         </text-prop>
@@ -6653,6 +6839,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">IMG_1book23.jpg</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.2</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">I_024</text>
         </text-prop>
@@ -6687,6 +6876,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">IMG_1book24.jpg</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.2</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">I_025</text>
         </text-prop>
@@ -6719,6 +6911,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">IMG_1book25.jpg</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.1</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">I_026</text>
         </text-prop>
@@ -6752,6 +6947,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">IMG_1book26.jpg</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.1</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">I_027</text>
         </text-prop>
@@ -6783,6 +6981,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">IMG_1book27.jpg</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.1</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">I_028</text>
         </text-prop>
@@ -6816,6 +7017,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">IMG_1book28.jpg</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.4</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">I_029</text>
         </text-prop>
@@ -6848,6 +7052,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">IMG_1book29.jpg</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.1</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">I_030</text>
         </text-prop>
@@ -6882,6 +7089,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">IMG_1book30.jpg</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.3</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">I_031</text>
         </text-prop>
@@ -6915,6 +7125,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">IMG_1book31.jpg</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.2</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">I_032</text>
         </text-prop>
@@ -6946,6 +7159,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">IMG_1book32.jpg</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.2</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">I_033</text>
         </text-prop>
@@ -6979,6 +7195,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">IMG_1book33.jpg</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.3</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">I_034</text>
         </text-prop>
@@ -7012,6 +7231,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">IMG_1book34.jpg</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.2</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">I_035</text>
         </text-prop>
@@ -7043,6 +7265,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">IMG_1book35.jpg</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.2</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">I_036</text>
         </text-prop>
@@ -7074,6 +7299,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">IMG_1book36.jpg</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.1</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">I_037</text>
         </text-prop>
@@ -7105,6 +7333,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">IMG_1book37.jpg</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.1</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">I_038</text>
         </text-prop>
@@ -7136,6 +7367,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">IMG_1book38.jpg</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.1</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">I_039</text>
         </text-prop>
@@ -7168,6 +7402,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">IMG_1book39.jpg</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.3</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">I_040</text>
         </text-prop>
@@ -7200,6 +7437,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">IMG_1book40.jpg</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.3</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">I_041</text>
         </text-prop>
@@ -7231,6 +7471,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">IMG_1book41.jpg</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.3</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">I_042</text>
         </text-prop>
@@ -7263,6 +7506,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">IMG_2book0.jpg</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.4</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">I_043</text>
         </text-prop>
@@ -7297,6 +7543,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">IMG_2book1.jpg</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.2</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">I_044</text>
         </text-prop>
@@ -7332,6 +7581,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">IMG_2book2.jpg</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.4</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">I_045</text>
         </text-prop>
@@ -7366,6 +7618,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">IMG_2book3.jpg</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.3</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">I_046</text>
         </text-prop>
@@ -7400,6 +7655,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">IMG_2book4.jpg</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.3</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">I_047</text>
         </text-prop>
@@ -7434,6 +7692,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">IMG_2book5.jpg</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.4</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">I_048</text>
         </text-prop>
@@ -7469,6 +7730,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">IMG_2book6.jpg</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.3</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">I_049</text>
         </text-prop>
@@ -7503,6 +7767,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">IMG_2book7.jpg</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.2</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">I_050</text>
         </text-prop>
@@ -7537,6 +7804,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">IMG_2book8.jpg</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.4</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">I_051</text>
         </text-prop>
@@ -7572,6 +7842,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">IMG_2book9.jpg</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.3</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">I_052</text>
         </text-prop>
@@ -7607,6 +7880,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">IMG_2book10.jpg</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.3</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">I_053</text>
         </text-prop>
@@ -7638,6 +7914,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">IMG_2book11.jpg</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.3</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">I_054</text>
         </text-prop>
@@ -7673,6 +7952,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">IMG_2book12.jpg</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.2</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">I_055</text>
         </text-prop>
@@ -7707,6 +7989,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">IMG_2book13.jpg</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.4</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">I_056</text>
         </text-prop>
@@ -7738,6 +8023,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">IMG_2book14.jpg</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.2</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">I_057</text>
         </text-prop>
@@ -7769,6 +8057,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">IMG_2book15.jpg</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.2</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">I_058</text>
         </text-prop>
@@ -7800,6 +8091,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">IMG_2book16.jpg</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.2</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">I_059</text>
         </text-prop>
@@ -7834,6 +8128,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">IMG_2book17.jpg</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.3</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">I_060</text>
         </text-prop>
@@ -7869,6 +8166,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">IMG_2book18.jpg</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.3</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">I_061</text>
         </text-prop>
@@ -7904,6 +8204,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">IMG_2book19.jpg</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.2</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">I_062</text>
         </text-prop>
@@ -7939,6 +8242,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">IMG_2book20.jpg</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.2</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">I_063</text>
         </text-prop>
@@ -7974,6 +8280,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">IMG_2book21.jpg</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.2</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">I_064</text>
         </text-prop>
@@ -8008,6 +8317,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">IMG_2book22.jpg</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.2</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">I_065</text>
         </text-prop>
@@ -8043,6 +8355,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">IMG_2book23.jpg</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.3</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">I_066</text>
         </text-prop>
@@ -8078,6 +8393,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">IMG_2book24.jpg</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.3</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">I_067</text>
         </text-prop>
@@ -8113,6 +8431,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">IMG_2book25.jpg</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.3</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">I_068</text>
         </text-prop>
@@ -8147,6 +8468,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">IMG_2book26.jpg</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.3</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">I_069</text>
         </text-prop>
@@ -8182,6 +8506,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">IMG_2book27.jpg</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.4</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">I_070</text>
         </text-prop>
@@ -8217,6 +8544,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">IMG_2book28.jpg</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.4</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">I_071</text>
         </text-prop>
@@ -8252,6 +8582,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">IMG_2book29.jpg</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.2</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">I_072</text>
         </text-prop>
@@ -8283,6 +8616,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">IMG_2book30.jpg</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.3</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">I_073</text>
         </text-prop>
@@ -8317,6 +8653,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">IMG_2book31.jpg</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.2</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">I_074</text>
         </text-prop>
@@ -8348,6 +8687,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">IMG_2book32.jpg</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.4</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">I_075</text>
         </text-prop>
@@ -8384,6 +8726,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">IMG_2book33.jpg</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.3</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">I_076</text>
         </text-prop>
@@ -8423,6 +8768,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">IMG_2book34.jpg</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.3</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">I_077</text>
         </text-prop>
@@ -8459,6 +8807,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">IMG_2book35.jpg</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.3</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">I_078</text>
         </text-prop>
@@ -8493,6 +8844,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">IMG_2book36.jpg</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.3</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">I_079</text>
         </text-prop>
@@ -8529,6 +8883,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">IMG_2book37.jpg</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.4</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">I_080</text>
         </text-prop>
@@ -8564,6 +8921,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">IMG_2book38.jpg</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.3</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">I_081</text>
         </text-prop>
@@ -8599,6 +8959,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">IMG_2book39.jpg</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.3</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">I_082</text>
         </text-prop>
@@ -8633,6 +8996,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">IMG_2book40.jpg</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.3</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">I_083</text>
         </text-prop>
@@ -8667,6 +9033,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">IMG_2book41.jpg</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.2</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">I_084</text>
         </text-prop>
@@ -8703,6 +9072,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">IMG_2book42.jpg</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.2</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">I_085</text>
         </text-prop>
@@ -8739,6 +9111,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">IMG_2book43.jpg</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.2</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">I_086</text>
         </text-prop>
@@ -8774,6 +9149,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">IMG_2book44.jpg</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.3</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">I_087</text>
         </text-prop>
@@ -8805,6 +9183,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">IMG_2book45.jpg</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.2</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">I_088</text>
         </text-prop>
@@ -8839,6 +9220,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">IMG_2book46.jpg</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.3</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">I_089</text>
         </text-prop>
@@ -8874,6 +9258,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">IMG_2book47.jpg</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.2</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">I_090</text>
         </text-prop>
@@ -8909,6 +9296,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">IMG_2book48.jpg</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.2</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">I_091</text>
         </text-prop>
@@ -8944,6 +9334,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">IMG_2book49.jpg</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.3</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">I_092</text>
         </text-prop>
@@ -8978,6 +9371,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">IMGALT_Alice_1.jpg</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>2.1</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">I_093</text>
         </text-prop>
@@ -9009,6 +9405,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">IMGALT_Alice_2.jpg</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.4</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">I_094</text>
         </text-prop>
@@ -9040,6 +9439,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">IMGALT_Archival_Madcap.png</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.7</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">I_095</text>
         </text-prop>
@@ -9071,6 +9473,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">IMGALT_Cyberpillar_1.jpg</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.4</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">I_096</text>
         </text-prop>
@@ -9102,6 +9507,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">IMGALT_DaSCHland.jpg</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>2.3</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">I_097</text>
         </text-prop>
@@ -9133,6 +9541,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">IMGALT_Data_Queen.jpg</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.3</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">I_098</text>
         </text-prop>
@@ -9164,6 +9575,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">IMGALT_Mockup_Data.jpg</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.4</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">I_099</text>
         </text-prop>
@@ -9195,6 +9609,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">IMGALT_Quantum_Cat.jpg</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.4</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">I_100</text>
         </text-prop>
@@ -9226,6 +9643,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">IMGALT_RabbIT.jpg</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.4</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">I_101</text>
         </text-prop>
@@ -9257,6 +9677,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">IMGALT_Real-Time_Processor.jpg</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.3</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">I_102</text>
         </text-prop>
@@ -9288,6 +9711,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">IMGALT_System_Protector.jpg</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.5</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">I_103</text>
         </text-prop>
@@ -9319,6 +9745,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">IMG_teaparty_tenniel.svg</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.8</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">I_104</text>
         </text-prop>
@@ -10209,6 +10638,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">data_daschland.xml</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>1.0</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">MAT_001</text>
         </text-prop>
@@ -10231,6 +10663,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">Archive.csv</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.0</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">MAT_002</text>
         </text-prop>
@@ -10253,6 +10688,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">Audio.csv</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.0</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">MAT_003</text>
         </text-prop>
@@ -10275,6 +10713,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">Story.csv</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.0</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">MAT_004</text>
         </text-prop>
@@ -10297,6 +10738,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">StoryChapter.csv</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.4</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">MAT_005</text>
         </text-prop>
@@ -10319,6 +10763,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">BookEdition.csv</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.0</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">MAT_006</text>
         </text-prop>
@@ -10341,6 +10788,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">Character.csv</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.1</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">MAT_007</text>
         </text-prop>
@@ -10363,6 +10813,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">Documentation.csv</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.0</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">MAT_008</text>
         </text-prop>
@@ -10385,6 +10838,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">Event.csv</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.0</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">MAT_009</text>
         </text-prop>
@@ -10407,6 +10863,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">Image.csv</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.0</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">MAT_010</text>
         </text-prop>
@@ -10429,6 +10888,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">List_Event_Type.csv</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.0</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">MAT_011</text>
         </text-prop>
@@ -10451,6 +10913,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">List_License.csv</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.0</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">MAT_012</text>
         </text-prop>
@@ -10473,6 +10938,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">List_Role.csv</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.0</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">MAT_013</text>
         </text-prop>
@@ -10495,6 +10963,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">Location.csv</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.0</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">MAT_014</text>
         </text-prop>
@@ -10517,6 +10988,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">Material.csv</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.0</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">MAT_015</text>
         </text-prop>
@@ -10539,6 +11013,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">Region.csv</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.0</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">MAT_016</text>
         </text-prop>
@@ -10561,6 +11038,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">Video.csv</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.0</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">MAT_017</text>
         </text-prop>
@@ -10583,6 +11063,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">VideoSegment.csv</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.0</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">MAT_018</text>
         </text-prop>
@@ -10605,6 +11088,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">AudioSegment.csv</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>0.0</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">MAT_019</text>
         </text-prop>
@@ -14345,6 +14831,9 @@ Alice's Mother - Lotta Savoy</text>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">VID_AliceInWonderland_1915.mp4</text>
         </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>172.8</decimal>
+        </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">V_01</text>
         </text-prop>
