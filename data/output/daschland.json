@@ -2359,7 +2359,7 @@
                         },
                         "comments": {
                             "de": "Unterklasse von Ereignis, vom Typ Konflikt. Protagonisten und Antagonisten (Charaktere) der Ereignisse sind mit dieser Unterklasse verknüpft.",
-                            "en": "Subclass of Event, of type Conflict. Protagonists and Antagonists (characters) of the events are linked with tis sub-class.",
+                            "en": "Subclass of Event, of type Conflict. Protagonists and Antagonists (characters) of the events are linked with this sub-class.",
                             "fr": "Sous-classe de Événement, de type Conflit. Les protagonistes et antagonistes (personnages) des événements sont liés à cette sous-classe.",
                             "it": "Sottoclasse di Evento, di tipo Conflitto. I protagonisti e gli antagonisti (personaggi) degli eventi sono collegati a questa sottoclasse."
                         },
@@ -2424,10 +2424,10 @@
                             "it": "Luogo del mondo reale"
                         },
                         "comments": {
-                            "de": "Unterklasse von Bild. Illustrationen aus der alternativen Geschichte, generiert mit einer KI. Bilder Alternative sind in eingeschränkter Ansicht zugänglich.",
-                            "en": "Subclass of Image. Illustrations from the alternative story, generated with an AI. Images Alternative are accessible in limited view.",
-                            "fr": "Sous-classe d'Image. Illustrations tirées de l'histoire alternative, générées à l'aide d'une IA. Les images alternatives sont accessibles en affichage limité.",
-                            "it": "Sottoclasse di Immagine. Illustrazioni tratte dalla storia alternativa, generate con un'intelligenza artificiale. Le immagini alternative sono accessibili in visualizzazione limitata."
+                            "de": "Unterklasse von Ort. Orte, die in der realen Welt existieren und eine Eigenschaft mit Geonames-Referenzierung enthalten.",
+                            "en": "Subclass of Location. Places existing in the real world, containing a property with Geonames referencing.",
+                            "fr": "Sous-classe de Location. Lieux existant dans le monde réel, contenant une propriété avec référence Geonames.",
+                            "it": "Sottoclasse di Location. Luoghi esistenti nel mondo reale, contenenti una proprietà con riferimento a Geonames."
                         },
                         "cardinalities": [
                             {
@@ -2457,10 +2457,10 @@
                             "it": "Luogo del Paese delle Meraviglie"
                         },
                         "comments": {
-                            "de": "Unterklasse von Bild. Originalillustrationen aus der ersten Ausgabe, erstellt von John Tenniell.",
-                            "en": "Subclass of Image. Original illustrations from the first edition, created by John Tenniell.",
-                            "fr": "Sous-classe de Image. Illustrations originales de la première édition, créées par John Tenniel.",
-                            "it": "Sottoclasse di Immagine. Illustrazioni originali della prima edizione, realizzate da John Tenniel."
+                            "de": "Unterklasse von Ort. Orte, die in Wonderland existieren.",
+                            "en": "Subclass of Location. Places existing in Wonderland.",
+                            "fr": "Sous-classe de Location. Lieux existant au Pays des Merveilles.",
+                            "it": "Sottoclasse di Location. Luoghi esistenti nel Paese delle Meraviglie."
                         }
                     },
                     {
@@ -2478,10 +2478,10 @@
                             "it": "Immagine originale"
                         },
                         "comments": {
-                            "de": "Unterklasse von Ort. Orte, die in der realen Welt existieren und eine Eigenschaft mit Geonames-Referenzierung enthalten.",
-                            "en": "Subclass of Location. Places existing in the real world, containing a property with Geonames referencing.",
-                            "fr": "Sous-classe de Location. Lieux existant dans le monde réel, contenant une propriété avec référence Geonames.",
-                            "it": "Sottoclasse di Location. Luoghi esistenti nel mondo reale, contenenti una proprietà con riferimento a Geonames."
+                            "de": "Unterklasse von Bild. Originalillustrationen aus der ersten Ausgabe, erstellt von John Tenniel.",
+                            "en": "Subclass of Image. Original illustrations from the first edition, created by John Tenniel.",
+                            "fr": "Sous-classe de Image. Illustrations originales de la première édition, créées par John Tenniel.",
+                            "it": "Sottoclasse di Immagine. Illustrazioni originali della prima edizione, realizzate da John Tenniel."
                         },
                         "cardinalities": [
                             {
@@ -2506,10 +2506,10 @@
                             "it": "Immagine alternativa"
                         },
                         "comments": {
-                            "de": "Unterklasse von Ort. Orte, die in Wonderland existieren.",
-                            "en": "Subclass of Location. Places in existing in Wonderland.",
-                            "fr": "Subclass of Location. Places in existing in Wonderland.",
-                            "it": "Sottoclasse di Posizione. Luoghi esistenti nel Paese delle Meraviglie."
+                            "de": "Unterklasse von Bild. Illustrationen aus der alternativen Geschichte, generiert mit einer KI. Bilder Alternative sind in eingeschränkter Ansicht zugänglich.",
+                            "en": "Subclass of Image. Illustrations from the alternative story, generated with an AI. Images Alternative are accessible in limited view.",
+                            "fr": "Sous-classe d'Image. Illustrations tirées de l'histoire alternative, générées à l'aide d'une IA. Les images alternatives sont accessibles en affichage limité.",
+                            "it": "Sottoclasse di Immagine. Illustrazioni tratte dalla storia alternativa, generate con un'intelligenza artificiale. Le immagini alternative sono accessibili in visualizzazione limitata."
                         },
                         "cardinalities": [
                             {
