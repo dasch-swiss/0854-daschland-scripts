@@ -173,10 +173,10 @@ The demo server hosts a public showcase of the "Alice in DaSCHland" project. Unl
 
 **How it works:** the workflow (`.github/workflows/recreate-on-demo.yml`) runs **every Monday afternoon** and can also be triggered manually from the Actions tab. To avoid unnecessary URL churn (see below), it only acts when the project data actually changed:
 
-1. **Detect changes.** The committed files `data/output/daschland.json` and `data/output/data_daschland.xml` are compared against the `demo-deployed` git tag, which marks the commit currently live on demo. If nothing changed, the run stops here.
-2. **Erase.** The existing project is permanently removed via the DSP-API hard-erase endpoint (`DELETE /admin/projects/shortcode/0854/erase`). `dsp-tools` cannot delete a project, so this is a raw authenticated call implemented in `src/demo_deploy/`. It requires the `ALLOW_ERASE_PROJECTS` feature to be enabled on demo and a SystemAdmin login.
+1. **Detect changes.** The committed files `data/output/daschland.json` and `data/output/data_daschland.xml` are compared against the `demo-uploaded` git tag, which marks the commit currently live on demo. If nothing changed, the run stops here.
+2. **Erase.** The existing project is permanently removed via the DSP-API hard-erase endpoint (`DELETE /admin/projects/shortcode/0854/erase`). `dsp-tools` cannot delete a project, so this is a raw authenticated call implemented in `src/demo_upload/`. It requires the `ALLOW_ERASE_PROJECTS` feature to be enabled on demo and a SystemAdmin login.
 3. **Create & upload.** `dsp-tools create` and `dsp-tools xmlupload` recreate the project on `api.demo.dasch.swiss` from the latest JSON and XML.
-4. **Move the marker.** On success, the `demo-deployed` tag is moved to the deployed commit so the next run can detect the next change.
+4. **Move the marker.** On success, the `demo-uploaded` tag is moved to the uploaded commit so the next run can detect the next change.
 
 **Manual follow-up (important):** every upload assigns the project a **new URL** (`app.demo.dasch.swiss/project/<uuid>/data`). The workflow therefore files a **Linear issue** assigned to Daniela reminding her to update the "Discover Project Data" link on [repository.dasch.swiss/dpe/projects/0854](https://repository.dasch.swiss/dpe/projects/0854).
 

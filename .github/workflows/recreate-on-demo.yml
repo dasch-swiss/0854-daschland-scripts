@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write  # needed to move the 'demo-deployed' marker tag
+  contents: write  # needed to move the 'demo-uploaded' marker tag
 
 env:
   # Password for the users defined in the JSON (Cheshire Cat et al.). 'create' substitutes it into
@@ -24,20 +24,20 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0  # need full history + tags to diff against the last deploy
-      - name: Check whether the project data changed since the last demo deploy
+          fetch-depth: 0  # need full history + tags to diff against the last upload
+      - name: Check whether the project data changed since the last upload to demo
         id: diff
         run: |
-          if git rev-parse -q --verify refs/tags/demo-deployed >/dev/null; then
-            if git diff --quiet demo-deployed HEAD -- data/output/daschland.json data/output/data_daschland.xml; then
-              echo "No changes since the last demo deploy; skipping."
+          if git rev-parse -q --verify refs/tags/demo-uploaded >/dev/null; then
+            if git diff --quiet demo-uploaded HEAD -- data/output/daschland.json data/output/data_daschland.xml; then
+              echo "No changes since the last upload to demo; skipping."
               echo "changed=false" >> "$GITHUB_OUTPUT"
             else
-              echo "Project data changed since the last demo deploy; recreating."
+              echo "Project data changed since the last upload to demo; re-uploading."
               echo "changed=true" >> "$GITHUB_OUTPUT"
             fi
           else
-            echo "No 'demo-deployed' marker yet; treating this as the first deploy."
+            echo "No 'demo-uploaded' marker yet; treating this as the first upload."
             echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
 
@@ -51,7 +51,7 @@ jobs:
         with:
           lfs: 'true'  # take care not to exceed the monthly quota
           # https://docs.github.com/en/billing/managing-billing-for-your-products/managing-billing-for-git-large-file-storage
-          fetch-depth: 0  # need tags to move the 'demo-deployed' marker
+          fetch-depth: 0  # need tags to move the 'demo-uploaded' marker
       - name: Install uv
         uses: astral-sh/setup-uv@v5
         with:
@@ -61,7 +61,7 @@ jobs:
       - name: Upgrade DSP-TOOLS
         run: uv add --upgrade dsp-tools
       - name: Erase the existing project from demo
-        run: uv run python -m src.demo_deploy erase
+        run: uv run python -m src.demo_upload erase
         env:
           DASCH_USER_PW_PROD: ${{ secrets.DASCH_USER_PW_PROD }}
       - name: Create project
@@ -85,14 +85,14 @@ jobs:
       - name: Determine the new project URL
         id: project_url
         run: |
-          url="$(uv run -q python -m src.demo_deploy project-url)"
+          url="$(uv run -q python -m src.demo_upload project-url)"
           echo "url=$url" >> "$GITHUB_OUTPUT"
       - name: Remind Daniela to update the portal link (Linear)
-        run: uv run python -m src.demo_deploy notify --url "$URL"
+        run: uv run python -m src.demo_upload notify --url "$URL"
         env:
           URL: ${{ steps.project_url.outputs.url }}
           LINEAR_API_KEY: ${{ secrets.LINEAR_API_KEY }}
-      - name: Update the deploy marker
+      - name: Update the upload marker
         run: |
-          git tag -f demo-deployed HEAD
-          git push -f origin refs/tags/demo-deployed
+          git tag -f demo-uploaded HEAD
+          git push -f origin refs/tags/demo-uploaded

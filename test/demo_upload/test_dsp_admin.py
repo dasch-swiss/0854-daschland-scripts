@@ -2,9 +2,9 @@ from typing import Any
 
 import pytest
 
-from src.demo_deploy import config, dsp_admin
-from src.demo_deploy.dsp_admin import EraseOutcome
-from src.demo_deploy.errors import AuthenticationError, DemoDeployError, EraseError
+from src.demo_upload import config, dsp_admin
+from src.demo_upload.dsp_admin import EraseOutcome
+from src.demo_upload.errors import AuthenticationError, DemoUploadError, EraseError
 
 
 class _FakeResponse:
@@ -127,5 +127,5 @@ def test_fetch_project_url_not_found(monkeypatch: pytest.MonkeyPatch) -> None:
         return _FakeResponse(404, text="not found")
 
     monkeypatch.setattr("requests.get", fake_get)
-    with pytest.raises(DemoDeployError):
+    with pytest.raises(DemoUploadError):
         dsp_admin.fetch_project_url()

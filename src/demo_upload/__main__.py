@@ -1,10 +1,10 @@
-"""CLI entry point for the demo-deploy automation.
+"""CLI entry point for the demo-upload automation.
 
 Usage (from the repo root):
 
-    uv run python -m src.demo_deploy erase
-    uv run python -m src.demo_deploy project-url
-    uv run python -m src.demo_deploy notify --url <project-url>
+    uv run python -m src.demo_upload erase
+    uv run python -m src.demo_upload project-url
+    uv run python -m src.demo_upload notify --url <project-url>
 
 Logs go to stderr; ``project-url`` prints the resulting URL to stdout so the
 workflow can capture it. Any expected failure exits non-zero with one log line.
@@ -16,14 +16,14 @@ import sys
 
 from loguru import logger
 
-from src.demo_deploy import dsp_admin, notify
-from src.demo_deploy.errors import DemoDeployError
+from src.demo_upload import dsp_admin, notify
+from src.demo_upload.errors import DemoUploadError
 
 
 def _require_env(name: str) -> str:
     value = os.environ.get(name)
     if not value:
-        raise DemoDeployError(f"Required environment variable {name} is not set.")
+        raise DemoUploadError(f"Required environment variable {name} is not set.")
     return value
 
 
@@ -46,7 +46,7 @@ def _run_notify(project_url: str) -> None:
 
 
 def _build_parser() -> argparse.ArgumentParser:
-    parser = argparse.ArgumentParser(prog="demo_deploy", description="Recreate the Alice project on the demo server.")
+    parser = argparse.ArgumentParser(prog="demo_upload", description="Re-upload the Alice project to the demo server.")
     subparsers = parser.add_subparsers(dest="command", required=True)
     subparsers.add_parser("erase", help="Erase the Alice project from the demo server.")
     subparsers.add_parser("project-url", help="Print the current demo project's DSP-APP URL.")
@@ -64,7 +64,7 @@ def main() -> None:
             _run_project_url()
         elif args.command == "notify":
             _run_notify(args.url)
-    except DemoDeployError as exc:
+    except DemoUploadError as exc:
         logger.error(str(exc))
         sys.exit(1)
 

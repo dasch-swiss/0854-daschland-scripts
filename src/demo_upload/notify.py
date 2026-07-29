@@ -10,8 +10,8 @@ from typing import Any
 
 import requests
 
-from src.demo_deploy import config
-from src.demo_deploy.errors import DemoDeployError
+from src.demo_upload import config
+from src.demo_upload.errors import DemoUploadError
 
 _ISSUE_MUTATION = """
 mutation IssueCreate($input: IssueCreateInput!) {
@@ -55,14 +55,14 @@ def build_issue_input(project_url: str) -> dict[str, str]:
 def extract_issue_url(payload: dict[str, Any]) -> str:
     """Extract the created issue's URL from a Linear GraphQL response."""
     if payload.get("errors"):
-        raise DemoDeployError(f"Linear API returned errors: {payload['errors']}")
+        raise DemoUploadError(f"Linear API returned errors: {payload['errors']}")
     try:
         result = payload["data"]["issueCreate"]
         if not result["success"]:
-            raise DemoDeployError(f"Linear reported the issue creation as unsuccessful: {payload}")
+            raise DemoUploadError(f"Linear reported the issue creation as unsuccessful: {payload}")
         return str(result["issue"]["url"])
     except (KeyError, TypeError) as exc:
-        raise DemoDeployError(f"Unexpected Linear response: {payload!r}") from exc
+        raise DemoUploadError(f"Unexpected Linear response: {payload!r}") from exc
 
 
 def create_issue(api_key: str, project_url: str, *, api_url: str = config.LINEAR_API_URL) -> str:
@@ -75,5 +75,5 @@ def create_issue(api_key: str, project_url: str, *, api_url: str = config.LINEAR
         timeout=config.HTTP_TIMEOUT,
     )
     if response.status_code != HTTPStatus.OK:
-        raise DemoDeployError(f"Linear API call failed (HTTP {response.status_code}). Response body: {response.text}")
+        raise DemoUploadError(f"Linear API call failed (HTTP {response.status_code}). Response body: {response.text}")
     return extract_issue_url(response.json())

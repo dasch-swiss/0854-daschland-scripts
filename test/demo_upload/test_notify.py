@@ -2,8 +2,8 @@ from typing import Any
 
 import pytest
 
-from src.demo_deploy import config, notify
-from src.demo_deploy.errors import DemoDeployError
+from src.demo_upload import config, notify
+from src.demo_upload.errors import DemoUploadError
 
 
 class _FakeResponse:
@@ -39,17 +39,17 @@ def test_extract_issue_url_success() -> None:
 
 
 def test_extract_issue_url_graphql_errors() -> None:
-    with pytest.raises(DemoDeployError, match="errors"):
+    with pytest.raises(DemoUploadError, match="errors"):
         notify.extract_issue_url({"errors": [{"message": "bad"}]})
 
 
 def test_extract_issue_url_unsuccessful() -> None:
-    with pytest.raises(DemoDeployError, match="unsuccessful"):
+    with pytest.raises(DemoUploadError, match="unsuccessful"):
         notify.extract_issue_url({"data": {"issueCreate": {"success": False, "issue": None}}})
 
 
 def test_extract_issue_url_malformed() -> None:
-    with pytest.raises(DemoDeployError, match="Unexpected"):
+    with pytest.raises(DemoUploadError, match="Unexpected"):
         notify.extract_issue_url({"data": {}})
 
 
@@ -66,5 +66,5 @@ def test_create_issue_http_error(monkeypatch: pytest.MonkeyPatch) -> None:
         return _FakeResponse(500, text="boom")
 
     monkeypatch.setattr("requests.post", fake_post)
-    with pytest.raises(DemoDeployError, match="Linear API call failed"):
+    with pytest.raises(DemoUploadError, match="Linear API call failed"):
         notify.create_issue("key", _PROJECT_URL)

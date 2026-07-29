@@ -1,4 +1,4 @@
-"""Static configuration for the demo-server recreation automation."""
+"""Static configuration for the demo-server re-upload automation."""
 
 # DSP demo server
 DEMO_API_URL = "https://api.demo.dasch.swiss"

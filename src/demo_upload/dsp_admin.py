@@ -11,8 +11,8 @@ from typing import Any
 import requests
 from loguru import logger
 
-from src.demo_deploy import config
-from src.demo_deploy.errors import AuthenticationError, DemoDeployError, EraseError
+from src.demo_upload import config
+from src.demo_upload.errors import AuthenticationError, DemoUploadError, EraseError
 
 
 class EraseOutcome(enum.Enum):
@@ -91,7 +91,7 @@ def fetch_project_url(*, api_url: str = config.DEMO_API_URL, shortcode: str = co
     """Return the DSP-APP data URL of the project currently registered under the shortcode."""
     response = requests.get(f"{api_url}/admin/projects/shortcode/{shortcode}", timeout=config.HTTP_TIMEOUT)
     if response.status_code != HTTPStatus.OK:
-        raise DemoDeployError(
+        raise DemoUploadError(
             f"Could not read project {shortcode} from {api_url} (HTTP {response.status_code}). "
             f"Response body: {response.text}"
         )

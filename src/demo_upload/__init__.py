@@ -1,4 +1,4 @@
-"""Automation helpers for recreating the Alice project on the DSP demo server.
+"""Automation helpers for re-uploading the Alice project to the DSP demo server.
 
 Provides the raw HTTP operations that ``dsp-tools`` does not expose: erasing the
 project, deriving its (post-upload) DSP-APP URL, and filing a Linear reminder.
