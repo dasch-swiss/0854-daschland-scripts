@@ -1,0 +1,98 @@
+---
+name: Recreate Alice on Demo
+
+on:
+  schedule:
+    # Every Monday at 13:00 UTC (14:00 CET / 15:00 CEST). GitHub cron is UTC and ignores DST.
+    - cron: "0 13 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write  # needed to move the 'demo-deployed' marker tag
+
+env:
+  # Password for the users defined in the JSON (Cheshire Cat et al.). 'create' substitutes it into
+  # the "password": null fields, and 'xmlupload' authenticates with it as cheshire.cat@dasch.swiss.
+  DSP_USER_PASSWORD: ${{ secrets.USER_PASSWORD_CHESHIRE_CAT }}
+
+jobs:
+  detect-changes:
+    runs-on: ubuntu-latest
+    outputs:
+      changed: ${{ steps.diff.outputs.changed }}
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # need full history + tags to diff against the last deploy
+      - name: Check whether the project data changed since the last demo deploy
+        id: diff
+        run: |
+          if git rev-parse -q --verify refs/tags/demo-deployed >/dev/null; then
+            if git diff --quiet demo-deployed HEAD -- data/output/daschland.json data/output/data_daschland.xml; then
+              echo "No changes since the last demo deploy; skipping."
+              echo "changed=false" >> "$GITHUB_OUTPUT"
+            else
+              echo "Project data changed since the last demo deploy; recreating."
+              echo "changed=true" >> "$GITHUB_OUTPUT"
+            fi
+          else
+            echo "No 'demo-deployed' marker yet; treating this as the first deploy."
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+  recreate:
+    needs: detect-changes
+    if: needs.detect-changes.outputs.changed == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          lfs: 'true'  # take care not to exceed the monthly quota
+          # https://docs.github.com/en/billing/managing-billing-for-your-products/managing-billing-for-git-large-file-storage
+          fetch-depth: 0  # need tags to move the 'demo-deployed' marker
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+      - name: Install Python & dependencies (allow upgrade, in order to get most up-to-date DSP-TOOLS)
+        run: uv sync --all-extras --upgrade
+      - name: Upgrade DSP-TOOLS
+        run: uv add --upgrade dsp-tools
+      - name: Erase the existing project from demo
+        run: uv run python -m src.demo_deploy erase
+        env:
+          DASCH_USER_PW_PROD: ${{ secrets.DASCH_USER_PW_PROD }}
+      - name: Create project
+        run: |
+          uv run dsp-tools create \
+          --suppress-update-prompt \
+          -s api.demo.dasch.swiss \
+          -u dasch@dasch.swiss \
+          -p "$PW" \
+          data/output/daschland.json
+        env:
+          PW: ${{ secrets.DASCH_USER_PW_PROD }}
+      - name: Upload data
+        run: |
+          uv run dsp-tools xmlupload \
+          --suppress-update-prompt \
+          -s api.demo.dasch.swiss \
+          -u cheshire.cat@dasch.swiss \
+          -p "$DSP_USER_PASSWORD" \
+          data/output/data_daschland.xml
+      - name: Determine the new project URL
+        id: project_url
+        run: |
+          url="$(uv run -q python -m src.demo_deploy project-url)"
+          echo "url=$url" >> "$GITHUB_OUTPUT"
+      - name: Remind Daniela to update the portal link (Linear)
+        run: uv run python -m src.demo_deploy notify --url "$URL"
+        env:
+          URL: ${{ steps.project_url.outputs.url }}
+          LINEAR_API_KEY: ${{ secrets.LINEAR_API_KEY }}
+      - name: Update the deploy marker
+        run: |
+          git tag -f demo-deployed HEAD
+          git push -f origin refs/tags/demo-deployed

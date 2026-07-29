@@ -17,6 +17,8 @@ dependencies = [
     "ruff",
     "mypy",
     "pandas",
+    "requests>=2.34.0",
+    "loguru>=0.7.3",
 ]
 
 
@@ -37,6 +39,7 @@ dev = [
     "pytest",
     "types-lxml",
     "types-regex",
+    "types-requests>=2.33.0.20260712",
     "vulture",
 ]
 
