@@ -151,15 +151,15 @@ To manually deploy to the dev server, trigger the GitHub Actions workflow `.gith
 
 #### Stage Server
 
-After every deployment to stage, the Alice in DaSCHland project is **automatically recreated and repopulated** on the stage DSP-API server.
+After every deployment to stage, the Alice in DaSCHland project is **automatically created and populated** on the stage DSP-API server, unless it already exists (see below).
 
-**Why?** The Alice project is a comprehensive showcase of DSP features and frequently changes. Testers are accustomed to modifying data on stage freely, assuming it will be reset regularly. To maintain consistency and ensure testers always have a fresh, predictable dataset, the project is automatically recreated after each stage deployment.
+**Why?** The Alice project is a comprehensive showcase of DSP features and frequently changes. Testers are accustomed to modifying data on stage freely, assuming it will be reset regularly. To maintain consistency and ensure testers have a predictable dataset, the create-on-stage workflow runs automatically after each stage deployment.
 
 **How it works:**
 1. After a successful stage deployment, the ops-deploy Jenkins job triggers the GitHub Actions workflow
-2. The workflow (`.github/workflows/create-on-stage.yml`) runs two commands:
-   - `dsp-tools create` — creates the project schema on `api.stage.dasch.swiss`
-   - `dsp-tools xmlupload` — populates the project with data from the latest XML
+2. The workflow (`.github/workflows/create-on-stage.yml`) runs:
+   - `dsp-tools create --exit-if-exists` — creates the project schema on `api.stage.dasch.swiss`. The `--exit-if-exists` flag makes the command exit with code `3` if the project already exists on the server.
+   - `dsp-tools xmlupload` — populates the project with data from the latest XML. This step is **skipped** when `create` reported that the project already existed, so that re-running the workflow cannot create duplicate resources.
 
 **Monitoring:** You can view the workflow execution results in the GitHub Actions tab, or check the deploy logs at [deploy.ops.dasch.swiss](https://deploy.ops.dasch.swiss/job/ops_deploy/job/dsp_stage_01_daschland/)
 

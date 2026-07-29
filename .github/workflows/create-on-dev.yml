@@ -25,17 +25,27 @@ jobs:
       - name: Upgrade DSP-TOOLS
         run: uv add --upgrade dsp-tools
       - name: Create project
+        id: create
         run: |
+          code=0
           uv run dsp-tools create \
           --suppress-update-prompt \
           --exit-if-exists \
           -s api.dev.dasch.swiss \
           -u dasch@dasch.swiss \
           -p "$PW" \
-          data/output/daschland.json
+          data/output/daschland.json || code=$?
+          # dsp-tools 'create --exit-if-exists' exits with code 3 when the project already exists
+          if [ "$code" -eq 3 ]; then
+            echo "Project already exists on the server; skipping data upload to prevent duplicate resources."
+            echo "skip_upload=true" >> "$GITHUB_OUTPUT"
+          elif [ "$code" -ne 0 ]; then
+            exit "$code"
+          fi
         env:
           PW: ${{ secrets.DASCH_USER_PW_PROD }}
       - name: Upload data
+        if: steps.create.outputs.skip_upload != 'true'
         run: |
           uv run dsp-tools xmlupload \
           --suppress-update-prompt \
