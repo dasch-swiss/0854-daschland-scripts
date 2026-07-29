@@ -151,15 +151,15 @@ To manually deploy to the dev server, trigger the GitHub Actions workflow `.gith
 
 #### Stage Server
 
-After every deployment to stage, the Alice in DaSCHland project is **automatically recreated and repopulated** on the stage DSP-API server.
+The "Alice in DaSCHland" project is a comprehensive showcase of DSP features. Testers modify its data on stage freely, assuming it will be reset periodically. Its predictable state on stage is the result of **two independent mechanisms**:
 
-**Why?** The Alice project is a comprehensive showcase of DSP features and frequently changes. Testers are accustomed to modifying data on stage freely, assuming it will be reset regularly. To maintain consistency and ensure testers always have a fresh, predictable dataset, the project is automatically recreated after each stage deployment.
+**1. Data reset (prod → stage mirror).** The stage database is reset by a separate, scheduled job in the [ops-deploy](https://github.com/dasch-swiss/ops-deploy) repository, which mirrors production onto stage: it purges the stage database and assets and restores the latest production backup. Because Alice is a showcase project that is not part of the production data, this mirror removes Alice from stage. The stage deployment itself does **not** delete any data.
 
-**How it works:**
-1. After a successful stage deployment, the ops-deploy Jenkins job triggers the GitHub Actions workflow
-2. The workflow (`.github/workflows/create-on-stage.yml`) runs two commands:
-   - `dsp-tools create` — creates the project schema on `api.stage.dasch.swiss`
-   - `dsp-tools xmlupload` — populates the project with data from the latest XML
+**2. Alice (re)creation (this repo).** After every stage deployment, an ops-deploy Jenkins job triggers the GitHub Actions workflow (`.github/workflows/create-on-stage.yml`), which runs:
+   - `dsp-tools create --exit-if-exists` — creates the project schema on `api.stage.dasch.swiss`. If the project already exists, the command exits with code `3` instead of continuing.
+   - `dsp-tools xmlupload` — populates the project with data from the latest XML. This step is **skipped** when `create` reported that the project already existed (exit code `3`), so re-running the workflow cannot create duplicate resources.
+
+Because the two mechanisms are not chained, Alice is recreated fresh on the first deployment after a prod → stage mirror has reset the database; on later deployments — where Alice is still present — the workflow skips the upload rather than duplicating data.
 
 **Monitoring:** You can view the workflow execution results in the GitHub Actions tab, or check the deploy logs at [deploy.ops.dasch.swiss](https://deploy.ops.dasch.swiss/job/ops_deploy/job/dsp_stage_01_daschland/)
 
