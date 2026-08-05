@@ -200,11 +200,13 @@ source = { editable = "." }
 dependencies = [
     { name = "dsp-tools" },
     { name = "icecream" },
+    { name = "loguru" },
     { name = "mypy" },
     { name = "pandas" },
     { name = "pillow" },
     { name = "pyexiftool" },
     { name = "pymediainfo" },
+    { name = "requests" },
     { name = "ruff" },
 ]
 
@@ -216,6 +218,7 @@ dev = [
     { name = "pytest" },
     { name = "types-lxml" },
     { name = "types-regex" },
+    { name = "types-requests" },
     { name = "vulture" },
 ]
 
@@ -223,11 +226,13 @@ dev = [
 requires-dist = [
     { name = "dsp-tools" },
     { name = "icecream" },
+    { name = "loguru", specifier = ">=0.7.3" },
     { name = "mypy" },
     { name = "pandas" },
     { name = "pillow" },
     { name = "pyexiftool" },
     { name = "pymediainfo" },
+    { name = "requests", specifier = ">=2.34.0" },
     { name = "ruff" },
 ]
 
@@ -239,6 +244,7 @@ dev = [
     { name = "pytest" },
     { name = "types-lxml" },
     { name = "types-regex" },
+    { name = "types-requests", specifier = ">=2.33.0.20260712" },
     { name = "vulture" },
 ]
 
@@ -1481,6 +1487,18 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/de/e9/5a1e0ddb21996f5a2f1c31b9e678c6af2a12b996c9304917fbcb328e42ca/types_regex-2026.5.9.20260510.tar.gz", hash = "sha256:da1d4923ef7b4b5be268feb738d2806fdc5ca1a0b94e6bb35a23ef132bad6c36", size = 13339, upload-time = "2026-05-10T05:26:31.654Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/dc/64/2986fc3387258f9caef1212fbbb8cc755610caaa322def3e3a383f44e307/types_regex-2026.5.9.20260510-py3-none-any.whl", hash = "sha256:c6d7d0365db8d92b152e0ac177bb1c68ab8d001c017f9339bdbbe64fbafccbff", size = 11106, upload-time = "2026-05-10T05:26:30.677Z" },
+]
+
+[[package]]
+name = "types-requests"
+version = "2.33.0.20260712"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "urllib3" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/db/51/703318f7b7be8bee126ec13bf615050f932d0179b8784420f3a0199cc769/types_requests-2.33.0.20260712.tar.gz", hash = "sha256:2141b67ab534a5c5cd2dac5034f2a35f42e699c5bf185eee608c5246a069d7fb", size = 25084, upload-time = "2026-07-12T05:14:20.455Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/62/e7/010c87f559e216d83f9dc51e939633fd0d0ead3377340181ab0e223cd3b5/types_requests-2.33.0.20260712-py3-none-any.whl", hash = "sha256:de027e28c171d3da529689cbfa023b0b4eab188c8dfa22fd834eebd2cee6e7bb", size = 21392, upload-time = "2026-07-12T05:14:19.616Z" },
 ]
 
 [[package]]
