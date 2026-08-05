@@ -9,14 +9,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           lfs: 'false'  # take care not to exceed the monthly quota 
           # https://docs.github.com/en/billing/managing-billing-for-your-products/managing-billing-for-git-large-file-storage
       - name: Install just
         uses: taiki-e/install-action@just
       - name: Install uv
-        uses: astral-sh/setup-uv@v5
+        uses: astral-sh/setup-uv@v9.0.0
         with:
           enable-cache: true
       - name: Install Python dependencies (uv will install python automatically, if no appropriate version is installed)
@@ -35,14 +35,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           lfs: 'false'  # take care not to exceed the monthly quota 
           # https://docs.github.com/en/billing/managing-billing-for-your-products/managing-billing-for-git-large-file-storage
       - name: Install just
         uses: taiki-e/install-action@just
       - name: Install uv
-        uses: astral-sh/setup-uv@v5
+        uses: astral-sh/setup-uv@v9.0.0
         with:
           enable-cache: true
       - name: Install Python dependencies (uv will install python automatically, if no appropriate version is installed)
