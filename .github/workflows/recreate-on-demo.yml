@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write  # needed to move the 'demo-uploaded' marker tag
+  contents: write  # needed to push the 'demo-uploaded-*' marker tags
 
 env:
   # Password for the users defined in the JSON (Cheshire Cat et al.). 'create' substitutes it into
@@ -28,16 +28,16 @@ jobs:
       - name: Check whether the project data changed since the last upload to demo
         id: diff
         run: |
-          if git rev-parse -q --verify refs/tags/demo-uploaded >/dev/null; then
-            if git diff --quiet demo-uploaded HEAD -- data/output/daschland.json data/output/data_daschland.xml; then
-              echo "No changes since the last upload to demo; skipping."
-              echo "changed=false" >> "$GITHUB_OUTPUT"
-            else
-              echo "Project data changed since the last upload to demo; re-uploading."
-              echo "changed=true" >> "$GITHUB_OUTPUT"
-            fi
+          # Marker names carry a UTC timestamp, so sorting by refname is chronological.
+          last="$(git tag -l 'demo-uploaded-*' --sort=-refname | head -1)"
+          if [ -z "$last" ]; then
+            echo "No 'demo-uploaded-*' marker yet; treating this as the first upload."
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          elif git diff --quiet "$last" HEAD -- data/output/daschland.json data/output/data_daschland.xml; then
+            echo "No changes since $last; skipping."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
           else
-            echo "No 'demo-uploaded' marker yet; treating this as the first upload."
+            echo "Project data changed since $last; re-uploading."
             echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
 
@@ -51,7 +51,7 @@ jobs:
         with:
           lfs: 'true'  # take care not to exceed the monthly quota
           # https://docs.github.com/en/billing/managing-billing-for-your-products/managing-billing-for-git-large-file-storage
-          fetch-depth: 0  # need tags to move the 'demo-uploaded' marker
+          fetch-depth: 0  # need tags to record the upload marker
       - name: Install uv
         uses: astral-sh/setup-uv@v5
         with:
@@ -92,7 +92,12 @@ jobs:
         env:
           URL: ${{ steps.project_url.outputs.url }}
           LINEAR_API_KEY: ${{ secrets.LINEAR_API_KEY }}
-      - name: Update the upload marker
+      - name: Record the upload marker
         run: |
-          git tag -f demo-uploaded HEAD
-          git push -f origin refs/tags/demo-uploaded
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          tag="demo-uploaded-$(date -u +'%Y%m%dT%H%M%SZ')"
+          git tag -a "$tag" -m "Uploaded to demo: $URL"
+          git push origin "refs/tags/$tag"
+        env:
+          URL: ${{ steps.project_url.outputs.url }}
