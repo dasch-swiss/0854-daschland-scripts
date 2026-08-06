@@ -54,3 +54,16 @@ jobs:
         run: sudo apt-get update && sudo apt-get install -y exiftool
       - name: Run tests
         run: just test -s
+
+  large-files:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 0  # need the PR base ref to diff against
+          filter: blob:none  # ...but skip downloading existing blob content to get it
+      - name: Check for large files added outside Git LFS
+        uses: pre-commit/action@v3.0.1
+        with:
+          extra_args: check-added-large-files

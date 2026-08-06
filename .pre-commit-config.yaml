@@ -15,3 +15,5 @@ repos:
       - id: check-symlinks
       - id: destroyed-symlinks
       - id: mixed-line-ending
+      - id: check-added-large-files
+        args: [--maxkb=5120]
