@@ -171,19 +171,20 @@ Because the two mechanisms are not chained, Alice is recreated fresh on the firs
 
 The demo server hosts a public showcase of the "Alice in DaSCHland" project. Unlike stage, the demo database is **not** reset by any external job, so this repository keeps demo in sync itself.
 
-**How it works:** the workflow (`.github/workflows/recreate-on-demo.yml`) runs **every Monday afternoon** and can also be triggered manually from the Actions tab. To avoid unnecessary URL churn (see below), it only acts when the project data actually changed:
+**How it works:** the workflow (`.github/workflows/recreate-on-demo.yml`) runs **every Monday afternoon** and can also be triggered manually from the Actions tab. It erases the project, recreates it from the latest JSON and XML, repoints the portal link (see below), and records the upload as a `demo-uploaded-<UTC timestamp>` git tag — which is both the marker the next run compares against and a history of which commit went live under which URL.
 
-1. **Detect changes.** The committed files `data/output/daschland.json` and `data/output/data_daschland.xml` are compared against the newest `demo-uploaded-*` git tag, which marks the commit currently live on demo. If nothing changed, the run stops here.
-2. **Erase.** The existing project is permanently removed via the DSP-API hard-erase endpoint (`DELETE /admin/projects/shortcode/0854/erase`). `dsp-tools` cannot delete a project, so this is a raw authenticated call implemented in `src/demo_upload/`. It requires the `ALLOW_ERASE_PROJECTS` feature to be enabled on demo and a SystemAdmin login.
-3. **Create & upload.** `dsp-tools create` and `dsp-tools xmlupload` recreate the project on `api.demo.dasch.swiss` from the latest JSON and XML.
-4. **Record the upload.** On success, a new `demo-uploaded-<UTC timestamp>` tag is created on the uploaded commit, annotated with the project URL that upload produced. The next run compares against the newest such tag. Because every tag is immutable, `git tag -n99 -l 'demo-uploaded-*'` doubles as a history of which commit went live under which URL. Uploads only happen when the data changed, so these tags accumulate slowly; prune them by hand if they ever become noisy.
+Because a re-upload erases the project and assigns it a **new URL**, the workflow only acts when the data in `data/output/` actually changed since the last upload. Erasing needs the `ALLOW_ERASE_PROJECTS` feature enabled on demo, since `dsp-tools` cannot delete a project.
 
-**Manual follow-up (important):** every upload assigns the project a **new URL** (`app.demo.dasch.swiss/project/<uuid>/data`). The workflow therefore files a **Linear issue** assigned to Daniela reminding her to update the "Discover Project Data" link on [repository.dasch.swiss/dpe/projects/0854](https://repository.dasch.swiss/dpe/projects/0854).
+**The portal link.** As the URL changes with every upload, the workflow opens a pull request in [dsp-repository](https://github.com/dasch-swiss/dsp-repository) that repoints the "Discover Project Data" link on [repository.dasch.swiss/dpe/projects/0854](https://repository.dasch.swiss/dpe/projects/0854), with Daniela as reviewer and assignee.
+
+- **At most one such pull request is ever open**, always showing the newest URL — a later re-upload updates it rather than opening a second one. No pull request at all means the link was already current.
+- **It needs one human approval**; the automation cannot merge on its own.
+- **It uses a DaSCH Bot GitHub App token, not the default `GITHUB_TOKEN`.** The latter is scoped to this repository, and the pull requests it creates do not trigger workflows, so the required checks on dsp-repository would never run.
 
 **User accounts used:**
 - Project erase & creation: `dasch@dasch.swiss` (SystemAdmin account)
 - Data upload: `cheshire.cat@dasch.swiss` (project account)
 
-**Required GitHub secrets:** `USER_PASSWORD_CHESHIRE_CAT`, `DASCH_USER_PW_PROD`, and `LINEAR_API_KEY`.
+**Required GitHub secrets:** `USER_PASSWORD_CHESHIRE_CAT` and `DASCH_USER_PW_PROD`, plus the organisation-level `DASCH_BOT_APP_ID` and `DASCH_BOT_APP_PRIVATE_KEY` for the pull request in dsp-repository.
 
 **Monitoring:** view the workflow execution results in the GitHub Actions tab.
