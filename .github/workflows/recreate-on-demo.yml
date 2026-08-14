@@ -79,7 +79,9 @@ jobs:
           lfs: 'true'  # take care not to exceed the monthly quota
           # https://docs.github.com/en/billing/managing-billing-for-your-products/managing-billing-for-git-large-file-storage
           fetch-depth: 0  # need tags to record the upload marker
-          filter: blob:none  # skip downloading blob content; only HEAD's files are ever read
+          # No 'filter: blob:none' here: 'git lfs fetch' scans the tree for pointer files, and in a
+          # blobless clone those blobs are not local, so the scan fails. The filter stays on the
+          # 'detect-changes' job, which uses no LFS and is where the full-history diff happens.
       - name: Install uv
         uses: astral-sh/setup-uv@v9.0.0
         with:
