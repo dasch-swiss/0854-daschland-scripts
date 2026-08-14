@@ -6,6 +6,11 @@ on:
     # Every Monday at 13:00 UTC (14:00 CET / 15:00 CEST). GitHub cron is UTC and ignores DST.
     - cron: "0 13 * * 1"
   workflow_dispatch:
+    inputs:
+      force:
+        description: "Re-upload even if the project data did not change"
+        type: boolean
+        default: false
 
 permissions:
   contents: write  # needed to push the 'demo-uploaded-*' marker tags
@@ -28,10 +33,16 @@ jobs:
           filter: blob:none  # skip downloading blob content; only 2 files' content is ever read
       - name: Check whether the project data changed since the last upload to demo
         id: diff
+        env:
+          # Empty on a scheduled run, so the cron stays gated on the data having changed.
+          FORCE: ${{ inputs.force }}
         run: |
           # Marker names carry a UTC timestamp, so sorting by refname is chronological.
           last="$(git tag -l 'demo-uploaded-*' --sort=-refname | head -1)"
-          if [ -z "$last" ]; then
+          if [ "$FORCE" = "true" ]; then
+            echo "Forced by manual dispatch; re-uploading regardless of the data."
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          elif [ -z "$last" ]; then
             echo "No 'demo-uploaded-*' marker yet; treating this as the first upload."
             echo "changed=true" >> "$GITHUB_OUTPUT"
           elif git diff --quiet "$last" HEAD -- data/output/daschland.json data/output/data_daschland.xml; then

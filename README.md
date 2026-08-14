@@ -173,7 +173,7 @@ The demo server hosts a public showcase of the "Alice in DaSCHland" project. Unl
 
 **How it works:** the workflow (`.github/workflows/recreate-on-demo.yml`) runs **every Monday afternoon** and can also be triggered manually from the Actions tab. It erases the project, recreates it from the latest JSON and XML, repoints the portal link (see below), and records the upload as a `demo-uploaded-<UTC timestamp>` git tag — which is both the marker the next run compares against and a history of which commit went live under which URL.
 
-Because a re-upload erases the project and assigns it a **new URL**, the workflow only acts when the data in `data/output/` actually changed since the last upload. Erasing needs the `ALLOW_ERASE_PROJECTS` feature enabled on demo, since `dsp-tools` cannot delete a project.
+Because a re-upload erases the project and assigns it a **new URL**, the workflow only acts when the data in `data/output/` actually changed since the last upload — unless a manual run ticks the `force` input, which re-uploads regardless. Erasing needs the `ALLOW_ERASE_PROJECTS` feature enabled on demo, since `dsp-tools` cannot delete a project.
 
 **The portal link.** As the URL changes with every upload, the workflow opens a pull request in [dsp-repository](https://github.com/dasch-swiss/dsp-repository) that repoints the "Discover Project Data" link on [repository.dasch.swiss/dpe/projects/0854](https://repository.dasch.swiss/dpe/projects/0854), with Daniela as reviewer and assignee.
 
