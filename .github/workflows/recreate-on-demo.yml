@@ -78,7 +78,10 @@ jobs:
         with:
           lfs: 'true'  # take care not to exceed the monthly quota
           # https://docs.github.com/en/billing/managing-billing-for-your-products/managing-billing-for-git-large-file-storage
-          fetch-depth: 0  # need tags to record the upload marker
+          # Nothing in this job reads history: the marker step below only creates a tag on HEAD and
+          # pushes it, and a tag pointing at a commit the remote already has needs no shallow root.
+          # Reading the existing markers happens in 'detect-changes', which fetches full history.
+          fetch-depth: 1
           # No 'filter: blob:none' here: 'git lfs fetch' scans the tree for pointer files, and in a
           # blobless clone those blobs are not local, so the scan fails. The filter stays on the
           # 'detect-changes' job, which uses no LFS and is where the full-history diff happens.
