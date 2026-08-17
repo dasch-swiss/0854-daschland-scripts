@@ -6,6 +6,11 @@ on:
     # Every Monday at 13:00 UTC (14:00 CET / 15:00 CEST). GitHub cron is UTC and ignores DST.
     - cron: "0 13 * * 1"
   workflow_dispatch:
+    inputs:
+      force:
+        description: "Re-upload even if the project data did not change"
+        type: boolean
+        default: false
 
 permissions:
   contents: write  # needed to push the 'demo-uploaded-*' marker tags
@@ -28,10 +33,16 @@ jobs:
           filter: blob:none  # skip downloading blob content; only 2 files' content is ever read
       - name: Check whether the project data changed since the last upload to demo
         id: diff
+        env:
+          # Empty on a scheduled run, so the cron stays gated on the data having changed.
+          FORCE: ${{ inputs.force }}
         run: |
           # Marker names carry a UTC timestamp, so sorting by refname is chronological.
           last="$(git tag -l 'demo-uploaded-*' --sort=-refname | head -1)"
-          if [ -z "$last" ]; then
+          if [ "$FORCE" = "true" ]; then
+            echo "Forced by manual dispatch; re-uploading regardless of the data."
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          elif [ -z "$last" ]; then
             echo "No 'demo-uploaded-*' marker yet; treating this as the first upload."
             echo "changed=true" >> "$GITHUB_OUTPUT"
           elif git diff --quiet "$last" HEAD -- data/output/daschland.json data/output/data_daschland.xml; then
@@ -47,13 +58,33 @@ jobs:
     if: needs.detect-changes.outputs.changed == 'true'
     runs-on: ubuntu-latest
     steps:
+      # contents+pull-requests WRITE on dsp-repository ONLY, minted per run, so a leak of this token
+      # cannot touch any other repo. Minted before anything else, so a misconfigured app fails the
+      # run while the project on demo is still intact, rather than after it was erased and re-uploaded.
+      # A token lives one hour and a full run takes ~15 minutes, so it is still valid when used below.
+      # SHA-pinned (v3 == bcd2ba4) since this action handles private-key material.
+      - name: Mint DaSCH Bot App token (write — dsp-repository only)
+        id: app-token
+        uses: actions/create-github-app-token@bcd2ba49218906704ab6c1aa796996da409d3eb1  # v3
+        with:
+          app-id: ${{ secrets.DASCH_BOT_APP_ID }}
+          private-key: ${{ secrets.DASCH_BOT_APP_PRIVATE_KEY }}
+          owner: dasch-swiss
+          repositories: dsp-repository
+          permission-contents: write
+          permission-pull-requests: write
       - name: Checkout repo
         uses: actions/checkout@v7
         with:
           lfs: 'true'  # take care not to exceed the monthly quota
           # https://docs.github.com/en/billing/managing-billing-for-your-products/managing-billing-for-git-large-file-storage
-          fetch-depth: 0  # need tags to record the upload marker
-          filter: blob:none  # skip downloading blob content; only HEAD's files are ever read
+          # Nothing in this job reads history: the marker step below only creates a tag on HEAD and
+          # pushes it, and a tag pointing at a commit the remote already has needs no shallow root.
+          # Reading the existing markers happens in 'detect-changes', which fetches full history.
+          fetch-depth: 1
+          # No 'filter: blob:none' here: 'git lfs fetch' scans the tree for pointer files, and in a
+          # blobless clone those blobs are not local, so the scan fails. The filter stays on the
+          # 'detect-changes' job, which uses no LFS and is where the full-history diff happens.
       - name: Install uv
         uses: astral-sh/setup-uv@v9.0.0
         with:
@@ -89,11 +120,78 @@ jobs:
         run: |
           url="$(uv run -q python -m src.demo_upload project-url)"
           echo "url=$url" >> "$GITHUB_OUTPUT"
-      - name: Remind Daniela to update the portal link (Linear)
-        run: uv run python -m src.demo_upload notify --url "$URL"
+      - name: Checkout dsp-repository
+        uses: actions/checkout@v7
+        with:
+          repository: dasch-swiss/dsp-repository
+          token: ${{ steps.app-token.outputs.token }}
+          path: dsp-repository
+      - name: Repoint the portal link
+        id: portal
+        run: uv run python -m src.demo_upload edit-metadata --url "$URL" --repo-dir dsp-repository
         env:
           URL: ${{ steps.project_url.outputs.url }}
-          LINEAR_API_KEY: ${{ secrets.LINEAR_API_KEY }}
+      # Creates the branch, commits, and opens the pull request — or updates the one that is already
+      # open. Exits silently when the link was already current, so no 'if' is needed here.
+      # Not the default GITHUB_TOKEN: that one is scoped to this repo, and the pull requests it
+      # creates do not trigger workflows, so the required checks on dsp-repository would never run
+      # and the PR could never be merged. An App installation token does trigger them.
+      #
+      # The commit header below needs a type from dsp-repository's allowlist and a scope, because
+      # their commitlint requires both.
+      - name: Open the pull request in dsp-repository
+        uses: peter-evans/create-pull-request@5f6978faf089d4d20b00c7766989d076bb2fc7f1  # v8
+        with:
+          path: dsp-repository
+          token: ${{ steps.app-token.outputs.token }}
+          # One stable branch, so a re-upload updates the open PR instead of opening a second one
+          branch: chore/dpe-data-0854-demo-url
+          base: main
+          delete-branch: true
+          reviewers: danielasubotic
+          assignees: danielasubotic
+          title: "chore(dpe-data): update the demo URL for 0854 (Alice in DaSCHland)"
+          commit-message: |
+            chore(dpe-data): update the demo URL for 0854 (Alice in DaSCHland)
+
+            The Alice showcase project is re-uploaded to the DSP demo server whenever its
+            data changes, and every upload assigns it a new project IRI. Point the
+            "Discover Project Data" link at the URL of the latest upload:
+
+            ${{ steps.project_url.outputs.url }}
+
+            Opened automatically by the recreate-on-demo workflow in
+            ${{ github.server_url }}/${{ github.repository }}.
+          body: |
+            ## Motivation
+            The "Discover Project Data" link on https://repository.dasch.swiss/dpe/projects/0854
+            points at a project that no longer exists: Alice in DaSCHland is re-uploaded to the DSP
+            demo server whenever its data changes, and every upload assigns it a new project IRI.
+
+            ## Summary
+            - Point the 0854 project link at the demo URL of the latest upload.
+
+            ## Key Changes
+            ### modules/dpe/server/data/projects/0854_daschland.json
+            - `url[0]` is now ${{ steps.project_url.outputs.url }}
+
+            ## Challenges and Decisions
+            None. Exactly the one URL string is rewritten; every other byte of the file, including
+            the trailing newline it does not have, is preserved.
+
+            ## Gotchas
+            - Leaving this pull request open is safe. The next re-upload updates this same branch and
+              this same pull request, so at most one of them is ever open.
+
+            ## Test Plan
+            - [ ] ${{ steps.project_url.outputs.url }} opens the project in DSP-APP.
+            - [ ] The diff touches exactly one line.
+
+            ---
+            Opened automatically by the `recreate-on-demo` workflow in
+            ${{ github.server_url }}/${{ github.repository }}.
+            Workflow run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+            ${{ steps.portal.outputs.moved_note }}
       - name: Record the upload marker
         run: |
           git config user.name "github-actions[bot]"
