@@ -40,6 +40,8 @@
             "Visualisation des données",
             "Vorzeigeprojekt"
         ],
+        "data_license": "http://rdfh.ch/licenses/cc-by-4.0",
+        "data_copyright_holder": "Alice in DaSCHland",
         "enabled_licenses": [
             "http://rdfh.ch/licenses/ai-generated",
             "http://rdfh.ch/licenses/cc-0-1.0",
