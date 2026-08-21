@@ -79,8 +79,8 @@
             <list>LIC_002</list>
         </list-prop>
     </resource>
-    <resource label="Documentation_Documents.zip" id="AR_002" restype="project-metadata:Archive">
-        <bitstream license="http://rdfh.ch/licenses/cc-by-4.0" copyright-holder="DaSCH" authorship-id="authorship_9">data/multimedia/archive/Documentation_Documents.zip</bitstream>
+    <resource label="Documentation_Source.zip" id="AR_002" restype="project-metadata:Archive">
+        <bitstream license="http://rdfh.ch/licenses/cc-by-4.0" copyright-holder="DaSCH" authorship-id="authorship_9">data/multimedia/archive/Documentation_Source.zip</bitstream>
         <text-prop name="project-metadata:hasAuthorshipResource">
             <text encoding="utf8">Noémi Villars-Amberg</text>
         </text-prop>
@@ -91,7 +91,7 @@
             <text encoding="xml">Archive of the files used to create the project documentation. </text>
         </text-prop>
         <text-prop name="project-metadata:hasFileName">
-            <text encoding="utf8">Documentation_Documents.zip</text>
+            <text encoding="utf8">Documentation_Source.zip</text>
         </text-prop>
         <decimal-prop name="project-metadata:hasFileSize">
             <decimal>4.9</decimal>
@@ -4355,7 +4355,7 @@ Shrill Voice/The Fishes: Liberty Stump</text>
             <text encoding="utf8">DaSCH</text>
         </text-prop>
         <text-prop name="project-metadata:hasFileDescription">
-            <text encoding="xml">Document explaining how the api search works for the project, with examples.</text>
+            <text encoding="xml">Document explaining how to explore and retrieve information via the REST API</text>
         </text-prop>
         <text-prop name="project-metadata:hasFileName">
             <text encoding="utf8">Alice_in_DaSCHland_api_search_documentation.pdf</text>

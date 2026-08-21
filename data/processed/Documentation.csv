@@ -1,5 +1,5 @@
 ID,File Name,Description,Copyright,License List,URI DaSCH,Authorship,Authorship Resource,Time Stamp,File Size
-DOC_001,Alice_in_DaSCHland_api_search_documentation.pdf,"Document explaining how the api search works for the project, with examples.",DaSCH,CC BY 4.0,,Noémi Villars-Amberg,Noémi Villars-Amberg,,0.2
+DOC_001,Alice_in_DaSCHland_api_search_documentation.pdf,Document explaining how to explore and retrieve information via the REST API,DaSCH,CC BY 4.0,,Noémi Villars-Amberg,Noémi Villars-Amberg,,0.2
 DOC_002,Alice_in_DaSCHland_database_documentation.pdf,"Document explaining how the database is built, with description of each class and property as well as visualisations of the data model. ",DaSCH,CC BY 4.0,,Noémi Villars-Amberg,Noémi Villars-Amberg,,3.1
 DOC_003,Alice_in_DaSCHland_general_documentation.pdf,"General documentation about the project, explaining what data is to be found, how it was collected and what is specific about it. ",DaSCH,CC BY 4.0,,Noémi Villars-Amberg,Noémi Villars-Amberg,2026-08-21T06:51:58-00:00,0.2
 DOC_004,Alice_in_DaSCHland_search_documentation.pdf,Document explaining how to search for data in the project. ,DaSCH,CC BY 4.0,,Noémi Villars-Amberg,Noémi Villars-Amberg,,0.2
