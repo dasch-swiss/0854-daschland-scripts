@@ -40,8 +40,6 @@
             "Visualisation des données",
             "Vorzeigeprojekt"
         ],
-        "data_license": "http://rdfh.ch/licenses/cc-by-4.0",
-        "data_copyright_holder": "Alice in DaSCHland",
         "enabled_licenses": [
             "http://rdfh.ch/licenses/ai-generated",
             "http://rdfh.ch/licenses/cc-0-1.0",
@@ -661,82 +659,6 @@
                                 }
                             }
                         ]
-                    }
-                ]
-            },
-            {
-                "name": "License",
-                "labels": {
-                    "en": "License",
-                    "fr": "Licence"
-                },
-                "comments": {
-                    "en": "Licenses used in the project",
-                    "fr": "Licences en utilisation dans le projet"
-                },
-                "nodes": [
-                    {
-                        "name": "LIC_001",
-                        "labels": {
-                            "en": "CC0 1.0",
-                            "fr": "CC0 1.0"
-                        }
-                    },
-                    {
-                        "name": "LIC_002",
-                        "labels": {
-                            "en": "CC BY 4.0",
-                            "fr": "CC BY 4.0"
-                        }
-                    },
-                    {
-                        "name": "LIC_003",
-                        "labels": {
-                            "en": "CC BY-SA 4.0",
-                            "fr": "CC BY-SA 4.0"
-                        }
-                    },
-                    {
-                        "name": "LIC_004",
-                        "labels": {
-                            "en": "CC BY-NC 4.0",
-                            "fr": "CC BY-NC 4.0"
-                        }
-                    },
-                    {
-                        "name": "LIC_005",
-                        "labels": {
-                            "en": "CC BY-NC-SA 4.0",
-                            "fr": "CC BY-NC-SA 4.0"
-                        }
-                    },
-                    {
-                        "name": "LIC_006",
-                        "labels": {
-                            "en": "CC BY-ND 4.0",
-                            "fr": "CC BY-ND 4.0"
-                        }
-                    },
-                    {
-                        "name": "LIC_007",
-                        "labels": {
-                            "en": "CC BY-NC-ND 4.0",
-                            "fr": "CC BY-NC-ND 4.0"
-                        }
-                    },
-                    {
-                        "name": "LIC_008",
-                        "labels": {
-                            "en": "PDM 1.0",
-                            "fr": "PDM 1.0"
-                        }
-                    },
-                    {
-                        "name": "LIC_009",
-                        "labels": {
-                            "en": "Public Domain",
-                            "fr": "Domaine Public"
-                        }
                     }
                 ]
             },
@@ -1631,24 +1553,9 @@
                                 "gui_order": 10
                             },
                             {
-                                "propname": "project-metadata:hasAuthorshipResource",
-                                "cardinality": "0-n",
-                                "gui_order": 11
-                            },
-                            {
-                                "propname": "project-metadata:hasCopyrightResource",
-                                "cardinality": "0-1",
-                                "gui_order": 12
-                            },
-                            {
-                                "propname": "project-metadata:hasLicenseResource",
-                                "cardinality": "0-1",
-                                "gui_order": 13
-                            },
-                            {
                                 "propname": "project-metadata:hasID",
                                 "cardinality": "1",
-                                "gui_order": 14
+                                "gui_order": 11
                             }
                         ]
                     },
@@ -1723,24 +1630,9 @@
                                 "gui_order": 10
                             },
                             {
-                                "propname": "project-metadata:hasAuthorshipResource",
-                                "cardinality": "0-n",
-                                "gui_order": 11
-                            },
-                            {
-                                "propname": "project-metadata:hasCopyrightResource",
-                                "cardinality": "0-1",
-                                "gui_order": 12
-                            },
-                            {
-                                "propname": "project-metadata:hasLicenseResource",
-                                "cardinality": "0-1",
-                                "gui_order": 13
-                            },
-                            {
                                 "propname": "project-metadata:hasID",
                                 "cardinality": "1",
-                                "gui_order": 14
+                                "gui_order": 11
                             }
                         ]
                     },
@@ -1800,24 +1692,9 @@
                                 "gui_order": 7
                             },
                             {
-                                "propname": "project-metadata:hasAuthorshipResource",
-                                "cardinality": "0-n",
-                                "gui_order": 8
-                            },
-                            {
-                                "propname": "project-metadata:hasCopyrightResource",
-                                "cardinality": "0-1",
-                                "gui_order": 9
-                            },
-                            {
-                                "propname": "project-metadata:hasLicenseResource",
-                                "cardinality": "0-1",
-                                "gui_order": 10
-                            },
-                            {
                                 "propname": "project-metadata:hasID",
                                 "cardinality": "1",
-                                "gui_order": 11
+                                "gui_order": 8
                             }
                         ]
                     },
@@ -1867,24 +1744,9 @@
                                 "gui_order": 5
                             },
                             {
-                                "propname": "project-metadata:hasAuthorshipResource",
-                                "cardinality": "0-n",
-                                "gui_order": 8
-                            },
-                            {
-                                "propname": "project-metadata:hasCopyrightResource",
-                                "cardinality": "0-1",
-                                "gui_order": 9
-                            },
-                            {
-                                "propname": "project-metadata:hasLicenseResource",
-                                "cardinality": "0-1",
-                                "gui_order": 10
-                            },
-                            {
                                 "propname": "project-metadata:hasID",
                                 "cardinality": "1",
-                                "gui_order": 11
+                                "gui_order": 6
                             }
                         ]
                     },
@@ -1924,24 +1786,9 @@
                                 "gui_order": 3
                             },
                             {
-                                "propname": "project-metadata:hasAuthorshipResource",
-                                "cardinality": "0-n",
-                                "gui_order": 4
-                            },
-                            {
-                                "propname": "project-metadata:hasCopyrightResource",
-                                "cardinality": "0-1",
-                                "gui_order": 5
-                            },
-                            {
-                                "propname": "project-metadata:hasLicenseResource",
-                                "cardinality": "0-1",
-                                "gui_order": 6
-                            },
-                            {
                                 "propname": "project-metadata:hasID",
                                 "cardinality": "1",
-                                "gui_order": 7
+                                "gui_order": 4
                             }
                         ]
                     },
@@ -1991,29 +1838,14 @@
                                 "gui_order": 5
                             },
                             {
-                                "propname": "project-metadata:hasAuthorshipResource",
-                                "cardinality": "0-n",
-                                "gui_order": 6
-                            },
-                            {
-                                "propname": "project-metadata:hasCopyrightResource",
-                                "cardinality": "0-1",
-                                "gui_order": 7
-                            },
-                            {
-                                "propname": "project-metadata:hasLicenseResource",
-                                "cardinality": "0-1",
-                                "gui_order": 8
-                            },
-                            {
                                 "propname": "project-metadata:hasSeqnum",
                                 "cardinality": "0-1",
-                                "gui_order": 9
+                                "gui_order": 6
                             },
                             {
                                 "propname": "project-metadata:hasID",
                                 "cardinality": "1",
-                                "gui_order": 10
+                                "gui_order": 7
                             }
                         ]
                     },
@@ -2067,24 +1899,9 @@
                                 "gui_order": 6
                             },
                             {
-                                "propname": "project-metadata:hasAuthorshipResource",
-                                "cardinality": "0-n",
-                                "gui_order": 7
-                            },
-                            {
-                                "propname": "project-metadata:hasCopyrightResource",
-                                "cardinality": "0-1",
-                                "gui_order": 8
-                            },
-                            {
-                                "propname": "project-metadata:hasLicenseResource",
-                                "cardinality": "0-1",
-                                "gui_order": 9
-                            },
-                            {
                                 "propname": "project-metadata:hasID",
                                 "cardinality": "1",
-                                "gui_order": 10
+                                "gui_order": 7
                             }
                         ]
                     },
@@ -2124,24 +1941,9 @@
                                 "gui_order": 3
                             },
                             {
-                                "propname": "project-metadata:hasAuthorshipResource",
-                                "cardinality": "0-n",
-                                "gui_order": 4
-                            },
-                            {
-                                "propname": "project-metadata:hasCopyrightResource",
-                                "cardinality": "0-1",
-                                "gui_order": 5
-                            },
-                            {
-                                "propname": "project-metadata:hasLicenseResource",
-                                "cardinality": "0-1",
-                                "gui_order": 6
-                            },
-                            {
                                 "propname": "project-metadata:hasID",
                                 "cardinality": "1",
-                                "gui_order": 7
+                                "gui_order": 4
                             }
                         ]
                     },
@@ -2191,24 +1993,9 @@
                                 "gui_order": 5
                             },
                             {
-                                "propname": "project-metadata:hasAuthorshipResource",
-                                "cardinality": "0-n",
-                                "gui_order": 6
-                            },
-                            {
-                                "propname": "project-metadata:hasCopyrightResource",
-                                "cardinality": "0-1",
-                                "gui_order": 7
-                            },
-                            {
-                                "propname": "project-metadata:hasLicenseResource",
-                                "cardinality": "0-1",
-                                "gui_order": 8
-                            },
-                            {
                                 "propname": "project-metadata:hasID",
                                 "cardinality": "1",
-                                "gui_order": 9
+                                "gui_order": 6
                             }
                         ]
                     },
@@ -2261,21 +2048,6 @@
                                 "propname": "project-metadata:hasFileSize",
                                 "cardinality": "0-1",
                                 "gui_order": 6
-                            },
-                            {
-                                "propname": "project-metadata:hasAuthorshipResource",
-                                "cardinality": "0-n",
-                                "gui_order": 7
-                            },
-                            {
-                                "propname": "project-metadata:hasCopyrightResource",
-                                "cardinality": "0-1",
-                                "gui_order": 8
-                            },
-                            {
-                                "propname": "project-metadata:hasLicenseResource",
-                                "cardinality": "0-1",
-                                "gui_order": 9
                             },
                             {
                                 "propname": "project-metadata:hasID",
@@ -2435,12 +2207,12 @@
                             {
                                 "propname": ":hasGeoname",
                                 "cardinality": "0-1",
-                                "gui_order": 8
+                                "gui_order": 5
                             },
                             {
                                 "propname": ":hasWikidataLink",
                                 "cardinality": "0-1",
-                                "gui_order": 9
+                                "gui_order": 6
                             }
                         ]
                     },
@@ -2627,75 +2399,6 @@
                             "it": "Data e ora"
                         },
                         "gui_element": "TimeStamp"
-                    },
-                    {
-                        "name": "hasAuthorshipResource",
-                        "super": [
-                            "hasValue",
-                            "foaf:person",
-                            "schema:author",
-                            "crm:E21_Person"
-                        ],
-                        "object": "TextValue",
-                        "labels": {
-                            "de": "Autor der Resource",
-                            "en": "Author of the resource",
-                            "fr": "Auteur·rice de la ressource",
-                            "it": "Autore della risorsa"
-                        },
-                        "comments": {
-                            "de": "Autor der Resource",
-                            "en": "Author of the resource",
-                            "fr": "Auteur·rice de la ressource",
-                            "it": "Autore della risorsa"
-                        },
-                        "gui_element": "SimpleText"
-                    },
-                    {
-                        "name": "hasCopyrightResource",
-                        "super": [
-                            "hasValue",
-                            "schema:copyrightHolder",
-                            "crm:P105_right_held_by"
-                        ],
-                        "object": "TextValue",
-                        "labels": {
-                            "de": "Urheberrecht der Resource",
-                            "en": "Copyright of the resource",
-                            "fr": "Droits d'auteur de la ressource",
-                            "it": "Copyright della risorsa"
-                        },
-                        "comments": {
-                            "de": "Urheberrecht der Resource",
-                            "en": "Copyright of the resource",
-                            "fr": "Droits d'auteur de la ressource",
-                            "it": "Copyright della risorsa"
-                        },
-                        "gui_element": "SimpleText"
-                    },
-                    {
-                        "name": "hasLicenseResource",
-                        "super": [
-                            "hasValue",
-                            "schema:license"
-                        ],
-                        "object": "ListValue",
-                        "labels": {
-                            "de": "Lizenz der Resource",
-                            "en": "License of the resource",
-                            "fr": "Licence de la ressource",
-                            "it": "Licenza della risorsa"
-                        },
-                        "comments": {
-                            "de": "Lizenz der Resource",
-                            "en": "License of the resource",
-                            "fr": "Licence de la ressource",
-                            "it": "Licenza della risorsa"
-                        },
-                        "gui_element": "List",
-                        "gui_attributes": {
-                            "hlist": "License"
-                        }
                     },
                     {
                         "name": "hasSeqnum",
