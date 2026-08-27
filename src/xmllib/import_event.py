@@ -42,16 +42,12 @@ def main() -> list[Resource]:
             "Alternative": ":EventAlternative",
         }
 
-        class_name = event_type_to_restype_lookup.get(row["Event Type"])
-        if class_name is not None:
-            resource = Resource.create_new(
-                res_id=resource_id,
-                restype=class_name,
-                label=resource_label,
-                authorship=authors_resource,
-            )
-        else:
-            continue
+        resource = Resource.create_new(
+            res_id=resource_id,
+            restype=event_type_to_restype_lookup[row["Event Type"]],
+            label=resource_label,
+            authorship=authors_resource,
+        )
 
         # add properties to resource
         resource.add_simpletext("project-metadata:hasID", resource_id)
