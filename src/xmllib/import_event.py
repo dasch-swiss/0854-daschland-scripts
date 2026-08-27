@@ -51,7 +51,7 @@ def main() -> list[Resource]:
                 authorship=authors_resource,
             )
         else:
-            continue  # TODO: check if this is desired
+            continue
 
         # add properties to resource
         resource.add_simpletext("project-metadata:hasID", resource_id)
