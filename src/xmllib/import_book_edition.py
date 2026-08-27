@@ -47,8 +47,6 @@ def main() -> list[Resource]:
         resource.add_decimal_optional("project-metadata:hasFileSize", row["File Size"])
         resource.add_date_multiple(":hasDate", date_published)
         resource.add_uri_optional(":hasWikidataLink", row["Wikidata Link"])
-        resource.add_simpletext("project-metadata:hasCopyrightResource", "DaSCH")
-        resource.add_list("project-metadata:hasLicenseResource", "License", "LIC_002")
 
         # append resource to list
         all_resources.append(resource)

@@ -41,8 +41,6 @@ def main() -> list[Resource]:
         )
         resource.add_simpletext("project-metadata:hasID", row["ID"])
         resource.add_richtext(":hasDescription", row["Description"])
-        resource.add_simpletext("project-metadata:hasCopyrightResource", "DaSCH")
-        resource.add_list("project-metadata:hasLicenseResource", "License", "LIC_002")
         resource.add_uri(":hasUrl", row["Source"])
         resource.add_date_multiple(":hasDate", date_published)
 

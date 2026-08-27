@@ -40,8 +40,6 @@ def main() -> list[Resource]:
         resource.add_simpletext("project-metadata:hasFileName", row["File Name"])
         resource.add_richtext(":hasDescription", row["Description"])
         resource.add_textarea_optional(":hasCast", row["Cast"])
-        resource.add_simpletext("project-metadata:hasCopyrightResource", "DaSCH")
-        resource.add_list("project-metadata:hasLicenseResource", "License", "LIC_002")
 
         # append resource to list
         all_resources.append(resource)

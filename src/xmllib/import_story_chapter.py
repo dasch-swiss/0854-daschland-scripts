@@ -61,8 +61,6 @@ def main() -> list[Resource]:
         resource.add_link_multiple(":linkToAudio", audio_ids)
         resource.add_link_multiple(":linkToEvent", event_ids)
         resource.add_link_multiple(":linkToLocation", location_ids)
-        resource.add_simpletext("project-metadata:hasCopyrightResource", "DaSCH")
-        resource.add_list("project-metadata:hasLicenseResource", "License", "LIC_002")
         # append resource to list
         all_resources.append(resource)
 

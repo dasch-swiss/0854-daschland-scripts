@@ -73,8 +73,6 @@ def main() -> list[Resource]:
         resource.add_richtext_optional(":hasQuote", row["Quote"])
         resource.add_list_multiple(prop_name=":hasKeywordList", list_name="Keyword", values=keyword_names)
         resource.add_uri_optional(":hasWikidataLink", row["Wikidata Link"])
-        resource.add_simpletext("project-metadata:hasCopyrightResource", "DaSCH")
-        resource.add_list("project-metadata:hasLicenseResource", "License", "LIC_002")
 
         # append resource to list
         all_resources.append(resource)

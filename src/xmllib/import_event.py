@@ -71,8 +71,6 @@ def main() -> list[Resource]:
         # add properties for adventure event:
         resource.add_link_multiple(":linkToCharacter", adventure_character_ids)
         resource.add_bool_optional(":isDangerous", dangerous)
-        resource.add_simpletext("project-metadata:hasCopyrightResource", "DaSCH")
-        resource.add_list("project-metadata:hasLicenseResource", "License", "LIC_002")
 
         # add resource to list
         all_resources.append(resource)
