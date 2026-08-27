@@ -35,17 +35,23 @@ def main() -> list[Resource]:
         authors_resource = create_list_from_input(input_value=row["Authorship Resource"], separator=",")
         dangerous = convert_to_bool_string(row["Dangerous"]) if is_nonempty_value(row["Dangerous"]) else ""
 
-        # create resource, label and id
-        if row["Event Type"] == "Social":
-            resource = Resource.create_new(res_id=resource_id, restype=":EventSocial", label=resource_label)
-        elif row["Event Type"] == "Conflict":
-            resource = Resource.create_new(res_id=resource_id, restype=":EventConflict", label=resource_label)
-        elif row["Event Type"] == "Adventure":
-            resource = Resource.create_new(res_id=resource_id, restype=":EventAdventure", label=resource_label)
-        elif row["Event Type"] == "Alternative":
-            resource = Resource.create_new(res_id=resource_id, restype=":EventAlternative", label=resource_label)
+        event_type_to_restype_lookup = {
+            "Social": ":EventSocial",
+            "Conflict": ":EventConflict",
+            "Adventure": ":EventAdventure",
+            "Alternative": ":EventAlternative",
+        }
+
+        class_name = event_type_to_restype_lookup.get(row["Event Type"])
+        if class_name is not None:
+            resource = Resource.create_new(
+                res_id=resource_id,
+                restype=class_name,
+                label=resource_label,
+                authorship=authors_resource,
+            )
         else:
-            continue
+            continue  # TODO: check if this is desired
 
         # add properties to resource
         resource.add_simpletext("project-metadata:hasID", resource_id)
@@ -67,7 +73,6 @@ def main() -> list[Resource]:
         resource.add_bool_optional(":isDangerous", dangerous)
         resource.add_simpletext("project-metadata:hasCopyrightResource", "DaSCH")
         resource.add_list("project-metadata:hasLicenseResource", "License", "LIC_002")
-        resource.add_simpletext_multiple("project-metadata:hasAuthorshipResource", authors_resource)
 
         # add resource to list
         all_resources.append(resource)

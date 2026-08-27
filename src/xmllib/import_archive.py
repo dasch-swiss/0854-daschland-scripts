@@ -23,7 +23,12 @@ def main() -> list[Resource]:
         authors_resource = create_list_from_input(input_value=row["Authorship Resource"], separator=",")
 
         # create resource, label and id
-        resource = Resource.create_new(res_id=row["ID"], restype="project-metadata:Archive", label=row["File Name"])
+        resource = Resource.create_new(
+            res_id=row["ID"],
+            restype="project-metadata:Archive",
+            label=row["File Name"],
+            authorship=authors_resource,
+        )
 
         # add file to resource
         resource.add_file(
@@ -41,7 +46,6 @@ def main() -> list[Resource]:
         resource.add_decimal_optional("project-metadata:hasFileSize", row["File Size"])
         resource.add_simpletext("project-metadata:hasCopyrightResource", "DaSCH")
         resource.add_list("project-metadata:hasLicenseResource", "License", "LIC_002")
-        resource.add_simpletext_multiple("project-metadata:hasAuthorshipResource", authors_resource)
 
         # append resource to list
         all_resources.append(resource)

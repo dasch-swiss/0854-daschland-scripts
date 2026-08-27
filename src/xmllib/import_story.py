@@ -21,7 +21,12 @@ def main() -> list[Resource]:
         authors_resource = create_list_from_input(input_value=row["Authorship Resource"], separator=",")
 
         # create resource, label and id
-        resource = Resource.create_new(res_id=row["ID"], restype=":Story", label=row["Name"])
+        resource = Resource.create_new(
+            res_id=row["ID"],
+            restype=":Story",
+            label=row["Name"],
+            authorship=authors_resource,
+        )
 
         # add properties to resource
         resource.add_simpletext("project-metadata:hasID", row["ID"])
@@ -37,7 +42,6 @@ def main() -> list[Resource]:
         resource.add_uri_optional(":hasWikidataLink", row["Wikidata Link"])
         resource.add_simpletext("project-metadata:hasCopyrightResource", "DaSCH")
         resource.add_list("project-metadata:hasLicenseResource", "License", "LIC_002")
-        resource.add_simpletext_multiple("project-metadata:hasAuthorshipResource", authors_resource)
 
         # append resource to list
         all_resources.append(resource)
