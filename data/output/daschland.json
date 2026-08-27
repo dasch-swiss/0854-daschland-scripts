@@ -2467,21 +2467,6 @@
                                 "propname": ":hasFileSize",
                                 "cardinality": "0-1",
                                 "gui_order": 7
-                            },
-                            {
-                                "propname": ":hasCopyrightResource",
-                                "cardinality": "1",
-                                "gui_order": 1
-                            },
-                            {
-                                "propname": ":hasLicenseResource",
-                                "cardinality": "1",
-                                "gui_order": 2
-                            },
-                            {
-                                "propname": ":hasAuthorshipResource",
-                                "cardinality": "1-n",
-                                "gui_order": 3
                             }
                         ]
                     },
@@ -2529,21 +2514,6 @@
                                 "propname": ":hasFileSize",
                                 "cardinality": "0-1",
                                 "gui_order": 7
-                            },
-                            {
-                                "propname": ":hasCopyrightResource",
-                                "cardinality": "1",
-                                "gui_order": 1
-                            },
-                            {
-                                "propname": ":hasLicenseResource",
-                                "cardinality": "1",
-                                "gui_order": 2
-                            },
-                            {
-                                "propname": ":hasAuthorshipResource",
-                                "cardinality": "1-n",
-                                "gui_order": 3
                             }
                         ]
                     },
@@ -2591,21 +2561,6 @@
                                 "propname": ":hasFileSize",
                                 "cardinality": "0-1",
                                 "gui_order": 4
-                            },
-                            {
-                                "propname": ":hasCopyrightResource",
-                                "cardinality": "1",
-                                "gui_order": 6
-                            },
-                            {
-                                "propname": ":hasLicenseResource",
-                                "cardinality": "1",
-                                "gui_order": 7
-                            },
-                            {
-                                "propname": ":hasAuthorshipResource",
-                                "cardinality": "1-n",
-                                "gui_order": 8
                             }
                         ]
                     }
