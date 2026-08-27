@@ -69,6 +69,21 @@
             <text encoding="utf8">AR_001</text>
         </text-prop>
     </resource>
+    <resource label="Documentation_Source.zip" id="AR_002" restype="project-metadata:Archive" authorship-id="authorship_9">
+        <bitstream license="http://rdfh.ch/licenses/cc-by-4.0" copyright-holder="DaSCH" authorship-id="authorship_9">data/multimedia/archive/Documentation_Source.zip</bitstream>
+        <text-prop name="project-metadata:hasFileDescription">
+            <text encoding="xml">Archive of the files used to create the project documentation. </text>
+        </text-prop>
+        <text-prop name="project-metadata:hasFileName">
+            <text encoding="utf8">Documentation_Source.zip</text>
+        </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>4.9</decimal>
+        </decimal-prop>
+        <text-prop name="project-metadata:hasID">
+            <text encoding="utf8">AR_002</text>
+        </text-prop>
+    </resource>
     <audio-segment label="Alice in Wonderland - Dramatis Personae - Intro" id="AUS_001">
         <isSegmentOf>A_01</isSegmentOf>
         <hasSegmentBounds segment_start="0" segment_end="15"/>
@@ -3412,43 +3427,43 @@ Shrill Voice/The Fishes: Liberty Stump</text>
             <text encoding="utf8">CH_054</text>
         </text-prop>
     </resource>
-    <resource label="DaSCHland_Data_Model.pdf" id="DOC_001" restype="project-metadata:ProjectDocumentation" authorship-id="authorship_3">
-        <bitstream license="http://rdfh.ch/licenses/cc-by-4.0" copyright-holder="DaSCH" authorship-id="authorship_9">data/multimedia/documentation/DaSCHland_Data_Model.pdf</bitstream>
+    <resource label="Alice_in_DaSCHland_api_search_documentation.pdf" id="DOC_001" restype="project-metadata:ProjectDocumentation" authorship-id="authorship_9">
+        <bitstream license="http://rdfh.ch/licenses/cc-by-4.0" copyright-holder="DaSCH" authorship-id="authorship_9">data/multimedia/documentation/Alice_in_DaSCHland_api_search_documentation.pdf</bitstream>
         <text-prop name="project-metadata:hasFileDescription">
-            <text encoding="xml">Visualisations of the data model of project Alice in DaSCHland, with details of classes and properties</text>
+            <text encoding="xml">Document explaining how to explore and retrieve information via the REST API</text>
         </text-prop>
         <text-prop name="project-metadata:hasFileName">
-            <text encoding="utf8">DaSCHland_Data_Model.pdf</text>
-        </text-prop>
-        <decimal-prop name="project-metadata:hasFileSize">
-            <decimal>0.8</decimal>
-        </decimal-prop>
-        <text-prop name="project-metadata:hasID">
-            <text encoding="utf8">DOC_001</text>
-        </text-prop>
-    </resource>
-    <resource label="DaSCHland_Data_Model_Links.pdf" id="DOC_002" restype="project-metadata:ProjectDocumentation" authorship-id="authorship_3">
-        <bitstream license="http://rdfh.ch/licenses/cc-by-4.0" copyright-holder="DaSCH" authorship-id="authorship_9">data/multimedia/documentation/DaSCHland_Data_Model_Links.pdf</bitstream>
-        <text-prop name="project-metadata:hasFileDescription">
-            <text encoding="xml">Visualisations of the data model, with links between the classes</text>
-        </text-prop>
-        <text-prop name="project-metadata:hasFileName">
-            <text encoding="utf8">DaSCHland_Data_Model_Links.pdf</text>
+            <text encoding="utf8">Alice_in_DaSCHland_api_search_documentation.pdf</text>
         </text-prop>
         <decimal-prop name="project-metadata:hasFileSize">
             <decimal>0.2</decimal>
         </decimal-prop>
         <text-prop name="project-metadata:hasID">
+            <text encoding="utf8">DOC_001</text>
+        </text-prop>
+    </resource>
+    <resource label="Alice_in_DaSCHland_database_documentation.pdf" id="DOC_002" restype="project-metadata:ProjectDocumentation" authorship-id="authorship_9">
+        <bitstream license="http://rdfh.ch/licenses/cc-by-4.0" copyright-holder="DaSCH" authorship-id="authorship_9">data/multimedia/documentation/Alice_in_DaSCHland_database_documentation.pdf</bitstream>
+        <text-prop name="project-metadata:hasFileDescription">
+            <text encoding="xml">Document explaining how the database is built, with description of each class and property as well as visualisations of the data model. </text>
+        </text-prop>
+        <text-prop name="project-metadata:hasFileName">
+            <text encoding="utf8">Alice_in_DaSCHland_database_documentation.pdf</text>
+        </text-prop>
+        <decimal-prop name="project-metadata:hasFileSize">
+            <decimal>3.1</decimal>
+        </decimal-prop>
+        <text-prop name="project-metadata:hasID">
             <text encoding="utf8">DOC_002</text>
         </text-prop>
     </resource>
-    <resource label="DaSCHland_Data_Model_Legend.pdf" id="DOC_003" restype="project-metadata:ProjectDocumentation" authorship-id="authorship_3">
-        <bitstream license="http://rdfh.ch/licenses/cc-by-4.0" copyright-holder="DaSCH" authorship-id="authorship_9">data/multimedia/documentation/DaSCHland_Data_Model_Legend.pdf</bitstream>
+    <resource label="Alice_in_DaSCHland_general_documentation.pdf" id="DOC_003" restype="project-metadata:ProjectDocumentation" authorship-id="authorship_9">
+        <bitstream license="http://rdfh.ch/licenses/cc-by-4.0" copyright-holder="DaSCH" authorship-id="authorship_9">data/multimedia/documentation/Alice_in_DaSCHland_general_documentation.pdf</bitstream>
         <text-prop name="project-metadata:hasFileDescription">
-            <text encoding="xml">Legend to the Visualisations of the data model</text>
+            <text encoding="xml">General documentation about the project, explaining what data is to be found, how it was collected and what is specific about it. </text>
         </text-prop>
         <text-prop name="project-metadata:hasFileName">
-            <text encoding="utf8">DaSCHland_Data_Model_Legend.pdf</text>
+            <text encoding="utf8">Alice_in_DaSCHland_general_documentation.pdf</text>
         </text-prop>
         <decimal-prop name="project-metadata:hasFileSize">
             <decimal>0.2</decimal>
@@ -3456,17 +3471,20 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">DOC_003</text>
         </text-prop>
+        <time-prop name="project-metadata:hasTimeStamp">
+            <time>2026-08-21T06:51:58-00:00</time>
+        </time-prop>
     </resource>
-    <resource label="DaSCHland FAQ.pdf" id="DOC_004" restype="project-metadata:ProjectDocumentation" authorship-id="authorship_3">
-        <bitstream license="http://rdfh.ch/licenses/cc-by-4.0" copyright-holder="DaSCH" authorship-id="authorship_9">data/multimedia/documentation/DaSCHland FAQ.pdf</bitstream>
+    <resource label="Alice_in_DaSCHland_search_documentation.pdf" id="DOC_004" restype="project-metadata:ProjectDocumentation" authorship-id="authorship_9">
+        <bitstream license="http://rdfh.ch/licenses/cc-by-4.0" copyright-holder="DaSCH" authorship-id="authorship_9">data/multimedia/documentation/Alice_in_DaSCHland_search_documentation.pdf</bitstream>
         <text-prop name="project-metadata:hasFileDescription">
-            <text encoding="xml">Frequent asked questions to the DaSCH project Alice in DaSCHland</text>
+            <text encoding="xml">Document explaining how to search for data in the project. </text>
         </text-prop>
         <text-prop name="project-metadata:hasFileName">
-            <text encoding="utf8">DaSCHland FAQ.pdf</text>
+            <text encoding="utf8">Alice_in_DaSCHland_search_documentation.pdf</text>
         </text-prop>
         <decimal-prop name="project-metadata:hasFileSize">
-            <decimal>0.8</decimal>
+            <decimal>0.2</decimal>
         </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">DOC_004</text>
