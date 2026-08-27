@@ -1026,30 +1026,6 @@
                         }
                     },
                     {
-                        "name": "hasLicenseList",
-                        "super": [
-                            "hasValue",
-                            "schema:license"
-                        ],
-                        "object": "ListValue",
-                        "labels": {
-                            "de": "Lizenz",
-                            "en": "License",
-                            "fr": "Licence",
-                            "it": "Licenza"
-                        },
-                        "comments": {
-                            "de": "Lizenz zur Nutzung der Mediendatei",
-                            "en": "License of use of the Media file",
-                            "fr": "Licence d'utilisation du fichier média",
-                            "it": "Licenza d'uso del file multimediale"
-                        },
-                        "gui_element": "List",
-                        "gui_attributes": {
-                            "hlist": "License"
-                        }
-                    },
-                    {
                         "name": "hasName",
                         "super": [
                             "hasValue",
