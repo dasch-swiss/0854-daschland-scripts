@@ -25,13 +25,24 @@ def main() -> list[Resource]:
         image_ids = create_list_from_input(row["Image ID"], separator=",")
         authors_resource = create_list_from_input(input_value=row["Authorship Resource"], separator=",")
 
-        # create resource, label and id
-        if row["Location Type List"] == "Real World":
-            resource = Resource.create_new(res_id=resource_id, restype=":LocationRealWorld", label=resource_label)
-        elif row["Location Type List"] == "Wonderland":
-            resource = Resource.create_new(res_id=resource_id, restype=":LocationWonderland", label=resource_label)
+        location_type_to_restype_lookup = {
+            "Real World": ":LocationRealWorld",
+            "Wonderland": ":LocationWonderland",
+        }
+
+        restype_found = location_type_to_restype_lookup.get(row["Location Type List"])
+        if restype_found is not None:
+            restype = restype_found
         else:
-            resource = Resource.create_new(res_id=resource_id, restype=":Location", label=resource_label)
+            restype = ":Location"
+
+        # create resource, label and id
+        resource = Resource.create_new(
+            res_id=resource_id,
+            restype=restype,
+            label=resource_label,
+            authorship=authors_resource,
+        )
 
         # add properties to resource
         resource.add_simpletext("project-metadata:hasID", resource_id)
@@ -40,9 +51,6 @@ def main() -> list[Resource]:
         resource.add_link_multiple(":linkToImage", image_ids)
         resource.add_geoname_optional(":hasGeoname", row["Geoname ID"])
         resource.add_uri_optional(":hasWikidataLink", row["Wikidata Link"])
-        resource.add_simpletext("project-metadata:hasCopyrightResource", "DaSCH")
-        resource.add_list("project-metadata:hasLicenseResource", "License", "LIC_002")
-        resource.add_simpletext_multiple("project-metadata:hasAuthorshipResource", authors_resource)
 
         # append resource to list
         all_resources.append(resource)

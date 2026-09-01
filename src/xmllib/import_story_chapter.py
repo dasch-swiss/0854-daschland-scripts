@@ -46,6 +46,7 @@ def main() -> list[Resource]:
             label=f"{story} - Chapter {row['Chapter Number']} - {row['Name']}"
             if pd.notna(row["Chapter Number"])
             else f"{story} - {row['Name']}",
+            authorship=authors_resource,
         )
 
         # add properties to resource
@@ -60,9 +61,6 @@ def main() -> list[Resource]:
         resource.add_link_multiple(":linkToAudio", audio_ids)
         resource.add_link_multiple(":linkToEvent", event_ids)
         resource.add_link_multiple(":linkToLocation", location_ids)
-        resource.add_simpletext("project-metadata:hasCopyrightResource", "DaSCH")
-        resource.add_list("project-metadata:hasLicenseResource", "License", "LIC_002")
-        resource.add_simpletext_multiple("project-metadata:hasAuthorshipResource", authors_resource)
         # append resource to list
         all_resources.append(resource)
 

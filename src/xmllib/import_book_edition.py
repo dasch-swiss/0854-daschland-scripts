@@ -24,7 +24,12 @@ def main() -> list[Resource]:
         date_published = find_dates_in_string(row["Date Published"])
 
         # create resource, label and id
-        resource = Resource.create_new(res_id=row["ID"], restype=":BookEdition", label=row["File Name"])
+        resource = Resource.create_new(
+            res_id=row["ID"],
+            restype=":BookEdition",
+            label=row["File Name"],
+            authorship=authors_resource,
+        )
 
         # add file to resource
         resource.add_file(
@@ -42,9 +47,6 @@ def main() -> list[Resource]:
         resource.add_decimal_optional("project-metadata:hasFileSize", row["File Size"])
         resource.add_date_multiple(":hasDate", date_published)
         resource.add_uri_optional(":hasWikidataLink", row["Wikidata Link"])
-        resource.add_simpletext("project-metadata:hasCopyrightResource", "DaSCH")
-        resource.add_list("project-metadata:hasLicenseResource", "License", "LIC_002")
-        resource.add_simpletext_multiple("project-metadata:hasAuthorshipResource", authors_resource)
 
         # append resource to list
         all_resources.append(resource)

@@ -37,7 +37,12 @@ def main() -> list[Resource]:
         authors_resource = create_list_from_input(input_value=row["Authorship Resource"], separator=",")
 
         # create resource, label and id
-        resource = Resource.create_new(res_id=row["ID"], restype=restype, label=description)
+        resource = Resource.create_new(
+            res_id=row["ID"],
+            restype=restype,
+            label=description,
+            authorship=authors_resource,
+        )
 
         # add file to resource
         resource.add_file(
@@ -52,9 +57,6 @@ def main() -> list[Resource]:
         resource.add_simpletext(value=row["ID"], prop_name="project-metadata:hasID")
         resource.add_time_optional("project-metadata:hasTimeStamp", row["Time Stamp"])
         resource.add_decimal_optional("project-metadata:hasFileSize", row["File Size"])
-        resource.add_simpletext("project-metadata:hasCopyrightResource", "DaSCH")
-        resource.add_list("project-metadata:hasLicenseResource", "License", "LIC_002")
-        resource.add_simpletext_multiple("project-metadata:hasAuthorshipResource", authors_resource)
         resource.add_simpletext("project-metadata:hasFileName", row["File Name"])
         resource.add_link_multiple(":isPartOfStoryChapter", chapter_id)
         resource.add_link_multiple(":isPartOfCharacter", character_id)

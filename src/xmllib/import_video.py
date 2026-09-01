@@ -26,6 +26,7 @@ def main() -> list[Resource]:
             res_id=row["ID"],
             restype=":Video",
             label=row["Label"],
+            authorship=authors_resource,
         )
 
         # add file to resource
@@ -41,9 +42,6 @@ def main() -> list[Resource]:
         resource.add_time_optional("project-metadata:hasTimeStamp", row["Time Stamp"])
         resource.add_decimal_optional("project-metadata:hasFileSize", row["File Size"])
         resource.add_uri_optional(":hasWikidataLink", row["Wikidata Link"])
-        resource.add_simpletext("project-metadata:hasCopyrightResource", "DaSCH")
-        resource.add_list("project-metadata:hasLicenseResource", "License", "LIC_002")
-        resource.add_simpletext_multiple("project-metadata:hasAuthorshipResource", authors_resource)
         resource.add_simpletext("project-metadata:hasFileName", row["File Name"])
         resource.add_richtext(":hasDescription", row["Description"])
         resource.add_textarea_optional(":hasCast", row["Cast"])

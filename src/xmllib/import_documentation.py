@@ -26,11 +26,15 @@ def main() -> list[Resource]:
             res_id=row["ID"],
             restype="project-metadata:ProjectDocumentation",
             label=row["File Name"],
+            authorship=authors_resource,
         )
 
         # add file to resource
         resource.add_file(
-            documentation_path, license=LicenseRecommended.CC.BY, copyright_holder=row["Copyright"], authorship=authors
+            documentation_path,
+            license=LicenseRecommended.CC.BY,
+            copyright_holder=row["Copyright"],
+            authorship=authors,
         )
 
         # add properties to resource
@@ -39,9 +43,6 @@ def main() -> list[Resource]:
         resource.add_simpletext("project-metadata:hasFileName", row["File Name"])
         resource.add_time_optional("project-metadata:hasTimeStamp", row["Time Stamp"])
         resource.add_decimal_optional("project-metadata:hasFileSize", row["File Size"])
-        resource.add_simpletext("project-metadata:hasCopyrightResource", "DaSCH")
-        resource.add_list("project-metadata:hasLicenseResource", "License", "LIC_002")
-        resource.add_simpletext_multiple("project-metadata:hasAuthorshipResource", authors_resource)
 
         # append resource to list
         all_resources.append(resource)
