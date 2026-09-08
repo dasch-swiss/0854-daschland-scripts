@@ -7286,6 +7286,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name=":hasName">
             <text encoding="utf8">Riverbank</text>
         </text-prop>
+        <region-preview-prop name=":hasPreview">
+            <region-preview>preview_ids</region-preview>
+        </region-preview-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">L_001</text>
         </text-prop>
@@ -7300,6 +7303,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name=":hasName">
             <text encoding="utf8">Rabbit Hole</text>
         </text-prop>
+        <region-preview-prop name=":hasPreview">
+            <region-preview>preview_ids</region-preview>
+        </region-preview-prop>
         <resptr-prop name=":linkToImage">
             <resptr>I_006</resptr>
         </resptr-prop>
@@ -7317,6 +7323,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name=":hasName">
             <text encoding="utf8">Duchess' house</text>
         </text-prop>
+        <region-preview-prop name=":hasPreview">
+            <region-preview>preview_ids</region-preview>
+        </region-preview-prop>
         <resptr-prop name=":linkToImage">
             <resptr>I_020</resptr>
         </resptr-prop>
@@ -7334,6 +7343,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name=":hasName">
             <text encoding="utf8">White Rabbit's house</text>
         </text-prop>
+        <region-preview-prop name=":hasPreview">
+            <region-preview>preview_ids</region-preview>
+        </region-preview-prop>
         <resptr-prop name=":linkToImage">
             <resptr>I_011</resptr>
             <resptr>I_012</resptr>
@@ -7353,6 +7365,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name=":hasName">
             <text encoding="utf8">Seacoast</text>
         </text-prop>
+        <region-preview-prop name=":hasPreview">
+            <region-preview>preview_ids</region-preview>
+        </region-preview-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">L_005</text>
         </text-prop>
@@ -7367,6 +7382,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name=":hasName">
             <text encoding="utf8">Palace of Hearts</text>
         </text-prop>
+        <region-preview-prop name=":hasPreview">
+            <region-preview>preview_ids</region-preview>
+        </region-preview-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">L_006</text>
         </text-prop>
@@ -7381,6 +7399,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name=":hasName">
             <text encoding="utf8">Mad Hatters's Tea Room</text>
         </text-prop>
+        <region-preview-prop name=":hasPreview">
+            <region-preview>preview_ids</region-preview>
+        </region-preview-prop>
         <resptr-prop name=":linkToImage">
             <resptr>I_025</resptr>
             <resptr>I_027</resptr>
@@ -7399,6 +7420,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name=":hasName">
             <text encoding="utf8">Pool of Tears</text>
         </text-prop>
+        <region-preview-prop name=":hasPreview">
+            <region-preview>preview_ids</region-preview>
+        </region-preview-prop>
         <resptr-prop name=":linkToImage">
             <resptr>I_007</resptr>
             <resptr>I_008</resptr>
@@ -7420,6 +7444,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name=":hasName">
             <text encoding="utf8">Oxford</text>
         </text-prop>
+        <region-preview-prop name=":hasPreview">
+            <region-preview>preview_ids</region-preview>
+        </region-preview-prop>
         <uri-prop name=":hasWikidataLink">
             <uri>https://www.wikidata.org/wiki/Q34217</uri>
         </uri-prop>
@@ -7440,6 +7467,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name=":hasName">
             <text encoding="utf8">England</text>
         </text-prop>
+        <region-preview-prop name=":hasPreview">
+            <region-preview>preview_ids</region-preview>
+        </region-preview-prop>
         <uri-prop name=":hasWikidataLink">
             <uri>https://www.wikidata.org/wiki/Q21</uri>
         </uri-prop>
@@ -7457,6 +7487,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name=":hasName">
             <text encoding="utf8">Hall of Doors</text>
         </text-prop>
+        <region-preview-prop name=":hasPreview">
+            <region-preview>preview_ids</region-preview>
+        </region-preview-prop>
         <resptr-prop name=":linkToImage">
             <resptr>I_003</resptr>
         </resptr-prop>
@@ -7474,6 +7507,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name=":hasName">
             <text encoding="utf8">Garden of Live Flowers</text>
         </text-prop>
+        <region-preview-prop name=":hasPreview">
+            <region-preview>preview_ids</region-preview>
+        </region-preview-prop>
         <resptr-prop name=":linkToImage">
             <resptr>I_052</resptr>
         </resptr-prop>
@@ -7491,6 +7527,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name=":hasName">
             <text encoding="utf8">Queen's Garden</text>
         </text-prop>
+        <region-preview-prop name=":hasPreview">
+            <region-preview>preview_ids</region-preview>
+        </region-preview-prop>
         <resptr-prop name=":linkToImage">
             <resptr>I_028</resptr>
             <resptr>I_029</resptr>
@@ -7509,6 +7548,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name=":hasName">
             <text encoding="utf8">Caterpillar’s Mushroom</text>
         </text-prop>
+        <region-preview-prop name=":hasPreview">
+            <region-preview>preview_ids</region-preview>
+        </region-preview-prop>
         <resptr-prop name=":linkToImage">
             <resptr>I_015</resptr>
         </resptr-prop>
@@ -7526,6 +7568,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name=":hasName">
             <text encoding="utf8">March Hare’s House</text>
         </text-prop>
+        <region-preview-prop name=":hasPreview">
+            <region-preview>preview_ids</region-preview>
+        </region-preview-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">L_015</text>
         </text-prop>
@@ -7540,6 +7585,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name=":hasName">
             <text encoding="utf8">Courtroom</text>
         </text-prop>
+        <region-preview-prop name=":hasPreview">
+            <region-preview>preview_ids</region-preview>
+        </region-preview-prop>
         <resptr-prop name=":linkToImage">
             <resptr>I_001</resptr>
             <resptr>I_040</resptr>
@@ -7559,6 +7607,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name=":hasName">
             <text encoding="utf8">Wood Where Things Have No Names</text>
         </text-prop>
+        <region-preview-prop name=":hasPreview">
+            <region-preview>preview_ids</region-preview>
+        </region-preview-prop>
         <resptr-prop name=":linkToImage">
             <resptr>I_060</resptr>
         </resptr-prop>
@@ -7576,6 +7627,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name=":hasName">
             <text encoding="utf8">Mock Turtle’s Beach (Gryphon’s Plateau)</text>
         </text-prop>
+        <region-preview-prop name=":hasPreview">
+            <region-preview>preview_ids</region-preview>
+        </region-preview-prop>
         <resptr-prop name=":linkToImage">
             <resptr>I_034</resptr>
             <resptr>I_035</resptr>
@@ -7594,6 +7648,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name=":hasName">
             <text encoding="utf8">Alice's home</text>
         </text-prop>
+        <region-preview-prop name=":hasPreview">
+            <region-preview>preview_ids</region-preview>
+        </region-preview-prop>
         <resptr-prop name=":linkToImage">
             <resptr>I_045</resptr>
             <resptr>I_046</resptr>
@@ -7613,6 +7670,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name=":hasName">
             <text encoding="utf8">Duchess' Kitchen</text>
         </text-prop>
+        <region-preview-prop name=":hasPreview">
+            <region-preview>preview_ids</region-preview>
+        </region-preview-prop>
         <resptr-prop name=":linkToImage">
             <resptr>I_021</resptr>
         </resptr-prop>
@@ -7630,6 +7690,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name=":hasName">
             <text encoding="utf8">Cheshire Cat's Tree</text>
         </text-prop>
+        <region-preview-prop name=":hasPreview">
+            <region-preview>preview_ids</region-preview>
+        </region-preview-prop>
         <resptr-prop name=":linkToImage">
             <resptr>I_023</resptr>
             <resptr>I_024</resptr>
@@ -7648,6 +7711,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name=":hasName">
             <text encoding="utf8">Queen's Croquet Ground</text>
         </text-prop>
+        <region-preview-prop name=":hasPreview">
+            <region-preview>preview_ids</region-preview>
+        </region-preview-prop>
         <resptr-prop name=":linkToImage">
             <resptr>I_030</resptr>
         </resptr-prop>
@@ -7665,6 +7731,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name=":hasName">
             <text encoding="utf8">Looking-Glass House</text>
         </text-prop>
+        <region-preview-prop name=":hasPreview">
+            <region-preview>preview_ids</region-preview>
+        </region-preview-prop>
         <resptr-prop name=":linkToImage">
             <resptr>I_047</resptr>
         </resptr-prop>
@@ -7682,6 +7751,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name=":hasName">
             <text encoding="utf8">Chessboard Land</text>
         </text-prop>
+        <region-preview-prop name=":hasPreview">
+            <region-preview>preview_ids</region-preview>
+        </region-preview-prop>
         <resptr-prop name=":linkToImage">
             <resptr>I_054</resptr>
         </resptr-prop>
@@ -7699,6 +7771,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name=":hasName">
             <text encoding="utf8">Sheep Shop</text>
         </text-prop>
+        <region-preview-prop name=":hasPreview">
+            <region-preview>preview_ids</region-preview>
+        </region-preview-prop>
         <resptr-prop name=":linkToImage">
             <resptr>I_070</resptr>
         </resptr-prop>
@@ -7716,6 +7791,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name=":hasName">
             <text encoding="utf8">Tweedledum and Tweedledee's Place</text>
         </text-prop>
+        <region-preview-prop name=":hasPreview">
+            <region-preview>preview_ids</region-preview>
+        </region-preview-prop>
         <resptr-prop name=":linkToImage">
             <resptr>I_061</resptr>
         </resptr-prop>
@@ -7733,6 +7811,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name=":hasName">
             <text encoding="utf8">Prison</text>
         </text-prop>
+        <region-preview-prop name=":hasPreview">
+            <region-preview>preview_ids</region-preview>
+        </region-preview-prop>
         <resptr-prop name=":linkToImage">
             <resptr>I_069</resptr>
         </resptr-prop>
@@ -7750,6 +7831,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name=":hasName">
             <text encoding="utf8">Humpty Dumpty's Wall</text>
         </text-prop>
+        <region-preview-prop name=":hasPreview">
+            <region-preview>preview_ids</region-preview>
+        </region-preview-prop>
         <resptr-prop name=":linkToImage">
             <resptr>I_072</resptr>
         </resptr-prop>
@@ -7767,6 +7851,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name=":hasName">
             <text encoding="utf8">Lion and Unicorn's Battleground</text>
         </text-prop>
+        <region-preview-prop name=":hasPreview">
+            <region-preview>preview_ids</region-preview>
+        </region-preview-prop>
         <resptr-prop name=":linkToImage">
             <resptr>I_078</resptr>
         </resptr-prop>
@@ -7784,6 +7871,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name=":hasName">
             <text encoding="utf8">White Knight's Path</text>
         </text-prop>
+        <region-preview-prop name=":hasPreview">
+            <region-preview>preview_ids</region-preview>
+        </region-preview-prop>
         <resptr-prop name=":linkToImage">
             <resptr>I_081</resptr>
             <resptr>I_082</resptr>
@@ -7803,6 +7893,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name=":hasName">
             <text encoding="utf8">Red Queen's Hill</text>
         </text-prop>
+        <region-preview-prop name=":hasPreview">
+            <region-preview>preview_ids</region-preview>
+        </region-preview-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">L_031</text>
         </text-prop>
@@ -7817,6 +7910,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         <text-prop name=":hasName">
             <text encoding="utf8">Chessboard's Final Square</text>
         </text-prop>
+        <region-preview-prop name=":hasPreview">
+            <region-preview>preview_ids</region-preview>
+        </region-preview-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">L_032</text>
         </text-prop>
