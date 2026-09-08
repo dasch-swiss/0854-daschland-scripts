@@ -3,6 +3,11 @@ R_001,I_001,0.02,0.1,0.22,0.5,White Rabbit Figure,#5b24bf
 R_002,I_002,0.2,0.02,0.9,0.9,White Rabbit Figure,#5b24bf
 R_003,I_006,0.02,0.5,0.3,0.8,White Rabbit Figure,#5b24bf
 R_004,I_037,0.05,0.05,0.95,0.95,White Rabbit Figure,#5b24bf
-R_005,I_012,0.05,0.5,0.95,0.8,White Rabbit Figure,#5b24bf
+R_005,I_012,0.05,0.45,0.95,0.8,White Rabbit Figure,#5b24bf
 R_006,I_030,0.02,0.02,0.98,0.7,Flamingo,#FF99AA
 R_007,I_032,0.05,0.3,0.2,0.6,Flamingo,#FF99AA
+R_008,I_011,0.01,0.01,0.5,0.5,White Rabbit's house,#54ff33
+R_009,I_012,0.02,0.1,0.98,0.9,White Rabbit's house,#54ff33
+R_010,I_013,0.1,0.6,0.8,0.95,White Rabbit's house,#54ff33
+R_011,I_023,0.02,0.02,0.95,0.5,Cheshire Cat's tree,#3368ff
+R_012,I_024,0.02,0.02,0.95,0.95,Cheshire Cat's tree,#3368ff

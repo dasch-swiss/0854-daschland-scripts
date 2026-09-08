@@ -5976,10 +5976,10 @@ Shrill Voice/The Fishes: Liberty Stump</text>
             <time>2008-08-11T22:41:14-00:00</time>
         </time-prop>
     </resource>
-    <resource label="Alice sittin in a train carriage" id="I_056" restype=":ImageOriginal" authorship-id="authorship_3">
+    <resource label="Alice sitting in a train carriage" id="I_056" restype=":ImageOriginal" authorship-id="authorship_3">
         <bitstream license="http://rdfh.ch/licenses/public-domain" copyright-holder="Public Domain" authorship-id="authorship_5">data/multimedia/image/IMG_2book13.jpg</bitstream>
         <text-prop name=":hasDescription">
-            <text encoding="xml">Alice sittin in a train carriage</text>
+            <text encoding="xml">Alice sitting in a train carriage</text>
         </text-prop>
         <resptr-prop name=":isPartOfCharacter">
             <resptr>CH_001</resptr>
@@ -6102,10 +6102,10 @@ Shrill Voice/The Fishes: Liberty Stump</text>
             <time>2008-08-11T21:52:26-00:00</time>
         </time-prop>
     </resource>
-    <resource label="Alice calling on Tweedledum and Tweeldee" id="I_061" restype=":ImageOriginal" authorship-id="authorship_3">
+    <resource label="Alice calling on Tweedledum and Tweedledee" id="I_061" restype=":ImageOriginal" authorship-id="authorship_3">
         <bitstream license="http://rdfh.ch/licenses/public-domain" copyright-holder="Public Domain" authorship-id="authorship_5">data/multimedia/image/IMG_2book18.jpg</bitstream>
         <text-prop name=":hasDescription">
-            <text encoding="xml">Alice calling on Tweedledum and Tweeldee</text>
+            <text encoding="xml">Alice calling on Tweedledum and Tweedledee</text>
         </text-prop>
         <resptr-prop name=":isPartOfCharacter">
             <resptr>CH_001</resptr>
@@ -7830,7 +7830,7 @@ Shrill Voice/The Fishes: Liberty Stump</text>
             <text encoding="utf8">data_daschland.xml</text>
         </text-prop>
         <decimal-prop name="project-metadata:hasFileSize">
-            <decimal>1.0</decimal>
+            <decimal>0.9</decimal>
         </decimal-prop>
         <text-prop name="project-metadata:hasID">
             <text encoding="utf8">MAT_001</text>
@@ -8164,7 +8164,7 @@ Shrill Voice/The Fishes: Liberty Stump</text>
     </region>
     <region label="White Rabbit Figure" id="R_005">
         <geometry-prop name="hasGeometry">
-            <geometry>{"status": "active", "type": "rectangle", "lineWidth": 3, "points": [{"x": 0.05, "y": 0.5}, {"x": 0.95, "y": 0.8}]}</geometry>
+            <geometry>{"status": "active", "type": "rectangle", "lineWidth": 3, "points": [{"x": 0.05, "y": 0.45}, {"x": 0.95, "y": 0.8}]}</geometry>
         </geometry-prop>
         <color-prop name="hasColor">
             <color>#5b24bf</color>
@@ -8202,6 +8202,76 @@ Shrill Voice/The Fishes: Liberty Stump</text>
         </text-prop>
         <resptr-prop name="isRegionOf">
             <resptr>I_032</resptr>
+        </resptr-prop>
+    </region>
+    <region label="White Rabbit's house" id="R_008">
+        <geometry-prop name="hasGeometry">
+            <geometry>{"status": "active", "type": "rectangle", "lineWidth": 3, "points": [{"x": 0.01, "y": 0.01}, {"x": 0.5, "y": 0.5}]}</geometry>
+        </geometry-prop>
+        <color-prop name="hasColor">
+            <color>#54ff33</color>
+        </color-prop>
+        <text-prop name="hasComment">
+            <text encoding="xml">White Rabbit's house</text>
+        </text-prop>
+        <resptr-prop name="isRegionOf">
+            <resptr>I_011</resptr>
+        </resptr-prop>
+    </region>
+    <region label="White Rabbit's house" id="R_009">
+        <geometry-prop name="hasGeometry">
+            <geometry>{"status": "active", "type": "rectangle", "lineWidth": 3, "points": [{"x": 0.02, "y": 0.1}, {"x": 0.98, "y": 0.9}]}</geometry>
+        </geometry-prop>
+        <color-prop name="hasColor">
+            <color>#54ff33</color>
+        </color-prop>
+        <text-prop name="hasComment">
+            <text encoding="xml">White Rabbit's house</text>
+        </text-prop>
+        <resptr-prop name="isRegionOf">
+            <resptr>I_012</resptr>
+        </resptr-prop>
+    </region>
+    <region label="White Rabbit's house" id="R_010">
+        <geometry-prop name="hasGeometry">
+            <geometry>{"status": "active", "type": "rectangle", "lineWidth": 3, "points": [{"x": 0.1, "y": 0.6}, {"x": 0.8, "y": 0.95}]}</geometry>
+        </geometry-prop>
+        <color-prop name="hasColor">
+            <color>#54ff33</color>
+        </color-prop>
+        <text-prop name="hasComment">
+            <text encoding="xml">White Rabbit's house</text>
+        </text-prop>
+        <resptr-prop name="isRegionOf">
+            <resptr>I_013</resptr>
+        </resptr-prop>
+    </region>
+    <region label="Cheshire Cat's tree" id="R_011">
+        <geometry-prop name="hasGeometry">
+            <geometry>{"status": "active", "type": "rectangle", "lineWidth": 3, "points": [{"x": 0.02, "y": 0.02}, {"x": 0.95, "y": 0.5}]}</geometry>
+        </geometry-prop>
+        <color-prop name="hasColor">
+            <color>#3368ff</color>
+        </color-prop>
+        <text-prop name="hasComment">
+            <text encoding="xml">Cheshire Cat's tree</text>
+        </text-prop>
+        <resptr-prop name="isRegionOf">
+            <resptr>I_023</resptr>
+        </resptr-prop>
+    </region>
+    <region label="Cheshire Cat's tree" id="R_012">
+        <geometry-prop name="hasGeometry">
+            <geometry>{"status": "active", "type": "rectangle", "lineWidth": 3, "points": [{"x": 0.02, "y": 0.02}, {"x": 0.95, "y": 0.95}]}</geometry>
+        </geometry-prop>
+        <color-prop name="hasColor">
+            <color>#3368ff</color>
+        </color-prop>
+        <text-prop name="hasComment">
+            <text encoding="xml">Cheshire Cat's tree</text>
+        </text-prop>
+        <resptr-prop name="isRegionOf">
+            <resptr>I_024</resptr>
         </resptr-prop>
     </region>
     <resource label="Alice in Wonderland - Poem: “All in the golden afternoon”" id="SCH_001" restype=":StoryChapter" authorship-id="authorship_3">
