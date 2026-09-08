@@ -52,7 +52,7 @@ def main() -> list[Resource]:
         resource.add_link_multiple(":linkToImage", image_ids)
         resource.add_geoname_optional(":hasGeoname", row["Geoname ID"])
         resource.add_uri_optional(":hasWikidataLink", row["Wikidata Link"])
-        resource.add_region_preview_multiple(prop_name=":hasPreview", values="preview_ids")
+        resource.add_region_preview_multiple(prop_name=":hasPreview", values=preview_ids)
 
         # append resource to list
         all_resources.append(resource)
