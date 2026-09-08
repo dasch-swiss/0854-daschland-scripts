@@ -7335,9 +7335,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
             <text encoding="utf8">White Rabbit's house</text>
         </text-prop>
         <region-preview-prop name=":hasPreview">
-            <region-preview>R010</region-preview>
             <region-preview>R_008</region-preview>
             <region-preview>R_009</region-preview>
+            <region-preview>R_010</region-preview>
         </region-preview-prop>
         <resptr-prop name=":linkToImage">
             <resptr>I_011</resptr>
@@ -7636,8 +7636,8 @@ Shrill Voice/The Fishes: Liberty Stump</text>
             <text encoding="utf8">Cheshire Cat's Tree</text>
         </text-prop>
         <region-preview-prop name=":hasPreview">
-            <region-preview>R011</region-preview>
-            <region-preview>R012</region-preview>
+            <region-preview>R_011</region-preview>
+            <region-preview>R_012</region-preview>
         </region-preview-prop>
         <resptr-prop name=":linkToImage">
             <resptr>I_023</resptr>
