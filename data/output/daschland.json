@@ -1461,6 +1461,26 @@
                             "it": "link interno a Copertina/e del libro"
                         },
                         "gui_element": "Searchbox"
+                    },
+                    {
+                        "name": "hasPreview",
+                        "super": [
+                            "hasRegionPreview"
+                        ],
+                        "object": "RegionPreviewValue",
+                        "labels": {
+                            "de": "Bildvorschau",
+                            "en": "Image preview",
+                            "fr": "Aperçu de l'image",
+                            "it": "Anteprima dell'immagine"
+                        },
+                        "comments": {
+                            "de": "Vorschau der Bildbeschriftung",
+                            "en": "preview of the image annotation",
+                            "fr": "aperçu de l'annotation de l'image",
+                            "it": "anteprima dell'annotazione dell'immagine"
+                        },
+                        "gui_element": "RegionPreview"
                     }
                 ],
                 "resources": [
@@ -1771,6 +1791,11 @@
                                 "propname": "project-metadata:hasID",
                                 "cardinality": "1",
                                 "gui_order": 4
+                            },
+                            {
+                                "propname": ":hasPreview",
+                                "cardinality": "0-n",
+                                "gui_order": 5
                             }
                         ]
                     },
@@ -2189,12 +2214,12 @@
                             {
                                 "propname": ":hasGeoname",
                                 "cardinality": "0-1",
-                                "gui_order": 5
+                                "gui_order": 6
                             },
                             {
                                 "propname": ":hasWikidataLink",
                                 "cardinality": "0-1",
-                                "gui_order": 6
+                                "gui_order": 7
                             }
                         ]
                     },
