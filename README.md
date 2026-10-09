@@ -165,7 +165,7 @@ Because the two mechanisms are not chained, Alice is recreated fresh on the firs
 
 **User accounts used:**
 - Project creation: `dasch@dasch.swiss` (admin account)
-- Data upload: `cheshire.cat@dasch.swiss` (project account)
+- Data upload: `daschland@admin.dasch.swiss` (project admin account)
 
 #### Demo Server
 
@@ -183,7 +183,7 @@ Because a re-upload erases the project and assigns it a **new URL**, the workflo
 
 **User accounts used:**
 - Project erase & creation: `dasch@dasch.swiss` (SystemAdmin account)
-- Data upload: `cheshire.cat@dasch.swiss` (project account)
+- Data upload: `daschland@admin.dasch.swiss` (project admin account)
 
 **Required GitHub secrets:** `USER_PASSWORD_CHESHIRE_CAT` and `DASCH_USER_PW_PROD`, plus the organisation-level `DASCH_BOT_APP_ID` and `DASCH_BOT_APP_PRIVATE_KEY` for the pull request in dsp-repository.
 
