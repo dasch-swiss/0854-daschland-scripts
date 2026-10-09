@@ -64,6 +64,18 @@
         },
         "users": [
             {
+                "username": "daschlandAdmin",
+                "email": "daschland@admin.dasch.swiss",
+                "givenName": "daschland",
+                "familyName": "Admin",
+                "password": null,
+                "lang": "en",
+                "status": true,
+                "projects": [
+                    ":admin"
+                ]
+            },
+            {
                 "username": "Alice",
                 "email": "alice@dasch.swiss",
                 "givenName": "Alice Pleasance",

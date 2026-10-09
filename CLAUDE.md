@@ -29,7 +29,7 @@ Local upload:
 
 ```bash
 dsp-tools create daschland.json
-dsp-tools xmlupload -u cheshire.cat@dasch.swiss -p 'alice9548' data_daschland.xml
+dsp-tools xmlupload -u daschland@admin.dasch.swiss -p "$DSP_USER_PASSWORD" data_daschland.xml
 ```
 
 See README.md for information on manual dev server uploads and automatic stage deployments.
