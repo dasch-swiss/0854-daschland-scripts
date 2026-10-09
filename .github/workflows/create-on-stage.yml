@@ -5,7 +5,7 @@ on:
   workflow_dispatch:
 
 env:
-  DSP_USER_PASSWORD: ${{ secrets.USER_PASSWORD_CHESHIRE_CAT }}
+  DSP_USER_PASSWORD: ${{ secrets.DSP_USER_PASSWORD }}
 
 jobs:
   create:
@@ -50,6 +50,6 @@ jobs:
           uv run dsp-tools xmlupload \
           --suppress-update-prompt \
           -s api.stage.dasch.swiss \
-          -u cheshire.cat@dasch.swiss \
+          -u daschland@admin.dasch.swiss \
           -p "$DSP_USER_PASSWORD" \
           data/output/data_daschland.xml

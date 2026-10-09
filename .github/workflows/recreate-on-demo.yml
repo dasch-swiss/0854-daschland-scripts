@@ -16,9 +16,9 @@ permissions:
   contents: write  # needed to push the 'demo-uploaded-*' marker tags
 
 env:
-  # Password for the users defined in the JSON (Cheshire Cat et al.). 'create' substitutes it into
-  # the "password": null fields, and 'xmlupload' authenticates with it as cheshire.cat@dasch.swiss.
-  DSP_USER_PASSWORD: ${{ secrets.USER_PASSWORD_CHESHIRE_CAT }}
+  # Password for the users defined in the JSON with "password": null. 'create' substitutes it into
+  # these fields, and 'xmlupload' authenticates with it as daschland@admin.dasch.swiss.
+  DSP_USER_PASSWORD: ${{ secrets.DSP_USER_PASSWORD }}
 
 jobs:
   detect-changes:
@@ -112,7 +112,7 @@ jobs:
           uv run dsp-tools xmlupload \
           --suppress-update-prompt \
           -s api.demo.dasch.swiss \
-          -u cheshire.cat@dasch.swiss \
+          -u daschland@admin.dasch.swiss \
           -p "$DSP_USER_PASSWORD" \
           data/output/data_daschland.xml
       - name: Determine the new project URL

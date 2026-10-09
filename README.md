@@ -185,6 +185,6 @@ Because a re-upload erases the project and assigns it a **new URL**, the workflo
 - Project erase & creation: `dasch@dasch.swiss` (SystemAdmin account)
 - Data upload: `daschland@admin.dasch.swiss` (project admin account)
 
-**Required GitHub secrets:** `USER_PASSWORD_CHESHIRE_CAT` and `DASCH_USER_PW_PROD`, plus the organisation-level `DASCH_BOT_APP_ID` and `DASCH_BOT_APP_PRIVATE_KEY` for the pull request in dsp-repository.
+**Required GitHub secrets:** `DSP_USER_PASSWORD` and `DASCH_USER_PW_PROD`, plus the organisation-level `DASCH_BOT_APP_ID` and `DASCH_BOT_APP_PRIVATE_KEY` for the pull request in dsp-repository.
 
 **Monitoring:** view the workflow execution results in the GitHub Actions tab.
