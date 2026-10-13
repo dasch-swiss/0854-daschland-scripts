@@ -32,7 +32,7 @@ jobs:
           --suppress-update-prompt \
           --exit-if-exists \
           -s api.dev.dasch.swiss \
-          -u dasch@dasch.swiss \
+          -u dasch@admin.dasch.swiss \
           -p "$PW" \
           data/output/daschland.json || code=$?
           # dsp-tools 'create --exit-if-exists' exits with code 3 when the project already exists
