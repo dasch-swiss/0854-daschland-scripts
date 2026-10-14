@@ -164,7 +164,7 @@ Because the two mechanisms are not chained, Alice is recreated fresh on the firs
 **Monitoring:** You can view the workflow execution results in the GitHub Actions tab, or check the deploy logs at [deploy.ops.dasch.swiss](https://deploy.ops.dasch.swiss/job/ops_deploy/job/dsp_stage_01_daschland/)
 
 **User accounts used:**
-- Project creation: `dasch@dasch.swiss` (admin account)
+- Project creation: `dasch@admin.dasch.swiss` (admin account)
 - Data upload: `daschland@admin.dasch.swiss` (project admin account)
 
 #### Demo Server
