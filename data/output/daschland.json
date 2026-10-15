@@ -108,6 +108,18 @@
                 "lang": "en",
                 "status": true,
                 "projects": [
+                    ":member"
+                ]
+            },
+            {
+                "username": "DaSCHland",
+                "email": "daschland@admin.dasch.swiss",
+                "givenName": "DaSCHland",
+                "familyName": "Admin",
+                "password": null,
+                "lang": "en",
+                "status": true,
+                "projects": [
                     ":admin",
                     ":member"
                 ]
