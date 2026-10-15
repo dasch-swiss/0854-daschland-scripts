@@ -1,0 +1,42 @@
+---
+
+# Dependabot has two independent concerns: version updates and security updates.
+# Each concern has its own block below.
+# See https://docs.github.com/en/code-security/dependabot/dependabot-version-updates
+
+version: 2
+updates:
+  - package-ecosystem: "uv"
+    directory: "/"
+
+    # CONCERN 1: Version updates (routine updates, no known vulnerability).
+    # Goal: one bundled PR per month.
+    # Dependabot checks on the first day of each month.
+    schedule:
+      interval: "monthly"
+    # Cooldown: Dependabot skips a release until it is N days old.
+    # Cooldown applies to version updates only.
+    cooldown:
+      default-days: 7
+      semver-major-days: 14
+      semver-minor-days: 7
+      semver-patch-days: 7
+    # Limit applies to version updates only. At most one open version PR.
+    open-pull-requests-limit: 1
+
+    groups:
+      # A group without applies-to applies to version updates only.
+      all-dependencies:
+        patterns:
+          - "*"
+
+      # CONCERN 2: Security updates (known vulnerability).
+      # Goal: as few PRs as possible. A fix must reach a PR within 7 days.
+      # Schedule, cooldown and open-pull-requests-limit do not apply to security updates.
+      # Dependabot raises them when GitHub reports an advisory.
+      # No setting delays them, so the 7-day limit always holds.
+      # Without this group, each security update gets its own PR.
+      all-security-updates:
+        applies-to: security-updates
+        patterns:
+          - "*"
