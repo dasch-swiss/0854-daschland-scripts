@@ -26,8 +26,8 @@ def main() -> list[Resource]:
         authors_resource = create_list_from_input(input_value=row["Authorship Resource"], separator=",")
         preview_ids = create_list_from_input(row["Region ID"], separator=",")
         geolocation = GeographicCRS84.create_new(
-            longitude=row["Coordinates Longitude"],
-            latitude=row["Coordinates Latitude"])
+            longitude=row["Coordinates Longitude"], latitude=row["Coordinates Latitude"]
+        )
         location_type_to_restype_lookup = {
             "Real World": ":LocationRealWorld",
             "Wonderland": ":LocationWonderland",
