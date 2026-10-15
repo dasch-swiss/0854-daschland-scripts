@@ -7419,6 +7419,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
             <text encoding="xml">La ville d'Oxford, en Angleterre, où Alice Liddell a vécu.</text>
             <text encoding="xml">The city of Oxford, in England, where Alice Liddell lived.</text>
         </text-prop>
+        <geolocation-prop name=":hasGeolocation">
+            <geolocation crs="CRS84" longitude="-1.25596" latitude="51.75222"/>
+        </geolocation-prop>
         <geoname-prop name=":hasGeoname">
             <geoname>2640729</geoname>
         </geoname-prop>
@@ -7439,6 +7442,9 @@ Shrill Voice/The Fishes: Liberty Stump</text>
             <text encoding="xml">Le pays où vit Alice.</text>
             <text encoding="xml">The country where Alice lives.</text>
         </text-prop>
+        <geolocation-prop name=":hasGeolocation">
+            <geolocation crs="CRS84" longitude="-0.70312" latitude="52.16045"/>
+        </geolocation-prop>
         <geoname-prop name=":hasGeoname">
             <geoname>6269131</geoname>
         </geoname-prop>

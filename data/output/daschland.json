@@ -64,18 +64,6 @@
         },
         "users": [
             {
-                "username": "daschlandAdmin",
-                "email": "daschland@admin.dasch.swiss",
-                "givenName": "daschland",
-                "familyName": "Admin",
-                "password": null,
-                "lang": "en",
-                "status": true,
-                "projects": [
-                    ":admin"
-                ]
-            },
-            {
                 "username": "Alice",
                 "email": "alice@dasch.swiss",
                 "givenName": "Alice Pleasance",
@@ -116,6 +104,18 @@
                 "email": "cheshire.cat@dasch.swiss",
                 "givenName": "Cheshire",
                 "familyName": "Cat",
+                "password": null,
+                "lang": "en",
+                "status": true,
+                "projects": [
+                    ":member"
+                ]
+            },
+            {
+                "username": "DaSCHland",
+                "email": "daschland@admin.dasch.swiss",
+                "givenName": "DaSCHland",
+                "familyName": "Admin",
                 "password": null,
                 "lang": "en",
                 "status": true,
@@ -970,7 +970,7 @@
                         },
                         "comments": {
                             "de": "Link zum Ort auf der Geonames-Website",
-                            "en": "Link to the Place on geonames website",
+                            "en": "Link to the place on geonames website",
                             "fr": "Lien vers le lieu sur le site de geonames",
                             "it": "Link al luogo sul sito web geonames"
                         },
@@ -1493,6 +1493,27 @@
                             "it": "anteprima dell'annotazione dell'immagine"
                         },
                         "gui_element": "RegionPreview"
+                    },
+                    {
+                        "name": "hasGeolocation",
+                        "super": [
+                            "hasValue",
+                            "schema:position"
+                        ],
+                        "object": "GeolocationValue",
+                        "labels": {
+                            "de": "Geolokalisierung",
+                            "en": "Geolocation",
+                            "fr": "Géolocalisation",
+                            "it": "Geolocalizzazione"
+                        },
+                        "comments": {
+                            "de": "Koordinaten des Standorts",
+                            "en": "Coordinates of the location",
+                            "fr": "Coordonnées du lieu",
+                            "it": "Coordinate del luogo"
+                        },
+                        "gui_element": "Geolocation"
                     }
                 ],
                 "resources": [
@@ -2229,9 +2250,14 @@
                                 "gui_order": 6
                             },
                             {
-                                "propname": ":hasWikidataLink",
+                                "propname": ":hasGeolocation",
                                 "cardinality": "0-1",
                                 "gui_order": 7
+                            },
+                            {
+                                "propname": ":hasWikidataLink",
+                                "cardinality": "0-1",
+                                "gui_order": 8
                             }
                         ]
                     },
