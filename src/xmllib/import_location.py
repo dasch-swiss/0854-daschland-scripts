@@ -1,5 +1,5 @@
 import pandas as pd
-from dsp_tools.xmllib import Resource, create_list_from_input
+from dsp_tools.xmllib import Resource, create_list_from_input, GeographicCRS84
 
 from src.folder_paths import PROCESSED_FOLDER
 
@@ -25,7 +25,9 @@ def main() -> list[Resource]:
         image_ids = create_list_from_input(row["Image ID"], separator=",")
         authors_resource = create_list_from_input(input_value=row["Authorship Resource"], separator=",")
         preview_ids = create_list_from_input(row["Region ID"], separator=",")
-
+        geolocation = GeographicCRS84.create_new(
+            longitude=row["Coordinates Longitude"],
+            latitude=row["Coordinates Latitude"])
         location_type_to_restype_lookup = {
             "Real World": ":LocationRealWorld",
             "Wonderland": ":LocationWonderland",
@@ -53,7 +55,7 @@ def main() -> list[Resource]:
         resource.add_geoname_optional(":hasGeoname", row["Geoname ID"])
         resource.add_uri_optional(":hasWikidataLink", row["Wikidata Link"])
         resource.add_region_preview_multiple(prop_name=":hasPreview", values=preview_ids)
-
+        resource.add_geolocation_optional(prop_name=":hasGeolocation", value=geolocation)
         # append resource to list
         all_resources.append(resource)
 
