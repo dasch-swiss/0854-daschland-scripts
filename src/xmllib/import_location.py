@@ -1,5 +1,5 @@
 import pandas as pd
-from dsp_tools.xmllib import Resource, create_list_from_input, GeographicCRS84
+from dsp_tools.xmllib import GeographicCRS84, Resource, create_list_from_input
 
 from src.folder_paths import PROCESSED_FOLDER
 
