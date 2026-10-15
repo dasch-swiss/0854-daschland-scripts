@@ -7,7 +7,9 @@ on:
   schedule:
     - cron: "0 0 * * *"
 env:
-  DSP_USER_PASSWORD: ${{ secrets.DSP_USER_PASSWORD }}
+  # Default password for the users of the JSON project on the local stack only.
+  # Not a secret: Dependabot-triggered runs do not get Actions secrets.
+  DSP_USER_PASSWORD: "ci-local-stack-password"
 
 jobs:
   xmlupload:
