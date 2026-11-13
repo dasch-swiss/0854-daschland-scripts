@@ -3490,7 +3490,7 @@ Shrill Voice/The Fishes: Liberty Stump</text>
             <text encoding="utf8">DOC_004</text>
         </text-prop>
     </resource>
-    <resource label="A fall throught the Rabbit hole" id="EV_001" restype=":EventAdventure" authorship-id="authorship_3">
+    <resource label="A fall through the Rabbit hole" id="EV_001" restype=":EventAdventure" authorship-id="authorship_3">
         <text-prop name=":hasDescription">
             <text encoding="xml">Alice spots, while on a <a class="salsah-link" href="IRI:L_001:IRI">riverbank</a> with her sister, a White Rabbit with a pocket watch and follows him down a <a class="salsah-link" href="IRI:L_002:IRI">Rabbit Hole </a>.</text>
         </text-prop>
@@ -3498,7 +3498,7 @@ Shrill Voice/The Fishes: Liberty Stump</text>
             <list>EVT_002</list>
         </list-prop>
         <text-prop name=":hasName">
-            <text encoding="utf8">A fall throught the Rabbit hole</text>
+            <text encoding="utf8">A fall through the Rabbit hole</text>
         </text-prop>
         <boolean-prop name=":isDangerous">
             <boolean>true</boolean>
@@ -4279,7 +4279,7 @@ Shrill Voice/The Fishes: Liberty Stump</text>
             <text encoding="utf8">EV_034</text>
         </text-prop>
     </resource>
-    <resource label="Mushroom fiest" id="EV_035" restype=":EventAdventure" authorship-id="authorship_3">
+    <resource label="Mushroom feast" id="EV_035" restype=":EventAdventure" authorship-id="authorship_3">
         <text-prop name=":hasDescription">
             <text encoding="xml">Alice eats different pieces of a <a class="salsah-link" href="IRI:L_014:IRI">mushroom</a> to change her size.</text>
         </text-prop>
@@ -4287,7 +4287,7 @@ Shrill Voice/The Fishes: Liberty Stump</text>
             <list>EVT_003</list>
         </list-prop>
         <text-prop name=":hasName">
-            <text encoding="utf8">Mushroom fiest</text>
+            <text encoding="utf8">Mushroom feast</text>
         </text-prop>
         <boolean-prop name=":isDangerous">
             <boolean>true</boolean>
@@ -4319,7 +4319,7 @@ Shrill Voice/The Fishes: Liberty Stump</text>
             <text encoding="utf8">EV_036</text>
         </text-prop>
     </resource>
-    <resource label="Red Queen gets shaked into a kitten" id="EV_037" restype=":EventConflict" authorship-id="authorship_3">
+    <resource label="Red Queen gets shaken into a kitten" id="EV_037" restype=":EventConflict" authorship-id="authorship_3">
         <text-prop name=":hasDescription">
             <text encoding="xml">Alice grabs the Red Queen, who turns into her black kitten as she wakes up from the dream.</text>
         </text-prop>
@@ -4327,7 +4327,7 @@ Shrill Voice/The Fishes: Liberty Stump</text>
             <list>EVT_014</list>
         </list-prop>
         <text-prop name=":hasName">
-            <text encoding="utf8">Red Queen gets shaked into a kitten</text>
+            <text encoding="utf8">Red Queen gets shaken into a kitten</text>
         </text-prop>
         <resptr-prop name=":linkToCharacterAntagonist">
             <resptr>CH_049</resptr>
@@ -4972,10 +4972,10 @@ Shrill Voice/The Fishes: Liberty Stump</text>
             <integer>16</integer>
         </integer-prop>
     </resource>
-    <resource label="Father William turning a back-sommersault" id="I_017" restype=":ImageOriginal" authorship-id="authorship_3">
+    <resource label="Father William turning a back-somersault" id="I_017" restype=":ImageOriginal" authorship-id="authorship_3">
         <bitstream license="http://rdfh.ch/licenses/public-domain" copyright-holder="Public Domain" authorship-id="authorship_5">data/multimedia/image/IMG_1book16.jpg</bitstream>
         <text-prop name=":hasDescription">
-            <text encoding="xml">Father William turning a back-sommersault</text>
+            <text encoding="xml">Father William turning a back-somersault</text>
         </text-prop>
         <resptr-prop name=":isPartOfCharacter">
             <resptr>CH_038</resptr>
@@ -5068,10 +5068,10 @@ Shrill Voice/The Fishes: Liberty Stump</text>
             <integer>20</integer>
         </integer-prop>
     </resource>
-    <resource label="Dutchess nursing the baby" id="I_021" restype=":ImageOriginal" authorship-id="authorship_3">
+    <resource label="Duchess nursing the baby" id="I_021" restype=":ImageOriginal" authorship-id="authorship_3">
         <bitstream license="http://rdfh.ch/licenses/public-domain" copyright-holder="Public Domain" authorship-id="authorship_5">data/multimedia/image/IMG_1book20.jpg</bitstream>
         <text-prop name=":hasDescription">
-            <text encoding="xml">Dutchess nursing the baby</text>
+            <text encoding="xml">Duchess nursing the baby</text>
         </text-prop>
         <resptr-prop name=":isPartOfCharacter">
             <resptr>CH_001</resptr>
@@ -5841,10 +5841,10 @@ Shrill Voice/The Fishes: Liberty Stump</text>
             <time>2008-08-11T21:45:07-00:00</time>
         </time-prop>
     </resource>
-    <resource label="Jabberwork" id="I_051" restype=":ImageOriginal" authorship-id="authorship_3">
+    <resource label="Jabberwocky" id="I_051" restype=":ImageOriginal" authorship-id="authorship_3">
         <bitstream license="http://rdfh.ch/licenses/public-domain" copyright-holder="Public Domain" authorship-id="authorship_5">data/multimedia/image/IMG_2book8.jpg</bitstream>
         <text-prop name=":hasDescription">
-            <text encoding="xml">Jabberwork</text>
+            <text encoding="xml">Jabberwocky</text>
         </text-prop>
         <resptr-prop name=":isPartOfCharacter">
             <resptr>CH_026</resptr>
@@ -7376,7 +7376,7 @@ Shrill Voice/The Fishes: Liberty Stump</text>
             <text encoding="utf8">L_006</text>
         </text-prop>
     </resource>
-    <resource label="Mad Hatters's Tea Room" id="L_007" restype=":LocationWonderland" authorship-id="authorship_3">
+    <resource label="Mad Hatter's Tea Room" id="L_007" restype=":LocationWonderland" authorship-id="authorship_3">
         <text-prop name=":hasDescription">
             <text encoding="xml">An open air Tea Room where Alice attends a weird tea party. </text>
             <text encoding="xml">Ein Tearoom unter freiem Himmel, in dem Alice an einer seltsamen Teeparty teilnimmt.</text>
@@ -7384,7 +7384,7 @@ Shrill Voice/The Fishes: Liberty Stump</text>
             <text encoding="xml">Una sala da tè all'aperto dove Alice partecipa a uno strano tea party.</text>
         </text-prop>
         <text-prop name=":hasName">
-            <text encoding="utf8">Mad Hatters's Tea Room</text>
+            <text encoding="utf8">Mad Hatter's Tea Room</text>
         </text-prop>
         <resptr-prop name=":linkToImage">
             <resptr>I_025</resptr>
