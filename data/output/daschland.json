@@ -108,18 +108,6 @@
                 "lang": "en",
                 "status": true,
                 "projects": [
-                    ":member"
-                ]
-            },
-            {
-                "username": "daschlandAdmin",
-                "email": "daschland@admin.dasch.swiss",
-                "givenName": "DaSCHland",
-                "familyName": "Admin",
-                "password": null,
-                "lang": "en",
-                "status": true,
-                "projects": [
                     ":admin",
                     ":member"
                 ]
@@ -129,54 +117,70 @@
             {
                 "name": "Event Type",
                 "labels": {
+                    "de": "Ereignistyp",
                     "en": "Event Type",
-                    "fr": "Type d'événement"
+                    "fr": "Type d'événement",
+                    "it": "Tipo di evento"
                 },
                 "comments": {
-                    "en": "The events of Alice in Wonderland are subdivised into four main types and their subdivisions. This list explores the possibility of hierarchical controlled vocabularies.",
-                    "fr": "Les événements d'Alice au Pays des Merveilles sont divisés en quatre types principaux et leurs subdivisions. Cette liste explore les possibilités de vocabulaire contrôlé hiérarchique."
+                    "de": "Die Ereignisse von Alice im Wunderland sind in vier Haupttypen und deren Unterteilungen gegliedert. Diese Liste erkundet die Möglichkeiten hierarchischer kontrollierter Vokabulare.",
+                    "en": "The events of Alice in Wonderland are subdivided into four main types and their subdivisions. This list explores the possibility of hierarchical controlled vocabularies.",
+                    "fr": "Les événements d'Alice au Pays des Merveilles sont divisés en quatre types principaux et leurs subdivisions. Cette liste explore les possibilités de vocabulaire contrôlé hiérarchique.",
+                    "it": "Gli eventi di Alice nel Paese delle Meraviglie sono suddivisi in quattro tipi principali e nelle loro suddivisioni. Questo elenco esplora le possibilità dei vocabolari controllati gerarchici."
                 },
                 "nodes": [
                     {
                         "name": "EVT_001",
                         "labels": {
+                            "de": "Abenteuer",
                             "en": "Adventure",
-                            "fr": "Aventure"
+                            "fr": "Aventure",
+                            "it": "Avventura"
                         },
                         "nodes": [
                             {
                                 "name": "EVT_002",
                                 "labels": {
+                                    "de": "Auslösendes Ereignis",
                                     "en": "Inciting Incident",
-                                    "fr": "Incident incitant"
+                                    "fr": "Élément déclencheur",
+                                    "it": "Incidente scatenante"
                                 }
                             },
                             {
                                 "name": "EVT_003",
                                 "labels": {
+                                    "de": "Körperliche Verwandlung",
                                     "en": "Physical Transformation",
-                                    "fr": "Transformation physique"
+                                    "fr": "Transformation physique",
+                                    "it": "Trasformazione fisica"
                                 }
                             },
                             {
                                 "name": "EVT_004",
                                 "labels": {
+                                    "de": "Erkundung",
                                     "en": "Exploration",
-                                    "fr": "Exploration"
+                                    "fr": "Exploration",
+                                    "it": "Esplorazione"
                                 }
                             },
                             {
                                 "name": "EVT_005",
                                 "labels": {
+                                    "de": "Rollenwechsel",
                                     "en": "Role Change",
-                                    "fr": "Changement de rôle"
+                                    "fr": "Changement de rôle",
+                                    "it": "Cambio di ruolo"
                                 }
                             },
                             {
                                 "name": "EVT_006",
                                 "labels": {
+                                    "de": "Auflösung",
                                     "en": "Resolution",
-                                    "fr": "Résolution"
+                                    "fr": "Résolution",
+                                    "it": "Risoluzione"
                                 }
                             }
                         ]
@@ -184,29 +188,37 @@
                     {
                         "name": "EVT_007",
                         "labels": {
+                            "de": "Sozial",
                             "en": "Social",
-                            "fr": "Social"
+                            "fr": "Social",
+                            "it": "Sociale"
                         },
                         "nodes": [
                             {
                                 "name": "EVT_008",
                                 "labels": {
+                                    "de": "Begegnung",
                                     "en": "Encounter",
-                                    "fr": "Rencontre"
+                                    "fr": "Rencontre",
+                                    "it": "Incontro"
                                 }
                             },
                             {
                                 "name": "EVT_009",
                                 "labels": {
+                                    "de": "Hilfe",
                                     "en": "Assistance",
-                                    "fr": "Assistance"
+                                    "fr": "Assistance",
+                                    "it": "Aiuto"
                                 }
                             },
                             {
                                 "name": "EVT_010",
                                 "labels": {
+                                    "de": "Herausforderung",
                                     "en": "Challenge",
-                                    "fr": "Compétition"
+                                    "fr": "Défi",
+                                    "it": "Sfida"
                                 }
                             }
                         ]
@@ -214,29 +226,37 @@
                     {
                         "name": "EVT_011",
                         "labels": {
+                            "de": "Konflikt",
                             "en": "Conflict",
-                            "fr": "Conflit"
+                            "fr": "Conflit",
+                            "it": "Conflitto"
                         },
                         "nodes": [
                             {
                                 "name": "EVT_012",
                                 "labels": {
+                                    "de": "Verwandlung",
                                     "en": "Transformation",
-                                    "fr": "Transformation"
+                                    "fr": "Transformation",
+                                    "it": "Trasformazione"
                                 }
                             },
                             {
                                 "name": "EVT_013",
                                 "labels": {
+                                    "de": "Konfrontation",
                                     "en": "Confrontation",
-                                    "fr": "Confrontation"
+                                    "fr": "Confrontation",
+                                    "it": "Confronto"
                                 },
                                 "nodes": [
                                     {
                                         "name": "EVT_014",
                                         "labels": {
+                                            "de": "Konfrontation und Verwandlung",
                                             "en": "Confrontation and Transformation",
-                                            "fr": "Confrontation et transformation"
+                                            "fr": "Confrontation et transformation",
+                                            "it": "Confronto e trasformazione"
                                         }
                                     }
                                 ]
@@ -244,8 +264,10 @@
                             {
                                 "name": "EVT_015",
                                 "labels": {
+                                    "de": "Schwerwiegender Vorfall",
                                     "en": "Major Incident",
-                                    "fr": "Incident majeur"
+                                    "fr": "Incident majeur",
+                                    "it": "Incidente grave"
                                 }
                             }
                         ]
@@ -253,8 +275,10 @@
                     {
                         "name": "EVT_016",
                         "labels": {
+                            "de": "Alternativ",
                             "en": "Alternative",
-                            "fr": "Alternatif"
+                            "fr": "Alternatif",
+                            "it": "Alternativo"
                         }
                     }
                 ]
@@ -262,58 +286,76 @@
             {
                 "name": "Keyword",
                 "labels": {
+                    "de": "Schlagwort",
                     "en": "Keyword",
-                    "fr": "Mot-clé"
+                    "fr": "Mot-clé",
+                    "it": "Parola chiave"
                 },
                 "comments": {
+                    "de": "Schlagwörter zum von Lewis Carroll geschaffenen Universum. Diese Liste erkundet die Möglichkeiten hierarchischer kontrollierter Vokabulare.",
                     "en": "Keywords associated with the universe created by Lewis Carroll. This list explores the possibilities of hierarchical controlled vocabulary.",
-                    "fr": "Mots-clés associés à l'univers créé par Lewis Carroll. Cette liste explore les possibilités de vocabulaire contrôlé hiérarchique"
+                    "fr": "Mots-clés associés à l'univers créé par Lewis Carroll. Cette liste explore les possibilités de vocabulaire contrôlé hiérarchique.",
+                    "it": "Parole chiave associate all'universo creato da Lewis Carroll. Questo elenco esplora le possibilità dei vocabolari controllati gerarchici."
                 },
                 "nodes": [
                     {
                         "name": "K_001",
                         "labels": {
+                            "de": "Thema",
                             "en": "Theme",
-                            "fr": "Thématique"
+                            "fr": "Thématique",
+                            "it": "Tema"
                         },
                         "comments": {
+                            "de": "Im Text vorkommende Themen",
                             "en": "Themes appearing in the text",
-                            "fr": "Thématiques abordées dans le texte"
+                            "fr": "Thématiques abordées dans le texte",
+                            "it": "Temi presenti nel testo"
                         },
                         "nodes": [
                             {
                                 "name": "K_002",
                                 "labels": {
+                                    "de": "Fantastik",
                                     "en": "Fantasy",
-                                    "fr": "Fantastique"
+                                    "fr": "Fantastique",
+                                    "it": "Fantastico"
                                 },
                                 "nodes": [
                                     {
                                         "name": "K_003",
                                         "labels": {
+                                            "de": "Surrealismus",
                                             "en": "Surrealism",
-                                            "fr": "Surréalisme"
+                                            "fr": "Surréalisme",
+                                            "it": "Surrealismo"
                                         }
                                     },
                                     {
                                         "name": "K_004",
                                         "labels": {
+                                            "de": "Fantasie",
                                             "en": "Imagination",
-                                            "fr": "Imagination"
+                                            "fr": "Imagination",
+                                            "it": "Immaginazione"
                                         }
                                     },
                                     {
                                         "name": "K_005",
                                         "labels": {
+                                            "de": "Widerspruch",
                                             "en": "Contradiction",
-                                            "fr": "Contradiction"
+                                            "fr": "Contradiction",
+                                            "it": "Contraddizione"
                                         }
                                     },
                                     {
                                         "name": "K_006",
                                         "labels": {
+                                            "de": "Fluidität des Raums",
                                             "en": "Fluidity of Space",
-                                            "fr": "Fluidité de l'espace"
+                                            "fr": "Fluidité de l'espace",
+                                            "it": "Fluidità dello spazio"
                                         }
                                     }
                                 ]
@@ -321,22 +363,28 @@
                             {
                                 "name": "K_007",
                                 "labels": {
+                                    "de": "Abenteuer",
                                     "en": "Adventure",
-                                    "fr": "Aventure"
+                                    "fr": "Aventure",
+                                    "it": "Avventura"
                                 },
                                 "nodes": [
                                     {
                                         "name": "K_008",
                                         "labels": {
+                                            "de": "Reise",
                                             "en": "Journey",
-                                            "fr": "Voyage"
+                                            "fr": "Voyage",
+                                            "it": "Viaggio"
                                         }
                                     },
                                     {
                                         "name": "K_009",
                                         "labels": {
+                                            "de": "Erkundung",
                                             "en": "Exploration",
-                                            "fr": "Exploration"
+                                            "fr": "Exploration",
+                                            "it": "Esplorazione"
                                         }
                                     }
                                 ]
@@ -344,29 +392,37 @@
                             {
                                 "name": "K_010",
                                 "labels": {
+                                    "de": "Identität",
                                     "en": "Identity",
-                                    "fr": "Identité"
+                                    "fr": "Identité",
+                                    "it": "Identità"
                                 },
                                 "nodes": [
                                     {
                                         "name": "K_011",
                                         "labels": {
+                                            "de": "Wachstum",
                                             "en": "Growth",
-                                            "fr": "Croissance"
+                                            "fr": "Croissance",
+                                            "it": "Crescita"
                                         },
                                         "nodes": [
                                             {
                                                 "name": "K_012",
                                                 "labels": {
+                                                    "de": "Körperliches Wachstum",
                                                     "en": "Physical Growth",
-                                                    "fr": "Croissance physique"
+                                                    "fr": "Croissance physique",
+                                                    "it": "Crescita fisica"
                                                 }
                                             },
                                             {
                                                 "name": "K_013",
                                                 "labels": {
+                                                    "de": "Persönliche Entwicklung",
                                                     "en": "Personal Growth",
-                                                    "fr": "Croissance personnelle"
+                                                    "fr": "Croissance personnelle",
+                                                    "it": "Crescita personale"
                                                 }
                                             }
                                         ]
@@ -374,15 +430,19 @@
                                     {
                                         "name": "K_014",
                                         "labels": {
+                                            "de": "Verwandlung",
                                             "en": "Transformation",
-                                            "fr": "Transformation"
+                                            "fr": "Transformation",
+                                            "it": "Trasformazione"
                                         }
                                     },
                                     {
                                         "name": "K_015",
                                         "labels": {
+                                            "de": "Selbstfindung",
                                             "en": "Self-discovery",
-                                            "fr": "Découverte de soi"
+                                            "fr": "Découverte de soi",
+                                            "it": "Scoperta di sé"
                                         }
                                     }
                                 ]
@@ -390,29 +450,37 @@
                             {
                                 "name": "K_016",
                                 "labels": {
+                                    "de": "Autorität",
                                     "en": "Authority",
-                                    "fr": "Autorité"
+                                    "fr": "Autorité",
+                                    "it": "Autorità"
                                 },
                                 "nodes": [
                                     {
                                         "name": "K_017",
                                         "labels": {
+                                            "de": "Regeln",
                                             "en": "Rules",
-                                            "fr": "Règles"
+                                            "fr": "Règles",
+                                            "it": "Regole"
                                         }
                                     },
                                     {
                                         "name": "K_018",
                                         "labels": {
+                                            "de": "Tyrannei",
                                             "en": "Tyranny",
-                                            "fr": "Tyrannie"
+                                            "fr": "Tyrannie",
+                                            "it": "Tirannia"
                                         }
                                     },
                                     {
                                         "name": "K_019",
                                         "labels": {
+                                            "de": "Absurdität",
                                             "en": "Absurdity",
-                                            "fr": "Absurdité"
+                                            "fr": "Absurdité",
+                                            "it": "Assurdità"
                                         }
                                     }
                                 ]
@@ -420,29 +488,37 @@
                             {
                                 "name": "K_020",
                                 "labels": {
+                                    "de": "Logik",
                                     "en": "Logic",
-                                    "fr": "Logique"
+                                    "fr": "Logique",
+                                    "it": "Logica"
                                 },
                                 "nodes": [
                                     {
                                         "name": "K_021",
                                         "labels": {
+                                            "de": "Paradoxien",
                                             "en": "Paradoxes",
-                                            "fr": "Paradoxe"
+                                            "fr": "Paradoxes",
+                                            "it": "Paradossi"
                                         }
                                     },
                                     {
                                         "name": "K_022",
                                         "labels": {
+                                            "de": "Wortspiel",
                                             "en": "Wordplay",
-                                            "fr": "Jeu de mots"
+                                            "fr": "Jeu de mots",
+                                            "it": "Gioco di parole"
                                         }
                                     },
                                     {
                                         "name": "K_023",
                                         "labels": {
+                                            "de": "Ironie",
                                             "en": "Irony",
-                                            "fr": "Ironie"
+                                            "fr": "Ironie",
+                                            "it": "Ironia"
                                         }
                                     }
                                 ]
@@ -450,22 +526,28 @@
                             {
                                 "name": "K_024",
                                 "labels": {
+                                    "de": "Zeit",
                                     "en": "Time",
-                                    "fr": "Temps"
+                                    "fr": "Temps",
+                                    "it": "Tempo"
                                 },
                                 "nodes": [
                                     {
                                         "name": "K_025",
                                         "labels": {
+                                            "de": "Angst",
                                             "en": "Anxiety",
-                                            "fr": "Anxiété"
+                                            "fr": "Anxiété",
+                                            "it": "Ansia"
                                         }
                                     },
                                     {
                                         "name": "K_026",
                                         "labels": {
+                                            "de": "Knechtschaft",
                                             "en": "Servitude",
-                                            "fr": "Servitude"
+                                            "fr": "Servitude",
+                                            "it": "Servitù"
                                         }
                                     }
                                 ]
@@ -473,22 +555,28 @@
                             {
                                 "name": "K_027",
                                 "labels": {
+                                    "de": "Chaos",
                                     "en": "Chaos",
-                                    "fr": "Chaos"
+                                    "fr": "Chaos",
+                                    "it": "Caos"
                                 },
                                 "nodes": [
                                     {
                                         "name": "K_028",
                                         "labels": {
+                                            "de": "Wahnsinn",
                                             "en": "Madness",
-                                            "fr": "Folie"
+                                            "fr": "Folie",
+                                            "it": "Follia"
                                         }
                                     },
                                     {
                                         "name": "K_029",
                                         "labels": {
+                                            "de": "Verwirrung",
                                             "en": "Confusion",
-                                            "fr": "Confusion"
+                                            "fr": "Confusion",
+                                            "it": "Confusione"
                                         }
                                     }
                                 ]
@@ -496,22 +584,28 @@
                             {
                                 "name": "K_030",
                                 "labels": {
+                                    "de": "Weisheit",
                                     "en": "Wisdom",
-                                    "fr": "Sagesse"
+                                    "fr": "Sagesse",
+                                    "it": "Saggezza"
                                 },
                                 "nodes": [
                                     {
                                         "name": "K_031",
                                         "labels": {
+                                            "de": "Geheimnis",
                                             "en": "Mystery",
-                                            "fr": "Mystère"
+                                            "fr": "Mystère",
+                                            "it": "Mistero"
                                         }
                                     },
                                     {
                                         "name": "K_032",
                                         "labels": {
+                                            "de": "Reflexion",
                                             "en": "Reflection",
-                                            "fr": "Réflexion"
+                                            "fr": "Réflexion",
+                                            "it": "Riflessione"
                                         }
                                     }
                                 ]
@@ -519,22 +613,28 @@
                             {
                                 "name": "K_033",
                                 "labels": {
+                                    "de": "Gewalt",
                                     "en": "Violence",
-                                    "fr": "Violence"
+                                    "fr": "Violence",
+                                    "it": "Violenza"
                                 },
                                 "nodes": [
                                     {
                                         "name": "K_034",
                                         "labels": {
+                                            "de": "Wut",
                                             "en": "Anger",
-                                            "fr": "Colère"
+                                            "fr": "Colère",
+                                            "it": "Rabbia"
                                         }
                                     },
                                     {
                                         "name": "K_035",
                                         "labels": {
+                                            "de": "Urteil",
                                             "en": "Judgment",
-                                            "fr": "Jugement"
+                                            "fr": "Jugement",
+                                            "it": "Giudizio"
                                         }
                                     }
                                 ]
@@ -542,15 +642,19 @@
                             {
                                 "name": "K_036",
                                 "labels": {
+                                    "de": "Gerechtigkeit",
                                     "en": "Justice",
-                                    "fr": "Justice"
+                                    "fr": "Justice",
+                                    "it": "Giustizia"
                                 },
                                 "nodes": [
                                     {
                                         "name": "K_037",
                                         "labels": {
+                                            "de": "Verkehrte Gerechtigkeit",
                                             "en": "Inverted Justice",
-                                            "fr": "Justice inversée"
+                                            "fr": "Justice inversée",
+                                            "it": "Giustizia capovolta"
                                         }
                                     }
                                 ]
@@ -558,15 +662,19 @@
                             {
                                 "name": "K_038",
                                 "labels": {
+                                    "de": "Häuslichkeit",
                                     "en": "Domesticity",
-                                    "fr": "Domesticité"
+                                    "fr": "Domesticité",
+                                    "it": "Domesticità"
                                 },
                                 "nodes": [
                                     {
                                         "name": "K_039",
                                         "labels": {
+                                            "de": "Häusliches Chaos",
                                             "en": "Domestic chaos",
-                                            "fr": "Chaos domestique"
+                                            "fr": "Chaos domestique",
+                                            "it": "Caos domestico"
                                         }
                                     }
                                 ]
@@ -576,40 +684,52 @@
                     {
                         "name": "K_040",
                         "labels": {
+                            "de": "Symbolik",
                             "en": "Symbolism",
-                            "fr": "Symbolisme"
+                            "fr": "Symbolisme",
+                            "it": "Simbolismo"
                         },
                         "comments": {
+                            "de": "Arten von Symbolen, die im Text vorkommen",
                             "en": "Type of symbols that appear in the text",
-                            "fr": "Type de symboles apparaissant dans le texte"
+                            "fr": "Type de symboles apparaissant dans le texte",
+                            "it": "Tipi di simboli presenti nel testo"
                         },
                         "nodes": [
                             {
                                 "name": "K_041",
                                 "labels": {
+                                    "de": "Tiere",
                                     "en": "Animals",
-                                    "fr": "Animaux"
+                                    "fr": "Animaux",
+                                    "it": "Animali"
                                 }
                             },
                             {
                                 "name": "K_042",
                                 "labels": {
+                                    "de": "Zeit",
                                     "en": "Time",
-                                    "fr": "Temps"
+                                    "fr": "Temps",
+                                    "it": "Tempo"
                                 }
                             },
                             {
                                 "name": "K_043",
                                 "labels": {
+                                    "de": "Verlangen",
                                     "en": "Desire",
-                                    "fr": "Désir"
+                                    "fr": "Désir",
+                                    "it": "Desiderio"
                                 }
                             },
                             {
                                 "name": "K_044",
                                 "labels": {
+                                    "de": "Schönheit",
                                     "en": "Beauty",
-                                    "fr": "Beauté"
+                                    "fr": "Beauté",
+                                    "it": "Bellezza"
                                 }
                             }
                         ]
@@ -617,40 +737,52 @@
                     {
                         "name": "K_045",
                         "labels": {
+                            "de": "Stilmittel",
                             "en": "Literary Device",
-                            "fr": "Procédé littéraire"
+                            "fr": "Procédé littéraire",
+                            "it": "Figura retorica"
                         },
                         "comments": {
+                            "de": "Im Text verwendete Stilmittel",
                             "en": "Literary devices that are used in the text",
-                            "fr": "Figures de style utilisées dans le texte"
+                            "fr": "Figures de style utilisées dans le texte",
+                            "it": "Figure retoriche usate nel testo"
                         },
                         "nodes": [
                             {
                                 "name": "K_046",
                                 "labels": {
+                                    "de": "Wortwitze",
                                     "en": "Puns",
-                                    "fr": "Calembours"
+                                    "fr": "Calembours",
+                                    "it": "Calembour"
                                 }
                             },
                             {
                                 "name": "K_047",
                                 "labels": {
+                                    "de": "Kofferwort",
                                     "en": "Portmanteau",
-                                    "fr": "Mot-valise"
+                                    "fr": "Mot-valise",
+                                    "it": "Parola macedonia"
                                 }
                             },
                             {
                                 "name": "K_048",
                                 "labels": {
+                                    "de": "Allegorie",
                                     "en": "Allegory",
-                                    "fr": "Allégorie"
+                                    "fr": "Allégorie",
+                                    "it": "Allegoria"
                                 }
                             },
                             {
                                 "name": "K_049",
                                 "labels": {
+                                    "de": "Satire",
                                     "en": "Satire",
-                                    "fr": "Satire"
+                                    "fr": "Satire",
+                                    "it": "Satira"
                                 }
                             }
                         ]
@@ -658,22 +790,28 @@
                     {
                         "name": "K_050",
                         "labels": {
+                            "de": "Erzählstruktur",
                             "en": "Narrative Structure",
-                            "fr": "Structure narrative"
+                            "fr": "Structure narrative",
+                            "it": "Struttura narrativa"
                         },
                         "nodes": [
                             {
                                 "name": "K_051",
                                 "labels": {
+                                    "de": "Episodisch",
                                     "en": "Episodic",
-                                    "fr": "Episodique"
+                                    "fr": "Épisodique",
+                                    "it": "Episodica"
                                 }
                             },
                             {
                                 "name": "K_052",
                                 "labels": {
+                                    "de": "Traumhaft",
                                     "en": "Dream-like",
-                                    "fr": "Onirique"
+                                    "fr": "Onirique",
+                                    "it": "Onirica"
                                 }
                             }
                         ]
@@ -683,26 +821,34 @@
             {
                 "name": "Role",
                 "labels": {
+                    "de": "Rolle",
                     "en": "Role",
-                    "fr": "Rôle"
+                    "fr": "Rôle",
+                    "it": "Ruolo"
                 },
                 "comments": {
+                    "de": "Bestimmt, ob eine Figur eine Haupt- oder Nebenfigur ist.",
                     "en": "Defines each character as either main or secondary",
-                    "fr": "Définit chaque personnage selon qu'il est principal ou secondaire"
+                    "fr": "Définit chaque personnage selon qu'il est principal ou secondaire",
+                    "it": "Indica se un personaggio è principale o secondario."
                 },
                 "nodes": [
                     {
                         "name": "R_01",
                         "labels": {
+                            "de": "Hauptfigur",
                             "en": "Main Character",
-                            "fr": "Personnage principal"
+                            "fr": "Personnage principal",
+                            "it": "Personaggio principale"
                         }
                     },
                     {
                         "name": "R_02",
                         "labels": {
+                            "de": "Nebenfigur",
                             "en": "Secondary Character",
-                            "fr": "Personnage secondaire"
+                            "fr": "Personnage secondaire",
+                            "it": "Personaggio secondario"
                         }
                     }
                 ]
@@ -725,14 +871,16 @@
                         "labels": {
                             "de": "Urheber:in",
                             "en": "Authorship",
-                            "fr": "Auteur·rice",
-                            "it": "Autore"
+                            "fr": "Auteur/autrice",
+                            "it": "Autore",
+                            "rm": "Autur(a)"
                         },
                         "comments": {
-                            "de": "Autor oder Urheber der Datei",
-                            "en": "Author or creator of the file",
-                            "fr": "Auteur ou créateur du fichier",
-                            "it": "Autore o creatore del file"
+                            "de": "Autor/in(nen) oder Urheber/in(nen) der Geschichte, als Text (z. B. 'Lewis Carroll').",
+                            "en": "Author(s) or creator(s) of the story, as text (e.g. 'Lewis Carroll').",
+                            "fr": "Auteur(s) ou créateur(s) de l'histoire, sous forme de texte (p. ex. « Lewis Carroll »).",
+                            "it": "Autore/i o creatore/i della storia, come testo (ad es. 'Lewis Carroll').",
+                            "rm": "Autur(s) u creatur(s) da l'istorgia, sco text (p.ex. «Lewis Carroll»)."
                         },
                         "gui_element": "SimpleText"
                     },
@@ -748,13 +896,15 @@
                             "de": "Besetzung",
                             "en": "Cast",
                             "fr": "Distribution",
-                            "it": "Getto"
+                            "it": "Interpreti",
+                            "rm": "Distribuziun"
                         },
                         "comments": {
-                            "de": "Darsteller, die in den Medien erscheinen",
-                            "en": "Cast members who appear on the media",
-                            "fr": "Membres de la distribution qui apparaissent sur le média",
-                            "it": "Cast dei membri che compaiono nel media"
+                            "de": "Besetzung der Aufnahme oder des Films, eine Zeile pro Rolle (z. B. 'Narrator: …', 'Alice: …').",
+                            "en": "Cast of the recording or film, one line per role (e.g. 'Narrator: …', 'Alice: …').",
+                            "fr": "Distribution de l'enregistrement ou du film, une ligne par rôle (p. ex. « Narrator: … », « Alice: … »).",
+                            "it": "Cast della registrazione o del film, una riga per ruolo (ad es. 'Narrator: …', 'Alice: …').",
+                            "rm": "Distribuziun da la registraziun u dal film, ina lingia per rolla (p.ex. «Narrator: …», «Alice: …»)."
                         },
                         "gui_element": "Textarea"
                     },
@@ -769,13 +919,15 @@
                             "de": "Kapitel Nummer",
                             "en": "Chapter Number",
                             "fr": "Numéro de chapitre",
-                            "it": "Numero del capitolo"
+                            "it": "Numero del capitolo",
+                            "rm": "Numer dal chapitel"
                         },
                         "comments": {
-                            "de": "Nummer des Kapitels",
-                            "en": "Number of the chapter",
-                            "fr": "Numéro du chapitre",
-                            "it": "Numero del capitolo"
+                            "de": "Nummer des Kapitels innerhalb seiner Geschichte; Vorworte, Gedichte und Dramatis Personae haben keine Nummer.",
+                            "en": "Number of the chapter within its story; prefaces, poems and the Dramatis Personae have no number.",
+                            "fr": "Numéro du chapitre dans son histoire ; les préfaces, poèmes et Dramatis Personae n'ont pas de numéro.",
+                            "it": "Numero del capitolo all'interno della storia; prefazioni, poesie e Dramatis Personae non hanno numero.",
+                            "rm": "Numer dal chapitel en sia istorgia; prefaziuns, poesias e las Dramatis Personae n'han nagin numer."
                         },
                         "gui_element": "SimpleText"
                     },
@@ -790,13 +942,15 @@
                             "de": "Farbe",
                             "en": "Colour",
                             "fr": "Couleur",
-                            "it": "Colore"
+                            "it": "Colore",
+                            "rm": "Colur"
                         },
                         "comments": {
-                            "de": "Farbe",
-                            "en": "Colour",
-                            "fr": "Couleur",
-                            "it": "Colore"
+                            "de": "Farbwert (z. B. für Annotationen oder Regionen); derzeit von keiner Klasse verwendet.",
+                            "en": "Colour value (e.g. for annotations or regions); currently not used by any class.",
+                            "fr": "Valeur de couleur (p. ex. pour des annotations ou des régions) ; actuellement utilisée par aucune classe.",
+                            "it": "Valore di colore (ad es. per annotazioni o regioni); attualmente non utilizzato da alcuna classe.",
+                            "rm": "Valur da colur (p.ex. per annotaziuns u regiuns); actualmain betg utilisada da nagina classa."
                         },
                         "gui_element": "Colorpicker"
                     },
@@ -812,13 +966,15 @@
                             "de": "Urheberrecht",
                             "en": "Copyright",
                             "fr": "Droits d'auteur",
-                            "it": "Copyright"
+                            "it": "Copyright",
+                            "rm": "Dretg d'autur"
                         },
                         "comments": {
                             "de": "Urheberrecht der Mediendatei",
                             "en": "Copyright of the media file",
                             "fr": "Copyright du fichier média",
-                            "it": "Copyright del file multimediale"
+                            "it": "Copyright del file multimediale",
+                            "rm": "Titular(a) dals dretgs d'autur da la datoteca da media."
                         },
                         "gui_element": "SimpleText"
                     },
@@ -831,16 +987,18 @@
                         ],
                         "object": "DateValue",
                         "labels": {
-                            "de": "Datum der Veröffentlichung",
-                            "en": "Publication Date",
-                            "fr": "Date de publication",
-                            "it": "Data di pubblicazione"
+                            "de": "Datum",
+                            "en": "Date",
+                            "fr": "Date",
+                            "it": "Data",
+                            "rm": "Data"
                         },
                         "comments": {
-                            "de": "Veröffentlichungsdatum",
-                            "en": "Date of publication",
-                            "fr": "Date de publication",
-                            "it": "Data di pubblicazione"
+                            "de": "Datum der Erstveröffentlichung der Geschichte (z. B. 4. Juli 1865) oder Erscheinungsjahr der Ausgabe bzw. des Bucheinbands.",
+                            "en": "Date of first publication of the story (e.g. 4 July 1865), or year of the edition or book cover.",
+                            "fr": "Date de première publication de l'histoire (p. ex. 4 juillet 1865), ou année de l'édition ou de la couverture.",
+                            "it": "Data di prima pubblicazione della storia (ad es. 4 luglio 1865), oppure anno dell'edizione o della copertina.",
+                            "rm": "Data da l'emprima publicaziun da l'istorgia (p.ex. ils 4 da fanadur 1865), u onn da l'ediziun u da la cuverta."
                         },
                         "gui_element": "Date"
                     },
@@ -856,13 +1014,15 @@
                             "de": "Beschreibung",
                             "en": "Description",
                             "fr": "Description",
-                            "it": "Descrizione"
+                            "it": "Descrizione",
+                            "rm": "Descripziun"
                         },
                         "comments": {
-                            "de": "Beschreibung",
-                            "en": "Description",
-                            "fr": "Description de l'œuvre",
-                            "it": "Descrizione"
+                            "de": "Beschreibung der Ressource (Zusammenfassung einer Geschichte oder eines Kapitels, bibliografische Beschreibung eines Einbands usw.); Ortsbeschreibungen liegen in mehreren Sprachen vor. Kann Standoff-Links zu Orten und Figuren enthalten.",
+                            "en": "Description of the resource (summary of a story or chapter, bibliographic description of a cover, etc.); location descriptions are given in several languages. May contain standoff links to locations and characters.",
+                            "fr": "Description de la ressource (résumé d'une histoire ou d'un chapitre, description bibliographique d'une couverture, etc.) ; les descriptions de lieux sont en plusieurs langues. Peut contenir des liens standoff vers des lieux et des personnages.",
+                            "it": "Descrizione della risorsa (riassunto di una storia o di un capitolo, descrizione bibliografica di una copertina, ecc.); le descrizioni dei luoghi sono in più lingue. Può contenere collegamenti standoff a luoghi e personaggi.",
+                            "rm": "Descripziun da la resursa (resumaziun d'ina istorgia u d'in chapitel, descripziun bibliografica d'ina cuverta etc.); las descripziuns da lieus èn en pliras linguas. Po cuntegnair colliaziuns standoff cun lieus e persunagis."
                         },
                         "gui_element": "Richtext"
                     },
@@ -878,13 +1038,15 @@
                             "de": "alternative Beschreibung",
                             "en": "Alternative Description",
                             "fr": "Description alternative",
-                            "it": "Descrizione alternativa"
+                            "it": "Descrizione alternativa",
+                            "rm": "Descripziun alternativa"
                         },
                         "comments": {
                             "de": "Alternative Beschreibung, um ein Beispiel für einen eingeschränkten Wert zu geben",
                             "en": "Alternative description, made to provide an example of restricted value",
                             "fr": "Description alternative, faite pour fournir un exemple de valeur restreinte",
-                            "it": "Descrizione alternativa, fornita per fornire un esempio di valore limitato"
+                            "it": "Descrizione alternativa, fornita per fornire un esempio di valore limitato",
+                            "rm": "Descripziun alternativa, creada sco exempel d'ina valur cun access restrenschì."
                         },
                         "gui_element": "Richtext"
                     },
@@ -900,13 +1062,15 @@
                             "de": "Ereignistyp",
                             "en": "Event Type",
                             "fr": "Type d'événement",
-                            "it": "Tipo di evento"
+                            "it": "Tipo di evento",
+                            "rm": "Tip d'eveniment"
                         },
                         "comments": {
                             "de": "Art der Veranstaltung, anhand einer Liste festgelegt",
                             "en": "Type of the event, determined by a list",
                             "fr": "Type d'événement, déterminé par une liste",
-                            "it": "Tipo di evento, determinato da un elenco"
+                            "it": "Tipo di evento, determinato da un elenco",
+                            "rm": "Tip da l'eveniment, tschernì d'ina glista."
                         },
                         "gui_element": "List",
                         "gui_attributes": {
@@ -924,13 +1088,15 @@
                             "de": "Dateiname",
                             "en": "File Name",
                             "fr": "Nom de fichier",
-                            "it": "Nome del file"
+                            "it": "Nome del file",
+                            "rm": "Num da la datoteca"
                         },
                         "comments": {
                             "de": "Name der Originaldatei",
                             "en": "Name of the original file",
                             "fr": "Nom du fichier original",
-                            "it": "Nome del file originale"
+                            "it": "Nome del file originale",
+                            "rm": "Num da la datoteca originala."
                         },
                         "gui_element": "SimpleText"
                     },
@@ -943,15 +1109,17 @@
                         "object": "TextValue",
                         "labels": {
                             "de": "Text (Englisch)",
-                            "en": "Text",
+                            "en": "Text (English)",
                             "fr": "Texte (Anglais)",
-                            "it": "Testo (Inglese)"
+                            "it": "Testo (Inglese)",
+                            "rm": "Text (englais)"
                         },
                         "comments": {
                             "de": "Text in englischer Sprache",
                             "en": "Text in english",
                             "fr": "Texte en anglais",
-                            "it": "Testo in inglese"
+                            "it": "Testo in inglese",
+                            "rm": "Text cumplet dal chapitel en englais."
                         },
                         "gui_element": "Richtext"
                     },
@@ -966,13 +1134,15 @@
                             "de": "Geoname",
                             "en": "Geoname",
                             "fr": "Geoname",
-                            "it": "Geoname"
+                            "it": "Geoname",
+                            "rm": "Geoname"
                         },
                         "comments": {
                             "de": "Link zum Ort auf der Geonames-Website",
                             "en": "Link to the place on geonames website",
                             "fr": "Lien vers le lieu sur le site de geonames",
-                            "it": "Link al luogo sul sito web geonames"
+                            "it": "Link al luogo sul sito web geonames",
+                            "rm": "Colliaziun cun il lieu sin la pagina d'internet Geonames."
                         },
                         "gui_element": "Geonames"
                     },
@@ -990,10 +1160,10 @@
                             "it": "Numero di ospiti"
                         },
                         "comments": {
-                            "de": "Anzahl der Gäste der Veranstaltung",
-                            "en": "Amount of guests to the event",
-                            "fr": "Nombre d'invités à l'événement",
-                            "it": "Numero di ospiti all'evento"
+                            "de": "Anzahl der Figuren, die am sozialen Ereignis teilnehmen.",
+                            "en": "Number of characters taking part in the social event.",
+                            "fr": "Nombre de personnages participant à l'événement social.",
+                            "it": "Numero di personaggi che partecipano all'evento sociale."
                         },
                         "gui_element": "SimpleText"
                     },
@@ -1057,10 +1227,10 @@
                             "it": "Nome"
                         },
                         "comments": {
-                            "de": "Name",
-                            "en": "Name",
-                            "fr": "Nom",
-                            "it": "Nome"
+                            "de": "Name oder Titel der Ressource; Namen von Figuren und Orten sind in mehreren Sprachen erfasst (ein Wert pro Sprache).",
+                            "en": "Name or title of the resource; names of characters and locations are given in several languages (one value per language).",
+                            "fr": "Nom ou titre de la ressource ; les noms des personnages et des lieux sont saisis en plusieurs langues (une valeur par langue).",
+                            "it": "Nome o titolo della risorsa; i nomi dei personaggi e dei luoghi sono indicati in più lingue (un valore per lingua)."
                         },
                         "gui_element": "SimpleText"
                     },
@@ -1072,10 +1242,10 @@
                         ],
                         "object": "TextValue",
                         "labels": {
-                            "de": "Angebot",
+                            "de": "Zitat",
                             "en": "Quote",
                             "fr": "Citation",
-                            "it": "Preventivo"
+                            "it": "Citazione"
                         },
                         "comments": {
                             "de": "Zitat, wie im Originaltext geschrieben",
@@ -1144,10 +1314,10 @@
                             "it": "Ulteriori informazioni"
                         },
                         "comments": {
-                            "de": "URL zu einer externen Seite mit weiteren Informationen",
-                            "en": "URL leading to an external page with more information",
-                            "fr": "URL menant à une page externe contenant plus d'informations",
-                            "it": "URL che rimanda a una pagina esterna con ulteriori informazioni"
+                            "de": "URL einer externen Seite mit weiteren Informationen, z. B. Online-Text des Kapitels oder Katalogeintrag des Bucheinbands (Library of Congress).",
+                            "en": "URL of an external page with more information, e.g. the online text of the chapter or the catalogue record of the book cover (Library of Congress).",
+                            "fr": "URL d'une page externe avec plus d'informations, p. ex. le texte en ligne du chapitre ou la notice de catalogue de la couverture (Library of Congress).",
+                            "it": "URL di una pagina esterna con ulteriori informazioni, ad es. il testo online del capitolo o la scheda di catalogo della copertina (Library of Congress)."
                         },
                         "gui_element": "SimpleText"
                     },
@@ -1166,10 +1336,10 @@
                             "it": "Wikidata ID"
                         },
                         "comments": {
-                            "de": "link zu der Wikidata Seite",
-                            "en": "link to the corresponding Wikidata entry",
-                            "fr": "lien vers l'entrée Wikidata correspondante",
-                            "it": "link alla voce Wikidata corrispondente"
+                            "de": "Link (URL) zum entsprechenden Wikidata-Eintrag.",
+                            "en": "Link (URL) to the corresponding Wikidata entry.",
+                            "fr": "Lien (URL) vers l'entrée Wikidata correspondante.",
+                            "it": "Link (URL) alla voce Wikidata corrispondente."
                         },
                         "gui_element": "SimpleText"
                     },
@@ -1209,10 +1379,10 @@
                             "it": "Appartiene al capitolo"
                         },
                         "comments": {
-                            "de": "Gehört zu folgendem Kapitel",
-                            "en": "Belongs to following chapter",
-                            "fr": "Appartient au chapitre suivant",
-                            "it": "Appartiene al seguente capitolo"
+                            "de": "Verknüpfung eines Bildes mit dem Kapitel, in dem es erscheint (Originalausgaben); die Bilder werden als zusammengesetztes Objekt auf Kapitelebene angezeigt, geordnet nach Sequenznummer.",
+                            "en": "Link from an image to the chapter in which it appears (original editions); the images are displayed as a compound object at chapter level, ordered by sequence number.",
+                            "fr": "Lien d'une image vers le chapitre dans lequel elle apparaît (éditions originales) ; les images sont affichées comme objet composite au niveau du chapitre, dans l'ordre du numéro de séquence.",
+                            "it": "Collegamento di un'immagine al capitolo in cui compare (edizioni originali); le immagini sono visualizzate come oggetto composto a livello di capitolo, ordinate per numero di sequenza."
                         },
                         "gui_element": "Searchbox"
                     },
@@ -1231,10 +1401,10 @@
                             "it": "Personaggio/i nell'immagine"
                         },
                         "comments": {
-                            "de": "Charakter(e) auf dem Bild",
-                            "en": "Character(s) on the image",
-                            "fr": "Personnage(s) sur l'image",
-                            "it": "Personaggio/i nell'immagine"
+                            "de": "Verknüpfung eines Bildes mit den darauf dargestellten Figuren; die Bilder werden dann als zusammengesetztes Objekt auf Figurenebene angezeigt.",
+                            "en": "Link from an image to the character(s) shown on it; the images are then displayed as a compound object at character level.",
+                            "fr": "Lien d'une image vers le ou les personnages qui y figurent ; les images sont alors affichées comme objet composite au niveau du personnage.",
+                            "it": "Collegamento di un'immagine al personaggio o ai personaggi raffigurati; le immagini sono poi visualizzate come oggetto composto a livello di personaggio."
                         },
                         "gui_element": "Searchbox"
                     },
@@ -1252,10 +1422,10 @@
                             "it": "Audio"
                         },
                         "comments": {
-                            "de": "Interner Link zu Audio",
-                            "en": "internal link to Audio",
-                            "fr": "lien interne vers les fichiers Audio",
-                            "it": "link interno all'audio"
+                            "de": "Verknüpfung mit der Audioaufnahme des Kapitels.",
+                            "en": "Link to the audio recording of the chapter.",
+                            "fr": "Lien vers l'enregistrement audio du chapitre.",
+                            "it": "Collegamento alla registrazione audio del capitolo."
                         },
                         "gui_element": "Searchbox"
                     },
@@ -1274,10 +1444,10 @@
                             "it": "Capitoli del libro"
                         },
                         "comments": {
-                            "de": "Interner Link zu Buchkapiteln",
-                            "en": "internal link to Book Chapters",
-                            "fr": "lien interne vers les Chapitres du livre",
-                            "it": "link interno ai capitoli del libro"
+                            "de": "Verknüpfung mit den Kapiteln, aus denen die Geschichte besteht.",
+                            "en": "Link to the chapters of which the story consists.",
+                            "fr": "Lien vers les chapitres qui composent l'histoire.",
+                            "it": "Collegamento ai capitoli che compongono la storia."
                         },
                         "gui_element": "Searchbox"
                     },
@@ -1291,14 +1461,14 @@
                         "labels": {
                             "de": "Ausgabe",
                             "en": "Edition",
-                            "fr": "Edition",
+                            "fr": "Édition(s)",
                             "it": "Edizione"
                         },
                         "comments": {
-                            "de": "Interner Link zu den Ausgaben",
-                            "en": "internal link to the Edition(s)",
-                            "fr": "lien interne vers l'(les) édition(s)",
-                            "it": "link interno all'edizione/alle edizioni"
+                            "de": "Verknüpfung mit den Ausgaben (digitalisierten Büchern) der Geschichte.",
+                            "en": "Link to the edition(s) (digitised books) of the story.",
+                            "fr": "Lien vers la ou les éditions (livres numérisés) de l'histoire.",
+                            "it": "Collegamento all'edizione o alle edizioni (libri digitalizzati) della storia."
                         },
                         "gui_element": "Searchbox"
                     },
@@ -1317,10 +1487,10 @@
                             "it": "Personaggio/i"
                         },
                         "comments": {
-                            "de": "Interner Link zu Figur(en)",
-                            "en": "internal link to Character(s)",
-                            "fr": "lien interne vers le(s) personnage(s)",
-                            "it": "link interno a Personaggio/i"
+                            "de": "Verknüpfung mit den am Ereignis beteiligten Figuren.",
+                            "en": "Link to the character(s) taking part in the event.",
+                            "fr": "Lien vers le ou les personnages qui participent à l'événement.",
+                            "it": "Collegamento al personaggio o ai personaggi che partecipano all'evento."
                         },
                         "gui_element": "Searchbox"
                     },
@@ -1339,10 +1509,10 @@
                             "it": "Antagonista/i"
                         },
                         "comments": {
-                            "de": "Interner Link zu Antagonist(en)",
-                            "en": "internal link to Antagonist(s)",
-                            "fr": "lien interne vers Antagoniste(s)",
-                            "it": "link interno a Antagonista/i"
+                            "de": "Verknüpfung mit den Figuren, die im Konflikt als Antagonisten auftreten.",
+                            "en": "Link to the character(s) acting as antagonists in the conflict.",
+                            "fr": "Lien vers le ou les personnages antagonistes du conflit.",
+                            "it": "Collegamento al personaggio o ai personaggi antagonisti nel conflitto."
                         },
                         "gui_element": "Searchbox"
                     },
@@ -1361,10 +1531,10 @@
                             "it": "Protagonista/i"
                         },
                         "comments": {
-                            "de": "Interner Link zu Protagonist(en)",
-                            "en": "internal link to Protagonist(s)",
-                            "fr": "lien interne vers Protagoniste(s)",
-                            "it": "link interno a Protagonista/i"
+                            "de": "Verknüpfung mit den Figuren, die im Konflikt als Protagonisten auftreten.",
+                            "en": "Link to the character(s) acting as protagonists in the conflict.",
+                            "fr": "Lien vers le ou les personnages protagonistes du conflit.",
+                            "it": "Collegamento al personaggio o ai personaggi protagonisti nel conflitto."
                         },
                         "gui_element": "Searchbox"
                     },
@@ -1376,16 +1546,16 @@
                         ],
                         "object": ":Event",
                         "labels": {
-                            "de": "Ereignis",
+                            "de": "Ereignis(se)",
                             "en": "Event(s)",
                             "fr": "Evénement(s)",
-                            "it": "Evento"
+                            "it": "Evento/i"
                         },
                         "comments": {
-                            "de": "Interner Link zu Ereignis(en)",
-                            "en": "internal link to Event(s)",
-                            "fr": "lien interne vers Événement(s)",
-                            "it": "link interno a Evento/i"
+                            "de": "Verknüpfung mit den Ereignissen, die im Kapitel stattfinden.",
+                            "en": "Link to the event(s) taking place in the chapter.",
+                            "fr": "Lien vers le ou les événements qui se déroulent dans le chapitre.",
+                            "it": "Collegamento all'evento o agli eventi che si svolgono nel capitolo."
                         },
                         "gui_element": "Searchbox"
                     },
@@ -1397,16 +1567,16 @@
                         ],
                         "object": ":Image",
                         "labels": {
-                            "de": "Bild",
+                            "de": "Bild(er)",
                             "en": "Image(s)",
-                            "fr": "Image(s) liée(s)",
-                            "it": "Immagine"
+                            "fr": "Image(s)",
+                            "it": "Immagine/i"
                         },
                         "comments": {
-                            "de": "Interner Link zu Bild(ern)",
-                            "en": "internal link to Image(s)",
-                            "fr": "lien interne vers Image(s)",
-                            "it": "link interno a Immagine/i"
+                            "de": "Verknüpfung mit den Bildern, die das Ereignis oder den Ort illustrieren.",
+                            "en": "Link to the image(s) illustrating the event or location.",
+                            "fr": "Lien vers la ou les images illustrant l'événement ou le lieu.",
+                            "it": "Collegamento all'immagine o alle immagini che illustrano l'evento o il luogo."
                         },
                         "gui_element": "Searchbox"
                     },
@@ -1419,16 +1589,16 @@
                         ],
                         "object": ":Location",
                         "labels": {
-                            "de": "Standort",
+                            "de": "Ort(e)",
                             "en": "Location",
-                            "fr": "Emplacement",
-                            "it": "Luogo"
+                            "fr": "Lieu(x)",
+                            "it": "Luogo/i"
                         },
                         "comments": {
-                            "de": "Interner Link zu Ort(en)",
-                            "en": "internal link to Location(s)",
-                            "fr": "lien interne vers Lieu(x)",
-                            "it": "link interno a Luogo/i"
+                            "de": "Verknüpfung mit den Orten, an denen das Kapitel oder das Ereignis spielt.",
+                            "en": "Link to the place(s) where the chapter or event takes place.",
+                            "fr": "Lien vers le ou les lieux où se déroule le chapitre ou l'événement.",
+                            "it": "Collegamento al luogo o ai luoghi in cui si svolge il capitolo o l'evento."
                         },
                         "gui_element": "Searchbox"
                     },
@@ -1446,10 +1616,10 @@
                             "it": "Video"
                         },
                         "comments": {
-                            "de": "Interner Link zu Video(s)",
-                            "en": "internal link to Video(s)",
-                            "fr": "lien interne vers Vidéo(s)",
-                            "it": "link interno a Video/i"
+                            "de": "Verknüpfung mit den Verfilmungen der Geschichte.",
+                            "en": "Link to the film adaptation(s) of the story.",
+                            "fr": "Lien vers la ou les adaptations cinématographiques de l'histoire.",
+                            "it": "Collegamento all'adattamento o agli adattamenti cinematografici della storia."
                         },
                         "gui_element": "Searchbox"
                     },
@@ -1461,16 +1631,16 @@
                         ],
                         "object": ":BookCover",
                         "labels": {
-                            "de": "Einband",
+                            "de": "Bucheinband",
                             "en": "Book Cover",
                             "fr": "Couverture",
-                            "it": "Copertine"
+                            "it": "Copertina/e"
                         },
                         "comments": {
-                            "de": "Interner Link zu Buchcover(s)",
-                            "en": "internal link to Book Cover(s)",
-                            "fr": "lien interne vers Couverture(s) de livre",
-                            "it": "link interno a Copertina/e del libro"
+                            "de": "Verknüpfung mit den Bucheinbänden von Ausgaben der Geschichte (Bilder auf externen IIIF-Servern).",
+                            "en": "Link to the book cover(s) of editions of the story (images on external IIIF servers).",
+                            "fr": "Lien vers la ou les couvertures d'éditions de l'histoire (images sur des serveurs IIIF externes).",
+                            "it": "Collegamento alla copertina o alle copertine di edizioni della storia (immagini su server IIIF esterni)."
                         },
                         "gui_element": "Searchbox"
                     },
@@ -1531,10 +1701,10 @@
                             "it": "01. Storia"
                         },
                         "comments": {
-                            "de": "Die beiden Geschichten von Lewis Carroll. Jede Geschichte enthält Links zu Buchausgaben und Buchcovern. Jede Geschichte besteht aus Kapiteln, die miteinander verlinkt sind. Außerdem ist ein Video (Film) mit der Geschichte verlinkt.",
+                            "de": "Die beiden von Lewis Carroll geschriebenen Geschichten. Jede Geschichte ist mit ihren Buchausgaben und Bucheinbänden verknüpft, ebenso mit ihren Kapiteln und mit Verfilmungen (Video).",
                             "en": "The two stories written by Lewis Carroll. Each story has links to book editions and book covers. Each story contains chapters, which are linked with it. A video (film) is also linked to the story.",
                             "fr": "Les deux histoires écrites par Lewis Carroll. Chaque histoire comporte des liens vers des éditions et des couvertures de livres. Chaque histoire contient des chapitres, qui sont liés à celle-ci. Une vidéo (film) est également liée à l'histoire.",
-                            "it": "Le due storie scritte da Lewis Carroll. Ogni storia contiene link alle edizioni dei libri e alle copertine. Ogni storia è suddivisa in capitoli, ai quali sono collegati dei link. Alla storia è collegato anche un video (film)."
+                            "it": "Le due storie scritte da Lewis Carroll. Ogni storia è collegata alle sue edizioni e copertine, ai suoi capitoli e agli adattamenti cinematografici (video)."
                         },
                         "cardinalities": [
                             {
@@ -1608,10 +1778,10 @@
                             "it": "02. Capitolo della storia"
                         },
                         "comments": {
-                            "de": "Kapitel der beiden Geschichten, einschließlich Vorworte und Gedichte aus den Büchern, mit vollständigem Text. Jedes Kapitel ist mit seiner Geschichte verlinkt. Audioaufnahmen zu jedem Kapitel sind ebenfalls verlinkt. Zu jedem Kapitel gibt es einen Link zu den Orten, an denen die Handlung des Kapitels stattfindet, sowie zu den Ereignissen, die während der Kapitel stattfinden.",
-                            "en": "Chapters of the two stories, including prefaces and poems from the books, with full text. Each chapter is linked to its story. Audio recordings of each chapter are also linked. For each chapter, a link towards the location(s) where the action of the chapter is provided, as well as the events taking place during the chapters.",
-                            "fr": "Chapitres des deux récits, y compris les préfaces et les poèmes tirés des livres, avec texte intégral. Chaque chapitre est lié à son récit. Des enregistrements audio de chaque chapitre sont également disponibles. Pour chaque chapitre, un lien vers le ou les lieux où se déroule l'action du chapitre est fourni, ainsi que les événements qui s'y déroulent.",
-                            "it": "Capitoli delle due storie, comprese prefazioni e poesie tratte dai libri, con testo completo. Ogni capitolo è collegato alla sua storia. Sono presenti anche registrazioni audio di ogni capitolo. Per ogni capitolo è fornito un link alla località o alle località in cui si svolge l'azione del capitolo, nonché agli eventi che hanno luogo durante i capitoli."
+                            "de": "Kapitel der beiden Geschichten, einschliesslich Vorworte, Gedichte und Dramatis Personae, mit Kapitelnummer, Zusammenfassung, Volltext (Englisch), Link zu einer Online-Fassung und Schlagwörtern. Jedes Kapitel ist mit seiner Audioaufnahme, den Orten der Handlung und seinen Ereignissen verknüpft; die Originalillustrationen sind ihm zugeordnet.",
+                            "en": "Chapters of the two stories, including prefaces, poems and the Dramatis Personae, with chapter number, summary, full text (English), link to an online version and keywords. Each chapter is linked to its audio recording, to the location(s) where it takes place and to its events; the original illustrations are attached to it.",
+                            "fr": "Chapitres des deux histoires, y compris préfaces, poèmes et Dramatis Personae, avec numéro de chapitre, résumé, texte intégral (anglais), lien vers une version en ligne et mots-clés. Chaque chapitre est lié à son enregistrement audio, au(x) lieu(x) où il se déroule et à ses événements ; les illustrations originales lui sont rattachées.",
+                            "it": "Capitoli delle due storie, comprese prefazioni, poesie e Dramatis Personae, con numero di capitolo, riassunto, testo completo (inglese), link a una versione online e parole chiave. Ogni capitolo è collegato alla sua registrazione audio, ai luoghi in cui si svolge e ai suoi eventi; le illustrazioni originali vi sono associate."
                         },
                         "cardinalities": [
                             {
@@ -1679,16 +1849,16 @@
                             "crm:E89_Propositional_Object"
                         ],
                         "labels": {
-                            "de": "03. Charakter",
+                            "de": "03. Figur",
                             "en": "03. Character",
                             "fr": "03. Personnage",
                             "it": "03. Personaggio"
                         },
                         "comments": {
-                            "de": "Die Charaktere in den Büchern lassen sich in zwei Gruppen einteilen: Hauptcharaktere und Nebencharaktere. Sie sind mit Bildern verknüpft, die sie zeigen und die direkt auf der Charakterebene erscheinen. Dies hängt auch mit den Ereignissen zusammen, die in den verschiedenen Teilen der Geschichten stattfinden.",
-                            "en": "Characters in the books can be divided into two groups: main characters and secondary characters. They are linked with images that show them, and which appear directly at character level. This is also connected to the Events that happen in the different parts of the stories.",
-                            "fr": "Les personnages des livres peuvent être divisés en deux groupes : les personnages principaux et les personnages secondaires. Ils sont associés à des images qui les représentent et qui apparaissent directement au niveau des personnages. Ils sont également liés aux événements qui se produisent dans les différentes parties des histoires.",
-                            "it": "I personaggi dei libri possono essere divisi in due gruppi: personaggi principali e personaggi secondari. Sono collegati alle immagini che li raffigurano e che appaiono direttamente a livello di personaggio. Questo è anche collegato agli eventi che accadono nelle diverse parti delle storie."
+                            "de": "Figuren der beiden Geschichten (Menschen, Tiere, Gegenstände oder Spielkarten), mit Namen auf Englisch, Deutsch, Französisch und Italienisch, Beschreibung, Rolle (Haupt- oder Nebenfigur), Schlagwörtern, Zitaten und Wikidata-Link. Bilder, die sie zeigen, und Ereignisse, an denen sie teilnehmen, sind mit ihnen verknüpft.",
+                            "en": "Characters of the two stories (human, animal, object or playing-card figures), with their names in English, German, French and Italian, description, role (main or secondary), keywords, quotes and Wikidata link. Images showing them and events they take part in are linked to them.",
+                            "fr": "Personnages des deux histoires (humains, animaux, objets ou cartes à jouer), avec leurs noms en anglais, allemand, français et italien, description, rôle (principal ou secondaire), mots-clés, citations et lien Wikidata. Les images qui les représentent et les événements auxquels ils participent leur sont liés.",
+                            "it": "Personaggi delle due storie (umani, animali, oggetti o carte da gioco), con i loro nomi in inglese, tedesco, francese e italiano, descrizione, ruolo (principale o secondario), parole chiave, citazioni e link a Wikidata. Le immagini che li raffigurano e gli eventi a cui partecipano sono collegati a loro."
                         },
                         "cardinalities": [
                             {
@@ -1748,7 +1918,7 @@
                         },
                         "comments": {
                             "de": "Ereignisse, die in den beiden Geschichten stattfinden. Ereignisse sind entsprechend ihrer Art in Unterklassen unterteilt: Abenteuer, Konflikt und Soziales. Alternative Ereignisse sind privat. Alle Ereignisse sind direkt mit dem Kapitel verknüpft, in dem sie stattfinden. Einige Ereignisse sind entsprechend ihrer Art mit Charakteren verknüpft. Die Eigenschaft „Beschreibung” enthält Stand-off-Links zu einer Klasse „Ort” und dem Charakter Alice.",
-                            "en": "Events taking place in the two stories. Events are divided in Subclasses, according to their type: Adventure, Conflict, and Social. Alternative Events are private. All events are directly linked to the chapter in which they take place. Some events are linked to characters, according to their type. The property \"Description\" contains stand-off links toward Location a class and Alice character",
+                            "en": "Events taking place in the two stories. Events are divided into subclasses according to their type: Adventure, Conflict and Social (Alternative events are private). All events are linked to the chapter in which they take place, and some to the characters involved. The property 'Description' contains standoff links to locations and to the character Alice.",
                             "fr": "Événements se déroulant dans les deux histoires. Les événements sont divisés en sous-classes, selon leur type : aventure, conflit et social. Les événements alternatifs sont privés. Tous les événements sont directement liés au chapitre dans lequel ils se déroulent. Certains événements sont liés à des personnages, selon leur type. La propriété « Description » contient des liens vers la classe Lieu et le personnage Alice.",
                             "it": "Eventi che si verificano nelle due storie. Gli eventi sono suddivisi in sottoclassi, in base al loro tipo: Avventura, Conflitto e Sociale. Gli eventi alternativi sono privati. Tutti gli eventi sono direttamente collegati al capitolo in cui si verificano. Alcuni eventi sono collegati ai personaggi, in base al loro tipo. La proprietà “Descrizione” contiene collegamenti diretti alla classe Location e al personaggio Alice."
                         },
@@ -1898,14 +2068,14 @@
                         "labels": {
                             "de": "07. Ausgabe",
                             "en": "07. Edition",
-                            "fr": "07. Edition",
+                            "fr": "07. Édition",
                             "it": "07. Edizione"
                         },
                         "comments": {
-                            "de": "Ausgaben der Geschichten. Jede Ausgabe ist mit der darin enthaltenen Geschichte verknüpft.",
-                            "en": "Editions of the stories. Each edition is linked to the story they contain.",
-                            "fr": "Éditions des récits. Chaque édition est liée au récit qu'elle contient.",
-                            "it": "Edizioni delle storie. Ogni edizione è collegata alla storia che contiene."
+                            "de": "Digitalisierte Ausgaben (PDF) der Geschichten, von der von John Tenniel illustrierten Erstausgabe bis zu späteren Ausgaben (z. B. illustriert von Peter Newell), mit Beschreibung, Datum der Ausgabe und Wikidata-Link. Jede Ausgabe wird von der Geschichte aus verknüpft, die sie enthält.",
+                            "en": "Digitised editions (PDF) of the stories, from the first edition illustrated by John Tenniel to later editions (e.g. illustrated by Peter Newell), with description, date of the edition and Wikidata link. Each edition is linked from the story it contains.",
+                            "fr": "Éditions numérisées (PDF) des histoires, de la première édition illustrée par John Tenniel à des éditions ultérieures (p. ex. illustrées par Peter Newell), avec description, date de l'édition et lien Wikidata. Chaque édition est liée depuis l'histoire qu'elle contient.",
+                            "it": "Edizioni digitalizzate (PDF) delle storie, dalla prima edizione illustrata da John Tenniel a edizioni successive (ad es. illustrate da Peter Newell), con descrizione, data dell'edizione e link a Wikidata. Ogni edizione è collegata dalla storia che contiene."
                         },
                         "cardinalities": [
                             {
@@ -1959,10 +2129,10 @@
                             "it": "08. Copertina del libro"
                         },
                         "comments": {
-                            "de": "Bucheinbände mehrerer Ausgaben der Geschichten. Die Einbände sind auf externen iiif-Servern gespeichert. Jede Instanz ist mit der Geschichte verknüpft, die in dem Buch enthalten ist, das sie illustriert.",
-                            "en": "Book covers of several editions of the stories. The covers are stored on external iiif-servers. Each instance is linked to the story contained in the book they illustrate.",
-                            "fr": "Couverture de plusieurs éditions des contes. Les couvertures sont stockées sur des serveurs iiif externes. Chaque instance est liée au conte contenu dans le livre qu'elle illustre.",
-                            "it": "Copertine di diverse edizioni delle storie. Le copertine sono archiviate su server iiif esterni. Ogni istanza è collegata alla storia contenuta nel libro che illustra."
+                            "de": "Einbände historischer Ausgaben der Geschichten (1899–1928), angezeigt über den IIIF-Server der Library of Congress, mit bibliografischer Beschreibung der Ausgabe, Erscheinungsjahr und Link zum Katalogeintrag. Jeder Einband wird von der Geschichte aus verknüpft, die er illustriert.",
+                            "en": "Covers of historical editions of the stories (1899–1928), displayed from the IIIF server of the Library of Congress, with the bibliographic description of the edition, its year and a link to the catalogue record. Each cover is linked from the story it illustrates.",
+                            "fr": "Couvertures d'éditions historiques des histoires (1899–1928), affichées depuis le serveur IIIF de la Library of Congress, avec la description bibliographique de l'édition, son année et un lien vers la notice du catalogue. Chaque couverture est liée depuis l'histoire qu'elle illustre.",
+                            "it": "Copertine di edizioni storiche delle storie (1899–1928), visualizzate dal server IIIF della Library of Congress, con la descrizione bibliografica dell'edizione, l'anno e un link alla scheda di catalogo. Ogni copertina è collegata dalla storia che illustra."
                         },
                         "cardinalities": [
                             {
@@ -2001,10 +2171,10 @@
                             "it": "09. Audio"
                         },
                         "comments": {
-                            "de": "Audioversion von Alice im Wunderland, Kapitel für Kapitel. Jedes Kapitel der Geschichte ist mit seiner Audioversion verlinkt.",
-                            "en": "Audio version of Alice in Wonderland, chapter per chapter. Each Chapter of the story is linked with its audio version.",
-                            "fr": "Version audio d'Alice au pays des merveilles, chapitre par chapitre. Chaque chapitre de l'histoire est lié à sa version audio.",
-                            "it": "Versione audio di Alice nel Paese delle Meraviglie, capitolo per capitolo. Ogni capitolo della storia è collegato alla sua versione audio."
+                            "de": "Audioaufnahmen (szenische Lesungen mit Erzähler/in und Besetzung) beider Geschichten, eine Datei pro Kapitel, einschliesslich der Dramatis Personae. Jedes Kapitel ist mit seiner Aufnahme verknüpft.",
+                            "en": "Audio recordings (dramatic readings with narrator and cast) of both stories, one file per chapter, including the Dramatis Personae. Each chapter of the stories is linked to its recording.",
+                            "fr": "Enregistrements audio (lectures théâtralisées avec narrateur et distribution) des deux histoires, un fichier par chapitre, y compris les Dramatis Personae. Chaque chapitre est lié à son enregistrement.",
+                            "it": "Registrazioni audio (letture drammatizzate con narratore e cast) di entrambe le storie, un file per capitolo, comprese le Dramatis Personae. Ogni capitolo è collegato alla sua registrazione."
                         },
                         "cardinalities": [
                             {
@@ -2053,10 +2223,10 @@
                             "it": "10. Video"
                         },
                         "comments": {
-                            "de": "Verfilmungen der beiden Geschichten. Sie stehen in Verbindung mit den Originalgeschichten.",
-                            "en": "Film adaptations of the two stories. They are connected to the original stories.",
-                            "fr": "Adaptations cinématographiques des deux histoires. Elles sont liées aux histoires originales.",
-                            "it": "Adattamenti cinematografici delle due storie. Sono collegati alle storie originali."
+                            "de": "Verfilmung der Geschichten (Stummfilm «Alice in Wonderland», 1915, der Kapitel beider Bücher verbindet), mit Besetzung; von beiden Geschichten aus verknüpft.",
+                            "en": "Film adaptation of the stories (silent film 'Alice in Wonderland', 1915, combining chapters of both books), with its cast; linked from both stories.",
+                            "fr": "Adaptation cinématographique des histoires (film muet « Alice in Wonderland », 1915, qui combine des chapitres des deux livres), avec sa distribution ; liée depuis les deux histoires.",
+                            "it": "Adattamento cinematografico delle storie (film muto «Alice in Wonderland», 1915, che combina capitoli di entrambi i libri), con il suo cast; collegato da entrambe le storie."
                         },
                         "cardinalities": [
                             {
@@ -2147,7 +2317,7 @@
                             "de": "Unterklasse von Ereignis, vom Typ Alternativ. Diese Klasse ist privat zugänglich, wie alle alternativen Daten.",
                             "en": "Subclass of Event, of type Alternative. This class is in private access, as are all alternative data.",
                             "fr": "Sous-classe de Événement, de type Alternatif. Cette classe est en accès privé, comme toutes les données alternatives.",
-                            "it": "Sottoclasse di Event, di tipo Alternative. Questa classe è ad accesso privato, come tutti i dati alternativi."
+                            "it": "Sottoclasse di Evento, di tipo Alternativo. Questa classe è ad accesso privato, come tutti i dati alternativi."
                         },
                         "cardinalities": [
                             {
@@ -2205,7 +2375,7 @@
                             "it": "Evento sociale"
                         },
                         "comments": {
-                            "de": "Unterklasse von Ereignis, vom Typ Sozial. Die an der Veranstaltung teilnehmenden Charaktere sind hier verlinkt.",
+                            "de": "Unterklasse von Ereignis, vom Typ Sozial. Die am Ereignis beteiligten Figuren sind hier verknüpft.",
                             "en": "Subclass of Event, of type Social. Characters taking part to the event are linked here.",
                             "fr": "Sous-classe de Événement, de type Social. Les personnages participant à l'événement sont liés ici.",
                             "it": "Sottoclasse di Evento, di tipo Sociale. I personaggi che partecipano all'evento sono collegati qui."
@@ -2238,10 +2408,10 @@
                             "it": "Luogo del mondo reale"
                         },
                         "comments": {
-                            "de": "Unterklasse von Ort. Orte, die in der realen Welt existieren und eine Eigenschaft mit Geonames-Referenzierung enthalten.",
-                            "en": "Subclass of Location. Places existing in the real world, containing a property with Geonames referencing.",
-                            "fr": "Sous-classe de Location. Lieux existant dans le monde réel, contenant une propriété avec référence Geonames.",
-                            "it": "Sottoclasse di Location. Luoghi esistenti nel mondo reale, contenenti una proprietà con riferimento a Geonames."
+                            "de": "Unterklasse von Ort. Reale Orte mit Bezug zu den Geschichten (z. B. England, Oxford, Alices Zuhause, das Flussufer), mit Geonames-Referenz, Geolokalisierung und Wikidata-Link.",
+                            "en": "Subclass of Location. Real places related to the stories (e.g. England, Oxford, Alice's home, the riverbank), with Geonames reference, geolocation and Wikidata link.",
+                            "fr": "Sous-classe de Lieu. Lieux réels liés aux histoires (p. ex. l'Angleterre, Oxford, la maison d'Alice, la rive), avec référence Geonames, géolocalisation et lien Wikidata.",
+                            "it": "Sottoclasse di Luogo. Luoghi reali legati alle storie (ad es. Inghilterra, Oxford, la casa di Alice, la riva del fiume), con riferimento Geonames, geolocalizzazione e link a Wikidata."
                         },
                         "cardinalities": [
                             {
@@ -2276,7 +2446,7 @@
                             "it": "Luogo del Paese delle Meraviglie"
                         },
                         "comments": {
-                            "de": "Unterklasse von Ort. Orte, die in Wonderland existieren.",
+                            "de": "Unterklasse von Ort. Orte, die im Wunderland existieren.",
                             "en": "Subclass of Location. Places existing in Wonderland.",
                             "fr": "Sous-classe de Location. Lieux existant au Pays des Merveilles.",
                             "it": "Sottoclasse di Location. Luoghi esistenti nel Paese delle Meraviglie."
@@ -2297,10 +2467,10 @@
                             "it": "Immagine originale"
                         },
                         "comments": {
-                            "de": "Unterklasse von Bild. Originalillustrationen aus der ersten Ausgabe, erstellt von John Tenniel.",
-                            "en": "Subclass of Image. Original illustrations from the first edition, created by John Tenniel.",
-                            "fr": "Sous-classe de Image. Illustrations originales de la première édition, créées par John Tenniel.",
-                            "it": "Sottoclasse di Immagine. Illustrazioni originali della prima edizione, realizzate da John Tenniel."
+                            "de": "Unterklasse von Bild. John Tenniels Originalillustrationen zu beiden Büchern, jeweils verknüpft mit dem Kapitel, in dem sie erscheinen, und mit den dargestellten Figuren.",
+                            "en": "Subclass of Image. John Tenniel's original illustrations for both books, each linked to the chapter in which it appears and to the characters it shows.",
+                            "fr": "Sous-classe de Image. Illustrations originales de John Tenniel pour les deux livres, chacune liée au chapitre où elle figure et aux personnages qu'elle représente.",
+                            "it": "Sottoclasse di Immagine. Illustrazioni originali di John Tenniel per entrambi i libri, ciascuna collegata al capitolo in cui compare e ai personaggi che raffigura."
                         },
                         "cardinalities": [
                             {
@@ -2325,10 +2495,10 @@
                             "it": "Immagine alternativa"
                         },
                         "comments": {
-                            "de": "Unterklasse von Bild. Illustrationen aus der alternativen Geschichte, generiert mit einer KI. Bilder Alternative sind in eingeschränkter Ansicht zugänglich.",
-                            "en": "Subclass of Image. Illustrations from the alternative story, generated with an AI. Images Alternative are accessible in limited view.",
-                            "fr": "Sous-classe d'Image. Illustrations tirées de l'histoire alternative, générées à l'aide d'une IA. Les images alternatives sont accessibles en affichage limité.",
-                            "it": "Sottoclasse di Immagine. Illustrazioni tratte dalla storia alternativa, generate con un'intelligenza artificiale. Le immagini alternative sono accessibili in visualizzazione limitata."
+                            "de": "Unterklasse von Bild. KI-generierte Illustrationen der alternativen, DaSCH-bezogenen Geschichte (z. B. «DaSCHland Alice», «RabbIT», «Cyberpillar»), verknüpft mit Kapiteln und Figuren der Originalgeschichte. Nur in eingeschränkter Ansicht zugänglich.",
+                            "en": "Subclass of Image. AI-generated illustrations of the alternative, DaSCH-themed story (e.g. 'DaSCHland Alice', 'RabbIT', 'Cyberpillar'), linked to chapters and characters of the original story. Accessible in limited view only.",
+                            "fr": "Sous-classe de Image. Illustrations générées par IA de l'histoire alternative sur le thème de DaSCH (p. ex. « DaSCHland Alice », « RabbIT », « Cyberpillar »), liées aux chapitres et personnages de l'histoire originale. Accessibles uniquement en affichage limité.",
+                            "it": "Sottoclasse di Immagine. Illustrazioni generate con IA della storia alternativa a tema DaSCH (ad es. «DaSCHland Alice», «RabbIT», «Cyberpillar»), collegate a capitoli e personaggi della storia originale. Accessibili solo in visualizzazione limitata."
                         },
                         "cardinalities": [
                             {
