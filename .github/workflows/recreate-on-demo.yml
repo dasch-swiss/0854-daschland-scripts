@@ -172,7 +172,7 @@ jobs:
             - Point the 0854 project link at the demo URL of the latest upload.
 
             ## Key Changes
-            ### modules/dpe/server/data/projects/0854_daschland.json
+            ### areas/access/dpe/server/data/projects/0854_daschland.json
             - `url[0]` is now ${{ steps.project_url.outputs.url }}
 
             ## Challenges and Decisions
