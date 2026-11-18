@@ -13,7 +13,7 @@ SYSADMIN_EMAIL = "dasch@dasch.swiss"
 # dsp-repository holds the metadata behind the portal page, including the link to the demo project
 REPOSITORY_REPO = "dasch-swiss/dsp-repository"
 # Last known location of the project metadata file; re-resolved by file name if it moved
-REPOSITORY_PROJECT_FILE = "modules/dpe/server/data/projects/0854_daschland.json"
+REPOSITORY_PROJECT_FILE = "areas/access/dpe/server/data/projects/0854_daschland.json"
 
 # Timeout in seconds for every outgoing HTTP request
 HTTP_TIMEOUT = 30

@@ -92,7 +92,7 @@ def test_find_project_file_at_the_known_location(tmp_path: Path) -> None:
 
 @pytest.mark.parametrize(
     "path",
-    ["data/projects/0854_daschland.json", "modules/dpe/server/data/projects/0854_alice.json"],
+    ["data/projects/0854_daschland.json", "areas/access/dpe/server/data/projects/0854_alice.json"],
 )
 def test_find_project_file_after_a_move_or_rename(tmp_path: Path, path: str) -> None:
     expected = _checkout(tmp_path, path)
